@@ -1,0 +1,17 @@
+C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.Infrastructure\bin\Debug\net8.0\OnlineLibrary.Infrastructure.deps.json
+C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.Infrastructure\bin\Debug\net8.0\OnlineLibrary.Infrastructure.dll
+C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.Infrastructure\bin\Debug\net8.0\OnlineLibrary.Infrastructure.pdb
+C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.Infrastructure\bin\Debug\net8.0\OnlineLibrary.Application.dll
+C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.Infrastructure\bin\Debug\net8.0\OnlineLibrary.Core.dll
+C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.Infrastructure\bin\Debug\net8.0\OnlineLibrary.Core.pdb
+C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.Infrastructure\bin\Debug\net8.0\OnlineLibrary.Application.pdb
+C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.Infrastructure\obj\Debug\net8.0\OnlineLibrary.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.Infrastructure\obj\Debug\net8.0\OnlineLibrary.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.Infrastructure\obj\Debug\net8.0\OnlineLibrary.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.Infrastructure\obj\Debug\net8.0\OnlineLibrary.Infrastructure.AssemblyInfo.cs
+C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.Infrastructure\obj\Debug\net8.0\OnlineLibrary.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.Infrastructure\obj\Debug\net8.0\OnlineLi.7305EDE0.Up2Date
+C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.Infrastructure\obj\Debug\net8.0\OnlineLibrary.Infrastructure.dll
+C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.Infrastructure\obj\Debug\net8.0\refint\OnlineLibrary.Infrastructure.dll
+C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.Infrastructure\obj\Debug\net8.0\OnlineLibrary.Infrastructure.pdb
+C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.Infrastructure\obj\Debug\net8.0\ref\OnlineLibrary.Infrastructure.dll

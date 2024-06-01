@@ -1,0 +1,15 @@
+C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.Application\bin\Debug\net8.0\OnlineLibrary.Application.deps.json
+C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.Application\bin\Debug\net8.0\OnlineLibrary.Application.dll
+C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.Application\bin\Debug\net8.0\OnlineLibrary.Application.pdb
+C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.Application\bin\Debug\net8.0\OnlineLibrary.Core.dll
+C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.Application\bin\Debug\net8.0\OnlineLibrary.Core.pdb
+C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.Application\obj\Debug\net8.0\OnlineLibrary.Application.csproj.AssemblyReference.cache
+C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.Application\obj\Debug\net8.0\OnlineLibrary.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.Application\obj\Debug\net8.0\OnlineLibrary.Application.AssemblyInfoInputs.cache
+C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.Application\obj\Debug\net8.0\OnlineLibrary.Application.AssemblyInfo.cs
+C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.Application\obj\Debug\net8.0\OnlineLibrary.Application.csproj.CoreCompileInputs.cache
+C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.Application\obj\Debug\net8.0\OnlineLi.38BF928F.Up2Date
+C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.Application\obj\Debug\net8.0\OnlineLibrary.Application.dll
+C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.Application\obj\Debug\net8.0\refint\OnlineLibrary.Application.dll
+C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.Application\obj\Debug\net8.0\OnlineLibrary.Application.pdb
+C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.Application\obj\Debug\net8.0\ref\OnlineLibrary.Application.dll

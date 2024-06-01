@@ -1,0 +1,22 @@
+services:
+  api:
+    container_name: online_library_api
+    build:
+      context: .
+      dockerfile: OnlineLibrary.API/Dockerfile
+    ports:
+      - "5000:80"
+    depends_on:
+      - db
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Server=db;Database=master;User=sa;Password=YourStrong@Passw0rd;
+
+  db:
+    image: mcr.microsoft.com/mssql/server
+    container_name: sqlserver
+    environment:
+      SA_PASSWORD: "YourStrong@Passw0rd"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
