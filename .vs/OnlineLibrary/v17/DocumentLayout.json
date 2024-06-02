@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9F8C9A45-BCB2-4263-9BFC-743AB9962C33}|OnlineLibrary.Core\\OnlineLibrary.Core.csproj|c:\\users\\a_shi\\source\\repos\\onlinelibrary\\onlinelibrary.core\\entities\\borrowedbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F8C9A45-BCB2-4263-9BFC-743AB9962C33}|OnlineLibrary.Core\\OnlineLibrary.Core.csproj|solutionrelative:onlinelibrary.core\\entities\\borrowedbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9F8C9A45-BCB2-4263-9BFC-743AB9962C33}|OnlineLibrary.Core\\OnlineLibrary.Core.csproj|c:\\users\\a_shi\\source\\repos\\onlinelibrary\\onlinelibrary.core\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F8C9A45-BCB2-4263-9BFC-743AB9962C33}|OnlineLibrary.Core\\OnlineLibrary.Core.csproj|solutionrelative:onlinelibrary.core\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26F29B98-6AB4-4912-BDEB-840526034E92}|OnlineLibrary.Infrastructure\\OnlineLibrary.Infrastructure.csproj|c:\\users\\a_shi\\source\\repos\\onlinelibrary\\onlinelibrary.infrastructure\\onlinelibrary.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{26F29B98-6AB4-4912-BDEB-840526034E92}|OnlineLibrary.Infrastructure\\OnlineLibrary.Infrastructure.csproj|solutionrelative:onlinelibrary.infrastructure\\onlinelibrary.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F694A0D5-23E3-478D-AB69-6EBFE5CD57DF}|OnlineLibrary.API\\OnlineLibrary.API.csproj|c:\\users\\a_shi\\source\\repos\\onlinelibrary\\onlinelibrary.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F694A0D5-23E3-478D-AB69-6EBFE5CD57DF}|OnlineLibrary.API\\OnlineLibrary.API.csproj|solutionrelative:onlinelibrary.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F8C9A45-BCB2-4263-9BFC-743AB9962C33}|OnlineLibrary.Core\\OnlineLibrary.Core.csproj|c:\\users\\a_shi\\source\\repos\\onlinelibrary\\onlinelibrary.core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,24 +23,8 @@
       "RelativeMoniker": "D:0:0:{9F8C9A45-BCB2-4263-9BFC-743AB9962C33}|OnlineLibrary.Core\\OnlineLibrary.Core.csproj|solutionrelative:onlinelibrary.core\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F8C9A45-BCB2-4263-9BFC-743AB9962C33}|OnlineLibrary.Core\\OnlineLibrary.Core.csproj|c:\\users\\a_shi\\source\\repos\\onlinelibrary\\onlinelibrary.core\\onlinelibrary.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{9F8C9A45-BCB2-4263-9BFC-743AB9962C33}|OnlineLibrary.Core\\OnlineLibrary.Core.csproj|solutionrelative:onlinelibrary.core\\onlinelibrary.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\Docker-Compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Docker-Compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F694A0D5-23E3-478D-AB69-6EBFE5CD57DF}|OnlineLibrary.API\\OnlineLibrary.API.csproj|c:\\users\\a_shi\\source\\repos\\onlinelibrary\\onlinelibrary.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{F694A0D5-23E3-478D-AB69-6EBFE5CD57DF}|OnlineLibrary.API\\OnlineLibrary.API.csproj|solutionrelative:onlinelibrary.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F694A0D5-23E3-478D-AB69-6EBFE5CD57DF}|OnlineLibrary.API\\OnlineLibrary.API.csproj|c:\\users\\a_shi\\source\\repos\\onlinelibrary\\onlinelibrary.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F694A0D5-23E3-478D-AB69-6EBFE5CD57DF}|OnlineLibrary.API\\OnlineLibrary.API.csproj|solutionrelative:onlinelibrary.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F694A0D5-23E3-478D-AB69-6EBFE5CD57DF}|OnlineLibrary.API\\OnlineLibrary.API.csproj|c:\\users\\a_shi\\source\\repos\\onlinelibrary\\onlinelibrary.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F694A0D5-23E3-478D-AB69-6EBFE5CD57DF}|OnlineLibrary.API\\OnlineLibrary.API.csproj|solutionrelative:onlinelibrary.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{9F8C9A45-BCB2-4263-9BFC-743AB9962C33}|OnlineLibrary.Core\\OnlineLibrary.Core.csproj|c:\\users\\a_shi\\source\\repos\\onlinelibrary\\onlinelibrary.core\\entities\\borrowedbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F8C9A45-BCB2-4263-9BFC-743AB9962C33}|OnlineLibrary.Core\\OnlineLibrary.Core.csproj|solutionrelative:onlinelibrary.core\\entities\\borrowedbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,122 +39,79 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "OnlineLibrary.Infrastructure",
+              "DocumentMoniker": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\OnlineLibrary.Infrastructure\\OnlineLibrary.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "OnlineLibrary.Infrastructure\\OnlineLibrary.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\OnlineLibrary.Infrastructure\\OnlineLibrary.Infrastructure.csproj",
+              "RelativeToolTip": "OnlineLibrary.Infrastructure\\OnlineLibrary.Infrastructure.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-02T17:27:19.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\OnlineLibrary.Core\\Interfaces\\IRepository.cs",
               "RelativeDocumentMoniker": "OnlineLibrary.Core\\Interfaces\\IRepository.cs",
               "ToolTip": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\OnlineLibrary.Core\\Interfaces\\IRepository.cs",
               "RelativeToolTip": "OnlineLibrary.Core\\Interfaces\\IRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-01T19:21:46.731Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "BorrowedBook.cs",
               "DocumentMoniker": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\OnlineLibrary.Core\\Entities\\BorrowedBook.cs",
               "RelativeDocumentMoniker": "OnlineLibrary.Core\\Entities\\BorrowedBook.cs",
               "ToolTip": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\OnlineLibrary.Core\\Entities\\BorrowedBook.cs",
               "RelativeToolTip": "OnlineLibrary.Core\\Entities\\BorrowedBook.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAzAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-01T19:20:40.383Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\OnlineLibrary.Core\\Entities\\User.cs",
               "RelativeDocumentMoniker": "OnlineLibrary.Core\\Entities\\User.cs",
               "ToolTip": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\OnlineLibrary.Core\\Entities\\User.cs",
               "RelativeToolTip": "OnlineLibrary.Core\\Entities\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAApAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-01T19:20:10.73Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\OnlineLibrary.Core\\Entities\\Book.cs",
               "RelativeDocumentMoniker": "OnlineLibrary.Core\\Entities\\Book.cs",
               "ToolTip": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\OnlineLibrary.Core\\Entities\\Book.cs",
               "RelativeToolTip": "OnlineLibrary.Core\\Entities\\Book.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-01T19:19:39.837Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "OnlineLibrary.Core",
-              "DocumentMoniker": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\OnlineLibrary.Core\\OnlineLibrary.Core.csproj",
-              "RelativeDocumentMoniker": "OnlineLibrary.Core\\OnlineLibrary.Core.csproj",
-              "ToolTip": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\OnlineLibrary.Core\\OnlineLibrary.Core.csproj",
-              "RelativeToolTip": "OnlineLibrary.Core\\OnlineLibrary.Core.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-01T19:18:42.899Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\OnlineLibrary.API\\Program.cs",
               "RelativeDocumentMoniker": "OnlineLibrary.API\\Program.cs",
               "ToolTip": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\OnlineLibrary.API\\Program.cs",
               "RelativeToolTip": "OnlineLibrary.API\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAkAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-01T19:12:03.751Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\OnlineLibrary.API\\appsettings.json",
-              "RelativeDocumentMoniker": "OnlineLibrary.API\\appsettings.json",
-              "ToolTip": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\OnlineLibrary.API\\appsettings.json",
-              "RelativeToolTip": "OnlineLibrary.API\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-01T19:05:29.654Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Docker-Compose.yml",
-              "DocumentMoniker": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\Docker-Compose.yml",
-              "RelativeDocumentMoniker": "Docker-Compose.yml",
-              "ToolTip": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\Docker-Compose.yml",
-              "RelativeToolTip": "Docker-Compose.yml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2024-05-31T20:01:40.086Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\OnlineLibrary.API\\Dockerfile",
-              "RelativeDocumentMoniker": "OnlineLibrary.API\\Dockerfile",
-              "ToolTip": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\OnlineLibrary.API\\Dockerfile",
-              "RelativeToolTip": "OnlineLibrary.API\\Dockerfile",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-31T18:43:38.349Z",
               "EditorCaption": ""
             }
           ]

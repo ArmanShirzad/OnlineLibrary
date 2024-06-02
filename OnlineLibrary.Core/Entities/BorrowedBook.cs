@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OnlineLibrary.Core.Entities
 {
-    internal class BorrowedBook
+    public class BorrowedBook
     {
         public int Id { get; set; }
         public int BookId { get; set; }

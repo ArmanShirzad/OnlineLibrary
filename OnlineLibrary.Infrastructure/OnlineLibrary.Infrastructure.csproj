@@ -3,7 +3,7 @@
   <ItemGroup>
     <ProjectReference Include="..\OnlineLibrary.Core\OnlineLibrary.Core.csproj" />
     <ProjectReference Include="..\OnlineLibrary.Application\OnlineLibrary.Application.csproj" />
-  </ItemGroup>
+  </ItemGroup>	 
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
