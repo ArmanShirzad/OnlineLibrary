@@ -1,0 +1,720 @@
+2024-06-07 00:00:43.809 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 576216.1146ms.
+2024-06-07 00:00:44.087 +03:30 [INF] Executing BadRequestObjectResult, writing value of type 'System.String[]'.
+2024-06-07 00:00:44.104 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API) in 577394.3625ms
+2024-06-07 00:00:44.113 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API)'
+2024-06-07 00:00:44.120 +03:30 [INF] HTTP POST /api/Books responded 400 in 577468.8995 ms
+2024-06-07 00:00:44.139 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Books - 400 null application/json; charset=utf-8 577511.6941ms
+2024-06-07 00:47:34.282 +03:30 [WRN] Overriding address(es) 'http://*:80'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-07 00:47:34.353 +03:30 [INF] Now listening on: http://[::]:80
+2024-06-07 00:47:34.361 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-07 00:47:34.363 +03:30 [INF] Hosting environment: Development
+2024-06-07 00:47:34.365 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-07 00:47:36.272 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/swagger/index.html - null null
+2024-06-07 00:47:36.431 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/swagger/index.html - 200 null text/html;charset=utf-8 165.5793ms
+2024-06-07 00:47:36.691 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-07 00:47:36.868 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 219.4652ms
+2024-06-07 00:47:36.919 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/swagger/v1/swagger.json - null null
+2024-06-07 00:47:37.079 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 160.226ms
+2024-06-07 00:47:44.248 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Books - null null
+2024-06-07 00:47:44.266 +03:30 [WRN] Failed to determine the https port for redirect.
+2024-06-07 00:47:44.276 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-07 00:47:44.296 +03:30 [INF] Route matched with {action = "GetAllBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllBooks() on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-07 00:47:44.932 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-07 00:47:47.059 +03:30 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[ISBN], [b].[IsAvailable], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+2024-06-07 00:47:47.214 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2268.5568ms.
+2024-06-07 00:47:47.230 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[OnlineLibrary.Core.Entities.Book, OnlineLibrary.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[OnlineLibrary.Application.DTOs.BookDto, OnlineLibrary.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-07 00:47:47.251 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) in 2942.2406ms
+2024-06-07 00:47:47.259 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-07 00:47:47.265 +03:30 [INF] HTTP GET /api/Books responded 200 in 2999.0493 ms
+2024-06-07 00:47:47.280 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Books - 200 null application/json; charset=utf-8 3032.2114ms
+2024-06-07 00:48:18.032 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Books - application/json 144
+2024-06-07 00:48:18.044 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API)'
+2024-06-07 00:48:18.064 +03:30 [INF] Route matched with {action = "AddBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddBook(OnlineLibrary.Application.DTOs.BookDto) on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-07 00:48:18.429 +03:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-06-07 00:48:18.448 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API) in 374.5569ms
+2024-06-07 00:48:18.455 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API)'
+2024-06-07 00:48:18.696 +03:30 [INF] HTTP POST /api/Books responded 400 in 651.4720 ms
+2024-06-07 00:48:18.844 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Books - 400 null application/problem+json; charset=utf-8 811.697ms
+2024-06-07 00:48:41.760 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Books - null null
+2024-06-07 00:48:41.851 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-07 00:48:41.857 +03:30 [INF] Route matched with {action = "GetAllBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllBooks() on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-07 00:48:41.898 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-07 00:48:41.939 +03:30 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[ISBN], [b].[IsAvailable], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+2024-06-07 00:48:41.947 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 44.0117ms.
+2024-06-07 00:48:41.956 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[OnlineLibrary.Core.Entities.Book, OnlineLibrary.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[OnlineLibrary.Application.DTOs.BookDto, OnlineLibrary.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-07 00:48:41.960 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) in 96.7623ms
+2024-06-07 00:48:41.967 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-07 00:48:41.970 +03:30 [INF] HTTP GET /api/Books responded 200 in 119.2634 ms
+2024-06-07 00:48:41.976 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Books - 200 null application/json; charset=utf-8 215.7079ms
+2024-06-07 00:48:44.821 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Books - null null
+2024-06-07 00:48:44.851 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-07 00:48:44.856 +03:30 [INF] Route matched with {action = "GetAllBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllBooks() on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-07 00:48:44.891 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-07 00:48:44.961 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[ISBN], [b].[IsAvailable], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+2024-06-07 00:48:44.971 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 74.3289ms.
+2024-06-07 00:48:44.977 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[OnlineLibrary.Core.Entities.Book, OnlineLibrary.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[OnlineLibrary.Application.DTOs.BookDto, OnlineLibrary.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-07 00:48:44.983 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) in 121.2962ms
+2024-06-07 00:48:44.989 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-07 00:48:44.993 +03:30 [INF] HTTP GET /api/Books responded 200 in 141.6415 ms
+2024-06-07 00:48:44.997 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Books - 200 null application/json; charset=utf-8 176.6228ms
+2024-06-07 00:50:19.646 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Books - application/json 144
+2024-06-07 00:50:19.877 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API)'
+2024-06-07 00:50:19.881 +03:30 [INF] Route matched with {action = "AddBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddBook(OnlineLibrary.Application.DTOs.BookDto) on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-07 00:50:20.189 +03:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-06-07 00:50:20.197 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API) in 306.9462ms
+2024-06-07 00:50:20.202 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API)'
+2024-06-07 00:50:20.205 +03:30 [INF] HTTP POST /api/Books responded 400 in 328.7099 ms
+2024-06-07 00:50:20.215 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Books - 400 null application/problem+json; charset=utf-8 586.7155ms
+2024-06-07 00:50:36.289 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Books - application/json 144
+2024-06-07 00:50:36.303 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API)'
+2024-06-07 00:50:36.309 +03:30 [INF] Route matched with {action = "AddBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddBook(OnlineLibrary.Application.DTOs.BookDto) on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-07 00:50:36.668 +03:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-06-07 00:50:36.771 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API) in 446.7934ms
+2024-06-07 00:50:36.866 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API)'
+2024-06-07 00:50:36.932 +03:30 [INF] HTTP POST /api/Books responded 400 in 629.2467 ms
+2024-06-07 00:50:37.002 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Books - 400 null application/problem+json; charset=utf-8 713.1949ms
+2024-06-07 00:50:52.913 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Books - null null
+2024-06-07 00:50:52.924 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-07 00:50:52.928 +03:30 [INF] Route matched with {action = "GetAllBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllBooks() on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-07 00:50:52.968 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-07 00:50:58.483 +03:30 [INF] Executed DbCommand (156ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[ISBN], [b].[IsAvailable], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+2024-06-07 00:50:58.671 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5696.7509ms.
+2024-06-07 00:50:58.677 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[OnlineLibrary.Core.Entities.Book, OnlineLibrary.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[OnlineLibrary.Application.DTOs.BookDto, OnlineLibrary.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-07 00:50:58.683 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) in 5741.8338ms
+2024-06-07 00:50:58.689 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-07 00:50:58.693 +03:30 [INF] HTTP GET /api/Books responded 200 in 5768.8671 ms
+2024-06-07 00:50:58.699 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Books - 200 null application/json; charset=utf-8 5786.7913ms
+2024-06-07 00:51:13.508 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Books - application/json 144
+2024-06-07 00:51:13.644 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API)'
+2024-06-07 00:51:13.648 +03:30 [INF] Route matched with {action = "AddBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddBook(OnlineLibrary.Application.DTOs.BookDto) on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-07 00:51:13.945 +03:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-06-07 00:51:13.950 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API) in 293.3457ms
+2024-06-07 00:51:13.956 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API)'
+2024-06-07 00:51:13.960 +03:30 [INF] HTTP POST /api/Books responded 400 in 316.4798 ms
+2024-06-07 00:51:13.967 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Books - 400 null application/problem+json; charset=utf-8 459.3625ms
+2024-06-07 00:51:27.431 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Books - application/json 130
+2024-06-07 00:51:27.670 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API)'
+2024-06-07 00:51:27.674 +03:30 [INF] Route matched with {action = "AddBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddBook(OnlineLibrary.Application.DTOs.BookDto) on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-07 00:51:27.964 +03:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-06-07 00:51:27.971 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API) in 289.6154ms
+2024-06-07 00:51:27.975 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API)'
+2024-06-07 00:51:27.978 +03:30 [INF] HTTP POST /api/Books responded 400 in 307.5681 ms
+2024-06-07 00:51:27.984 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Books - 400 null application/problem+json; charset=utf-8 552.9185ms
+2024-06-07 00:53:17.539 +03:30 [WRN] Overriding address(es) 'http://*:80'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-07 00:53:17.983 +03:30 [INF] Now listening on: http://[::]:80
+2024-06-07 00:53:17.989 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-07 00:53:17.991 +03:30 [INF] Hosting environment: Development
+2024-06-07 00:53:17.994 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-07 00:53:20.115 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/swagger/index.html - null null
+2024-06-07 00:53:20.389 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/swagger/index.html - 200 null text/html;charset=utf-8 281.3726ms
+2024-06-07 00:53:20.510 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-07 00:53:20.563 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 50.1881ms
+2024-06-07 00:53:20.674 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/swagger/v1/swagger.json - null null
+2024-06-07 00:53:21.212 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 538.0922ms
+2024-06-07 00:54:32.971 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Books - application/json 146
+2024-06-07 00:54:32.994 +03:30 [WRN] Failed to determine the https port for redirect.
+2024-06-07 00:54:33.005 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API)'
+2024-06-07 00:54:33.031 +03:30 [INF] Route matched with {action = "AddBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddBook(OnlineLibrary.Application.DTOs.BookDto) on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-07 00:54:33.410 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-07 00:55:20.295 +03:30 [ERR] Failed executing DbCommand (708ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Books] ([Id], [Author], [ISBN], [IsAvailable], [PublishedDate], [Title])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-06-07 00:55:21.519 +03:30 [ERR] An exception occurred in the database while saving changes for context type 'OnlineLibrary.Infrastructure.Data.LibraryDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Books' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:0e51259f-4e82-485e-b82e-e96dc2c427de
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Books' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:0e51259f-4e82-485e-b82e-e96dc2c427de
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-06-07 00:55:23.486 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API) in 50436.9278ms
+2024-06-07 00:55:23.759 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API)'
+2024-06-07 00:55:24.367 +03:30 [ERR] HTTP POST /api/Books responded 500 in 51373.5068 ms
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Books' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:0e51259f-4e82-485e-b82e-e96dc2c427de
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at OnlineLibrary.Infrastructure.Repositories.UnitOfWork.CompleteAsync() in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Infrastructure\Repositories\UnitOfWork.cs:line 33
+   at OnlineLibrary.Application.Services.BookService.AddBookAsync(BookDto bookDto) in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Application\Services\BookService.cs:line 49
+   at OnlineLibrary.API.Controllers.BooksController.AddBook(BookDto bookDto) in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\Controllers\BooksController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-06-07 00:55:25.499 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Books' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:0e51259f-4e82-485e-b82e-e96dc2c427de
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at OnlineLibrary.Infrastructure.Repositories.UnitOfWork.CompleteAsync() in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Infrastructure\Repositories\UnitOfWork.cs:line 33
+   at OnlineLibrary.Application.Services.BookService.AddBookAsync(BookDto bookDto) in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Application\Services\BookService.cs:line 49
+   at OnlineLibrary.API.Controllers.BooksController.AddBook(BookDto bookDto) in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\Controllers\BooksController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-07 00:55:25.581 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Books - 500 null text/plain; charset=utf-8 52610.2649ms
+2024-06-07 00:57:53.522 +03:30 [WRN] Overriding address(es) 'http://*:80'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-07 00:57:53.602 +03:30 [INF] Now listening on: http://[::]:80
+2024-06-07 00:57:53.608 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-07 00:57:53.611 +03:30 [INF] Hosting environment: Development
+2024-06-07 00:57:53.615 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-07 00:57:55.365 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/swagger/index.html - null null
+2024-06-07 00:57:55.506 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/swagger/index.html - 200 null text/html;charset=utf-8 145.9078ms
+2024-06-07 00:57:55.577 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-07 00:57:55.590 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 13.3612ms
+2024-06-07 00:57:55.707 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/swagger/v1/swagger.json - null null
+2024-06-07 00:57:56.227 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 519.4715ms
+2024-06-07 00:58:09.335 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Books - application/json 137
+2024-06-07 00:58:09.356 +03:30 [WRN] Failed to determine the https port for redirect.
+2024-06-07 00:58:09.364 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API)'
+2024-06-07 00:58:09.401 +03:30 [INF] Route matched with {action = "AddBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddBook(OnlineLibrary.Application.DTOs.BookDto) on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-07 00:58:10.027 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-07 00:58:36.231 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 25844.261ms.
+2024-06-07 00:58:36.244 +03:30 [INF] Executing BadRequestObjectResult, writing value of type 'System.String[]'.
+2024-06-07 00:58:36.255 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API) in 26839.8004ms
+2024-06-07 00:58:36.261 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API)'
+2024-06-07 00:58:36.266 +03:30 [INF] HTTP POST /api/Books responded 400 in 26912.0895 ms
+2024-06-07 00:58:36.274 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Books - 400 null application/json; charset=utf-8 26939.1378ms
+2024-06-07 00:59:44.207 +03:30 [WRN] Overriding address(es) 'http://*:80'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-07 00:59:44.276 +03:30 [INF] Now listening on: http://[::]:80
+2024-06-07 00:59:44.280 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-07 00:59:44.283 +03:30 [INF] Hosting environment: Development
+2024-06-07 00:59:44.286 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-07 00:59:46.876 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/swagger/index.html - null null
+2024-06-07 00:59:47.032 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/swagger/index.html - 200 null text/html;charset=utf-8 160.0689ms
+2024-06-07 00:59:47.099 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-07 00:59:47.110 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 10.853ms
+2024-06-07 00:59:47.225 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/swagger/v1/swagger.json - null null
+2024-06-07 00:59:47.369 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 143.9624ms
+2024-06-07 01:00:01.427 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Books - application/json 146
+2024-06-07 01:00:01.816 +03:30 [WRN] Failed to determine the https port for redirect.
+2024-06-07 01:00:01.823 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API)'
+2024-06-07 01:00:01.852 +03:30 [INF] Route matched with {action = "AddBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddBook(OnlineLibrary.Application.DTOs.BookDto) on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-07 01:00:02.219 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-07 01:00:32.845 +03:30 [ERR] Failed executing DbCommand (377ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Books] ([Id], [Author], [ISBN], [IsAvailable], [PublishedDate], [Title])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-06-07 01:00:33.987 +03:30 [ERR] An exception occurred in the database while saving changes for context type 'OnlineLibrary.Infrastructure.Data.LibraryDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Books' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:c88a4b9d-e0c8-4f37-b700-9bc9bbd0c2db
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Books' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:c88a4b9d-e0c8-4f37-b700-9bc9bbd0c2db
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-06-07 01:00:35.752 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API) in 33834.9697ms
+2024-06-07 01:00:36.374 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API)'
+2024-06-07 01:00:36.679 +03:30 [ERR] HTTP POST /api/Books responded 500 in 34834.6216 ms
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Books' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:c88a4b9d-e0c8-4f37-b700-9bc9bbd0c2db
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at OnlineLibrary.Infrastructure.Repositories.UnitOfWork.CompleteAsync() in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Infrastructure\Repositories\UnitOfWork.cs:line 33
+   at OnlineLibrary.Application.Services.BookService.AddBookAsync(BookDto bookDto) in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Application\Services\BookService.cs:line 49
+   at OnlineLibrary.API.Controllers.BooksController.AddBook(BookDto bookDto) in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\Controllers\BooksController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-06-07 01:00:37.801 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Books' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:c88a4b9d-e0c8-4f37-b700-9bc9bbd0c2db
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at OnlineLibrary.Infrastructure.Repositories.UnitOfWork.CompleteAsync() in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Infrastructure\Repositories\UnitOfWork.cs:line 33
+   at OnlineLibrary.Application.Services.BookService.AddBookAsync(BookDto bookDto) in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Application\Services\BookService.cs:line 49
+   at OnlineLibrary.API.Controllers.BooksController.AddBook(BookDto bookDto) in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\Controllers\BooksController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-07 01:00:38.165 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Books - 500 null text/plain; charset=utf-8 36737.2837ms
+2024-06-07 01:12:30.443 +03:30 [WRN] Overriding address(es) 'http://*:80'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-07 01:12:30.512 +03:30 [INF] Now listening on: http://[::]:80
+2024-06-07 01:12:30.519 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-07 01:12:30.524 +03:30 [INF] Hosting environment: Development
+2024-06-07 01:12:30.528 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-07 01:12:32.520 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/swagger/index.html - null null
+2024-06-07 01:12:33.041 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/swagger/index.html - 200 null text/html;charset=utf-8 527.6842ms
+2024-06-07 01:12:33.082 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-07 01:12:33.092 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 10.0991ms
+2024-06-07 01:12:33.219 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/swagger/v1/swagger.json - null null
+2024-06-07 01:12:33.422 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 202.8643ms
+2024-06-07 01:14:15.490 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Books - application/json 136
+2024-06-07 01:14:15.506 +03:30 [WRN] Failed to determine the https port for redirect.
+2024-06-07 01:14:15.515 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API)'
+2024-06-07 01:14:15.541 +03:30 [INF] Route matched with {action = "AddBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddBook(OnlineLibrary.Application.DTOs.BookDto) on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-07 01:14:16.265 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-07 01:14:18.989 +03:30 [INF] Executed DbCommand (440ms) [Parameters=[@__isbn_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[Author], [b].[ISBN], [b].[IsAvailable], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[ISBN] = @__isbn_0
+2024-06-07 01:14:19.107 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 2829.7424ms.
+2024-06-07 01:14:19.125 +03:30 [INF] Executing BadRequestObjectResult, writing value of type 'System.String[]'.
+2024-06-07 01:14:19.141 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API) in 3584.1547ms
+2024-06-07 01:14:19.147 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API)'
+2024-06-07 01:14:19.154 +03:30 [INF] HTTP POST /api/Books responded 400 in 3647.4392 ms
+2024-06-07 01:14:19.170 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Books - 400 null application/json; charset=utf-8 3680.5576ms
+2024-06-07 01:14:43.567 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Books - application/json 136
+2024-06-07 01:14:43.580 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API)'
+2024-06-07 01:14:43.585 +03:30 [INF] Route matched with {action = "AddBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddBook(OnlineLibrary.Application.DTOs.BookDto) on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-07 01:14:43.631 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-07 01:15:05.611 +03:30 [INF] Executed DbCommand (37ms) [Parameters=[@__isbn_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[Author], [b].[ISBN], [b].[IsAvailable], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[ISBN] = @__isbn_0
+2024-06-07 01:15:35.995 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 52129.1941ms.
+2024-06-07 01:15:36.482 +03:30 [INF] Executing BadRequestObjectResult, writing value of type 'System.String[]'.
+2024-06-07 01:15:36.488 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API) in 52893.1005ms
+2024-06-07 01:15:36.493 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API)'
+2024-06-07 01:15:36.498 +03:30 [INF] HTTP POST /api/Books responded 400 in 52917.9319 ms
+2024-06-07 01:15:36.506 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Books - 400 null application/json; charset=utf-8 52938.4049ms
+2024-06-07 01:15:43.636 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Books - application/json 134
+2024-06-07 01:15:43.647 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API)'
+2024-06-07 01:15:43.651 +03:30 [INF] Route matched with {action = "AddBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddBook(OnlineLibrary.Application.DTOs.BookDto) on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-07 01:15:43.693 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-07 01:15:50.935 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[@__isbn_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[Author], [b].[ISBN], [b].[IsAvailable], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[ISBN] = @__isbn_0
+2024-06-07 01:16:07.807 +03:30 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Books] ([Author], [ISBN], [IsAvailable], [PublishedDate], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-06-07 01:16:19.673 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 35972.5777ms.
+2024-06-07 01:16:19.803 +03:30 [INF] Executing OkObjectResult, writing value of type 'OnlineLibrary.Application.DTOs.BookDto'.
+2024-06-07 01:16:19.950 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API) in 36290.6903ms
+2024-06-07 01:16:20.013 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API)'
+2024-06-07 01:16:20.018 +03:30 [INF] HTTP POST /api/Books responded 200 in 36370.9759 ms
+2024-06-07 01:16:20.026 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Books - 200 null application/json; charset=utf-8 36389.9522ms
+2024-06-07 01:17:55.150 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Books - null null
+2024-06-07 01:17:55.159 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-07 01:17:55.168 +03:30 [INF] Route matched with {action = "GetAllBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllBooks() on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-07 01:17:55.201 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-07 01:17:55.220 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[ISBN], [b].[IsAvailable], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+2024-06-07 01:17:55.239 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 31.9311ms.
+2024-06-07 01:17:55.246 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[OnlineLibrary.Core.Entities.Book, OnlineLibrary.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[OnlineLibrary.Application.DTOs.BookDto, OnlineLibrary.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-07 01:17:55.253 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) in 76.6805ms
+2024-06-07 01:17:55.258 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-07 01:17:55.261 +03:30 [INF] HTTP GET /api/Books responded 200 in 102.3279 ms
+2024-06-07 01:17:55.266 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Books - 200 null application/json; charset=utf-8 116.2133ms
+2024-06-07 01:17:56.710 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Books - null null
+2024-06-07 01:17:56.731 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-07 01:17:56.734 +03:30 [INF] Route matched with {action = "GetAllBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllBooks() on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-07 01:17:56.767 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-07 01:17:56.840 +03:30 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[ISBN], [b].[IsAvailable], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+2024-06-07 01:17:57.056 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 250.4688ms.
+2024-06-07 01:17:57.136 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[OnlineLibrary.Core.Entities.Book, OnlineLibrary.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[OnlineLibrary.Application.DTOs.BookDto, OnlineLibrary.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-07 01:17:57.143 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) in 399.1323ms
+2024-06-07 01:17:57.149 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-07 01:17:57.152 +03:30 [INF] HTTP GET /api/Books responded 200 in 421.1979 ms
+2024-06-07 01:17:57.159 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Books - 200 null application/json; charset=utf-8 449.0525ms
+2024-06-07 01:18:12.255 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Books/1 - null null
+2024-06-07 01:18:12.268 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.GetBookById (OnlineLibrary.API)'
+2024-06-07 01:18:12.276 +03:30 [INF] Route matched with {action = "GetBookById", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBookById(Int32) on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-07 01:18:12.310 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.BooksController.GetBookById (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-07 01:18:21.685 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.GetBookById (OnlineLibrary.API) in 9402.6804ms
+2024-06-07 01:18:22.115 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.GetBookById (OnlineLibrary.API)'
+2024-06-07 01:18:22.587 +03:30 [ERR] HTTP GET /api/Books/1 responded 500 in 10319.3624 ms
+StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: UnableToConnect on redis://localhost:6379:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 0s ago, v: 2.7.33.41805, command=HMGET, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Initializing, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 1, serverEndpoint: redis://localhost:6379:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-GEPO9LI(SE.Redis-v2.7.33.41805), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=4,Free=32763,Min=8,Max=32767), POOL: (Threads=10,QueuedItems=0,CompletedItems=1929,Timers=24), v: 2.7.33.41805 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: UnableToConnect on redis://localhost:6379:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 0s ago, v: 2.7.33.41805
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetStringAsync(IDistributedCache cache, String key, CancellationToken token)
+   at OnlineLibrary.Application.Services.BookService.GetBookByIdAsync(Int32 id) in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Application\Services\BookService.cs:line 65
+   at OnlineLibrary.API.Controllers.BooksController.GetBookById(Int32 id) in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\Controllers\BooksController.cs:line 34
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-06-07 01:18:24.451 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: UnableToConnect on redis://localhost:6379:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 0s ago, v: 2.7.33.41805, command=HMGET, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Initializing, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 1, serverEndpoint: redis://localhost:6379:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-GEPO9LI(SE.Redis-v2.7.33.41805), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=4,Free=32763,Min=8,Max=32767), POOL: (Threads=10,QueuedItems=0,CompletedItems=1929,Timers=24), v: 2.7.33.41805 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: UnableToConnect on redis://localhost:6379:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 0s ago, v: 2.7.33.41805
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetStringAsync(IDistributedCache cache, String key, CancellationToken token)
+   at OnlineLibrary.Application.Services.BookService.GetBookByIdAsync(Int32 id) in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Application\Services\BookService.cs:line 65
+   at OnlineLibrary.API.Controllers.BooksController.GetBookById(Int32 id) in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\Controllers\BooksController.cs:line 34
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-07 01:18:25.267 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Books/1 - 500 null text/plain; charset=utf-8 13012.2875ms
+2024-06-07 01:18:52.565 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Books/1 - null null
+2024-06-07 01:18:52.575 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.GetBookById (OnlineLibrary.API)'
+2024-06-07 01:18:52.579 +03:30 [INF] Route matched with {action = "GetBookById", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBookById(Int32) on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-07 01:18:52.633 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.BooksController.GetBookById (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-07 01:19:22.054 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.GetBookById (OnlineLibrary.API) in 29466.1869ms
+2024-06-07 01:19:22.567 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.GetBookById (OnlineLibrary.API)'
+2024-06-07 01:19:23.010 +03:30 [ERR] HTTP GET /api/Books/1 responded 500 in 30434.4034 ms
+StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=HMGET, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 2, serverEndpoint: redis://localhost:6379:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-GEPO9LI(SE.Redis-v2.7.33.41805), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=2,Free=32765,Min=8,Max=32767), POOL: (Threads=11,QueuedItems=0,CompletedItems=2610,Timers=24), v: 2.7.33.41805 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetStringAsync(IDistributedCache cache, String key, CancellationToken token)
+   at OnlineLibrary.Application.Services.BookService.GetBookByIdAsync(Int32 id) in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Application\Services\BookService.cs:line 65
+   at OnlineLibrary.API.Controllers.BooksController.GetBookById(Int32 id) in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\Controllers\BooksController.cs:line 34
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-06-07 01:19:24.465 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=HMGET, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 2, serverEndpoint: redis://localhost:6379:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-GEPO9LI(SE.Redis-v2.7.33.41805), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=2,Free=32765,Min=8,Max=32767), POOL: (Threads=11,QueuedItems=0,CompletedItems=2610,Timers=24), v: 2.7.33.41805 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetStringAsync(IDistributedCache cache, String key, CancellationToken token)
+   at OnlineLibrary.Application.Services.BookService.GetBookByIdAsync(Int32 id) in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Application\Services\BookService.cs:line 65
+   at OnlineLibrary.API.Controllers.BooksController.GetBookById(Int32 id) in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\Controllers\BooksController.cs:line 34
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-07 01:19:24.898 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Books/1 - 500 null text/plain; charset=utf-8 32332.3811ms
+2024-06-07 02:34:19.933 +03:30 [WRN] Overriding address(es) 'http://*:80'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-07 02:34:20.793 +03:30 [INF] Now listening on: http://[::]:80
+2024-06-07 02:34:20.807 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-07 02:34:20.811 +03:30 [INF] Hosting environment: Development
+2024-06-07 02:34:20.818 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-07 02:34:23.347 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/swagger/index.html - null null
+2024-06-07 02:34:23.496 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/swagger/index.html - 200 null text/html;charset=utf-8 279.5333ms
+2024-06-07 02:34:23.571 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-07 02:34:23.590 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 20.2085ms
+2024-06-07 02:34:23.744 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/swagger/v1/swagger.json - null null
+2024-06-07 02:34:23.899 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 155.155ms
+2024-06-07 02:34:29.453 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Books - null null
+2024-06-07 02:34:29.473 +03:30 [WRN] Failed to determine the https port for redirect.
+2024-06-07 02:34:29.484 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-07 02:34:29.505 +03:30 [INF] Route matched with {action = "GetAllBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllBooks() on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-07 02:34:29.873 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-07 02:34:32.556 +03:30 [INF] Executed DbCommand (47ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[ISBN], [b].[IsAvailable], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+2024-06-07 02:34:32.717 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2833.7013ms.
+2024-06-07 02:34:32.738 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[OnlineLibrary.Core.Entities.Book, OnlineLibrary.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[OnlineLibrary.Application.DTOs.BookDto, OnlineLibrary.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-07 02:34:32.759 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) in 3236.33ms
+2024-06-07 02:34:32.768 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-07 02:34:32.773 +03:30 [INF] HTTP GET /api/Books responded 200 in 3300.4095 ms
+2024-06-07 02:34:32.789 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Books - 200 null application/json; charset=utf-8 3335.1971ms
+2024-06-07 02:34:43.252 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Books/1 - null null
+2024-06-07 02:34:43.360 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.GetBookById (OnlineLibrary.API)'
+2024-06-07 02:34:43.373 +03:30 [INF] Route matched with {action = "GetBookById", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBookById(Int32) on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-07 02:34:43.421 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.BooksController.GetBookById (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-07 02:35:05.467 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.GetBookById (OnlineLibrary.API) in 22083.0821ms
+2024-06-07 02:35:06.184 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.GetBookById (OnlineLibrary.API)'
+2024-06-07 02:35:06.703 +03:30 [ERR] HTTP GET /api/Books/1 responded 500 in 23342.7310 ms
+StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: UnableToConnect on redis://localhost:6379:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 0s ago, v: 2.7.33.41805, command=HMGET, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Initializing, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 1, serverEndpoint: redis://localhost:6379:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-GEPO9LI(SE.Redis-v2.7.33.41805), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=2,Free=32765,Min=8,Max=32767), POOL: (Threads=8,QueuedItems=0,CompletedItems=408,Timers=24), v: 2.7.33.41805 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: UnableToConnect on redis://localhost:6379:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 0s ago, v: 2.7.33.41805
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetStringAsync(IDistributedCache cache, String key, CancellationToken token)
+   at OnlineLibrary.Application.Services.BookService.GetBookByIdAsync(Int32 id) in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Application\Services\BookService.cs:line 65
+   at OnlineLibrary.API.Controllers.BooksController.GetBookById(Int32 id) in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\Controllers\BooksController.cs:line 34
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-06-07 02:35:08.927 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: UnableToConnect on redis://localhost:6379:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 0s ago, v: 2.7.33.41805, command=HMGET, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Initializing, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 1, serverEndpoint: redis://localhost:6379:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-GEPO9LI(SE.Redis-v2.7.33.41805), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=2,Free=32765,Min=8,Max=32767), POOL: (Threads=8,QueuedItems=0,CompletedItems=408,Timers=24), v: 2.7.33.41805 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: UnableToConnect on redis://localhost:6379:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 0s ago, v: 2.7.33.41805
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetStringAsync(IDistributedCache cache, String key, CancellationToken token)
+   at OnlineLibrary.Application.Services.BookService.GetBookByIdAsync(Int32 id) in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Application\Services\BookService.cs:line 65
+   at OnlineLibrary.API.Controllers.BooksController.GetBookById(Int32 id) in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\Controllers\BooksController.cs:line 34
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-07 02:35:10.206 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Books/1 - 500 null text/plain; charset=utf-8 26953.7733ms
