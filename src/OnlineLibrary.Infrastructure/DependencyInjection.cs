@@ -10,7 +10,7 @@ using Mapster;
 using MapsterMapper;
 using OnlineLibrary.Application.Validators.User;
 using OnlineLibrary.Application.Validators.Loan;
-using OnlineLibrary.Core.Interfaces;
+using OnlineLibrary.Domain.Interfaces;
 using OnlineLibrary.Infrastructure.ExternalServices;
 using OnlineLibrary.Infrastructure.Repositories;
 using StackExchange.Redis;
@@ -35,15 +35,17 @@ namespace OnlineLibrary.Infrastructure
             services.AddSingleton(Log.Logger);
 
             //redis
-            var redisConnectionString = configuration.GetSection("Redis:RedisConnectionString").Value;
+            var redisConnectionString = configuration["Redis:ConnectionString"];
             var redisOptions = ConfigurationOptions.Parse(redisConnectionString);
-            redisOptions.AbortOnConnectFail = false; // Ens
+            redisOptions.AbortOnConnectFail = false;
+
             services.AddSingleton<IConnectionMultiplexer>(ConnectionMultiplexer.Connect(redisOptions));
             services.AddStackExchangeRedisCache(options =>
             {
-                options.Configuration = redisOptions.ToString(); 
+                options.Configuration = redisConnectionString;
+                options.InstanceName = "SampleInstance";
             });
-     
+
             services.AddScoped<NotificationService>();
             services.AddScoped<RedisDataService>();
             services.AddScoped<RedisStreamService>();

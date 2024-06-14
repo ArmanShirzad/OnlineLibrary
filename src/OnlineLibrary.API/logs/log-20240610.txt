@@ -1,0 +1,210 @@
+2024-06-10 00:03:36.353 +03:30 [WRN] Overriding address(es) 'http://*:80'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-10 00:03:36.425 +03:30 [INF] Now listening on: http://[::]:80
+2024-06-10 00:03:36.429 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-10 00:03:36.431 +03:30 [INF] Hosting environment: Development
+2024-06-10 00:03:36.434 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-10 00:03:38.669 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/swagger/index.html - null null
+2024-06-10 00:04:00.106 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/swagger/index.html - 200 null text/html;charset=utf-8 21443.6718ms
+2024-06-10 00:04:00.183 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-10 00:04:00.185 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/_vs/browserLink - null null
+2024-06-10 00:04:00.202 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 18.3481ms
+2024-06-10 00:04:00.247 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/_vs/browserLink - 200 null text/javascript; charset=UTF-8 62.226ms
+2024-06-10 00:04:00.356 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/swagger/v1/swagger.json - null null
+2024-06-10 00:04:00.507 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 151.1621ms
+2024-06-10 00:06:31.118 +03:30 [WRN] Overriding address(es) 'http://*:80'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-10 00:06:31.183 +03:30 [INF] Now listening on: http://[::]:80
+2024-06-10 00:06:31.188 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-10 00:06:31.190 +03:30 [INF] Hosting environment: Development
+2024-06-10 00:06:31.193 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-10 00:06:33.186 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/swagger/index.html - null null
+2024-06-10 00:06:54.545 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/swagger/index.html - 200 null text/html;charset=utf-8 21365.6868ms
+2024-06-10 00:06:54.626 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-10 00:06:54.628 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/_vs/browserLink - null null
+2024-06-10 00:06:54.645 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 19.2452ms
+2024-06-10 00:06:54.695 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/_vs/browserLink - 200 null text/javascript; charset=UTF-8 67.4905ms
+2024-06-10 00:06:54.798 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/swagger/v1/swagger.json - null null
+2024-06-10 00:06:54.934 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 135.9223ms
+2024-06-10 00:07:02.652 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Users/GetAllUsers - null null
+2024-06-10 00:07:02.669 +03:30 [WRN] Failed to determine the https port for redirect.
+2024-06-10 00:07:02.675 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.UsersController.GetAllUsersAsync (OnlineLibrary.API)'
+2024-06-10 00:07:02.698 +03:30 [INF] Route matched with {action = "GetAllUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllUsersAsync() on controller OnlineLibrary.API.Controllers.UsersController (OnlineLibrary.API).
+2024-06-10 00:07:03.028 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.UsersController.GetAllUsersAsync (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-10 00:07:04.591 +03:30 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+2024-06-10 00:07:04.746 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.UsersController.GetAllUsersAsync (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1705.7639ms.
+2024-06-10 00:07:04.763 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[OnlineLibrary.Domain.Entities.User, OnlineLibrary.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[OnlineLibrary.Application.DTOs.UserDto, OnlineLibrary.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-10 00:07:04.780 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.UsersController.GetAllUsersAsync (OnlineLibrary.API) in 2070.8099ms
+2024-06-10 00:07:04.790 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.UsersController.GetAllUsersAsync (OnlineLibrary.API)'
+2024-06-10 00:07:04.795 +03:30 [INF] HTTP GET /api/Users/GetAllUsers responded 200 in 2127.2236 ms
+2024-06-10 00:07:04.814 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Users/GetAllUsers - 200 null application/json; charset=utf-8 2162.3706ms
+2024-06-10 00:07:31.610 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Loans/alluserloans/4 - null null
+2024-06-10 00:07:31.625 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.LoansController.GetLoansByUserId (OnlineLibrary.API)'
+2024-06-10 00:07:31.641 +03:30 [INF] Route matched with {action = "GetLoansByUserId", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLoansByUserId(Int32) on controller OnlineLibrary.API.Controllers.LoansController (OnlineLibrary.API).
+2024-06-10 00:07:31.710 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.LoansController.GetLoansByUserId (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-10 00:07:33.938 +03:30 [INF] Executed DbCommand (52ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[BookId], [l].[BorrowedDate], [l].[ReturnedDate], [l].[UserId]
+FROM [Loans] AS [l]
+WHERE [l].[UserId] = @__userId_0
+2024-06-10 00:07:33.983 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.LoansController.GetLoansByUserId (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2266.1393ms.
+2024-06-10 00:07:33.991 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[OnlineLibrary.Domain.Entities.Loan, OnlineLibrary.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[OnlineLibrary.Application.DTOs.LoanDto, OnlineLibrary.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-10 00:07:34.010 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.LoansController.GetLoansByUserId (OnlineLibrary.API) in 2356.9713ms
+2024-06-10 00:07:34.016 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.LoansController.GetLoansByUserId (OnlineLibrary.API)'
+2024-06-10 00:07:34.019 +03:30 [INF] HTTP GET /api/Loans/alluserloans/4 responded 200 in 2394.5437 ms
+2024-06-10 00:07:34.027 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Loans/alluserloans/4 - 200 null application/json; charset=utf-8 2416.5135ms
+2024-06-10 00:08:02.748 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Loans/alluserloans/4 - null null
+2024-06-10 00:08:02.763 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.LoansController.GetLoansByUserId (OnlineLibrary.API)'
+2024-06-10 00:08:02.767 +03:30 [INF] Route matched with {action = "GetLoansByUserId", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLoansByUserId(Int32) on controller OnlineLibrary.API.Controllers.LoansController (OnlineLibrary.API).
+2024-06-10 00:08:02.810 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.LoansController.GetLoansByUserId (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-10 00:08:13.337 +03:30 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[BookId], [l].[BorrowedDate], [l].[ReturnedDate], [l].[UserId]
+FROM [Loans] AS [l]
+WHERE [l].[UserId] = @__userId_0
+2024-06-10 00:08:29.356 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.LoansController.GetLoansByUserId (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 26539.4887ms.
+2024-06-10 00:08:29.448 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[OnlineLibrary.Domain.Entities.Loan, OnlineLibrary.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[OnlineLibrary.Application.DTOs.LoanDto, OnlineLibrary.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-10 00:08:29.548 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.LoansController.GetLoansByUserId (OnlineLibrary.API) in 26773.2337ms
+2024-06-10 00:08:29.569 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.LoansController.GetLoansByUserId (OnlineLibrary.API)'
+2024-06-10 00:08:29.574 +03:30 [INF] HTTP GET /api/Loans/alluserloans/4 responded 200 in 26810.6159 ms
+2024-06-10 00:08:29.581 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Loans/alluserloans/4 - 200 null application/json; charset=utf-8 26833.3324ms
+2024-06-10 00:08:51.598 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Loans/gettallloans - null null
+2024-06-10 00:08:51.610 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.LoansController.GetAllLoans (OnlineLibrary.API)'
+2024-06-10 00:08:51.618 +03:30 [INF] Route matched with {action = "GetAllLoans", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllLoans() on controller OnlineLibrary.API.Controllers.LoansController (OnlineLibrary.API).
+2024-06-10 00:08:51.659 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.LoansController.GetAllLoans (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-10 00:08:56.792 +03:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[BookId], [l].[BorrowedDate], [l].[ReturnedDate], [l].[UserId]
+FROM [Loans] AS [l]
+2024-06-10 00:10:50.400 +03:30 [WRN] Overriding address(es) 'http://*:80'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-10 00:10:50.463 +03:30 [INF] Now listening on: http://[::]:80
+2024-06-10 00:10:50.469 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-10 00:10:50.471 +03:30 [INF] Hosting environment: Development
+2024-06-10 00:10:50.474 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-10 00:10:52.427 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/swagger/index.html - null null
+2024-06-10 00:11:13.774 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/swagger/index.html - 200 null text/html;charset=utf-8 21354.9809ms
+2024-06-10 00:11:14.181 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/_vs/browserLink - null null
+2024-06-10 00:11:14.181 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-10 00:11:14.200 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 18.4602ms
+2024-06-10 00:11:14.230 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.8844ms
+2024-06-10 00:11:14.298 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/swagger/v1/swagger.json - null null
+2024-06-10 00:11:14.424 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 125.0948ms
+2024-06-10 00:11:24.781 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Books - null null
+2024-06-10 00:11:24.800 +03:30 [WRN] Failed to determine the https port for redirect.
+2024-06-10 00:11:24.810 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-10 00:11:24.831 +03:30 [INF] Route matched with {action = "GetAllBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllBooks() on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-10 00:11:25.165 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-10 00:11:26.745 +03:30 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[ISBN], [b].[IsAvailable], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+2024-06-10 00:11:26.906 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1731.8072ms.
+2024-06-10 00:11:26.920 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[OnlineLibrary.Domain.Entities.Book, OnlineLibrary.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[OnlineLibrary.Application.DTOs.BookDto, OnlineLibrary.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-10 00:11:26.942 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) in 2094.4755ms
+2024-06-10 00:11:26.951 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-10 00:11:26.956 +03:30 [INF] HTTP GET /api/Books responded 200 in 2157.7132 ms
+2024-06-10 00:11:26.973 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Books - 200 null application/json; charset=utf-8 2191.9746ms
+2024-06-10 00:11:51.482 +03:30 [INF] Request starting HTTP/1.1 PUT http://localhost/api/Books/1 - application/json 157
+2024-06-10 00:11:51.496 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.UpdateBook (OnlineLibrary.API)'
+2024-06-10 00:11:51.510 +03:30 [INF] Route matched with {action = "UpdateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateBook(Int32, OnlineLibrary.Application.DTOs.BookDto) on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-10 00:11:51.582 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.BooksController.UpdateBook (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-10 00:11:51.813 +03:30 [INF] Executed DbCommand (48ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Books] SET [Author] = @p0, [ISBN] = @p1, [IsAvailable] = @p2, [PublishedDate] = @p3, [Title] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+2024-06-10 00:11:51.842 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.BooksController.UpdateBook (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 253.9593ms.
+2024-06-10 00:11:51.850 +03:30 [INF] Executing OkObjectResult, writing value of type 'null'.
+2024-06-10 00:11:51.855 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.UpdateBook (OnlineLibrary.API) in 335.5486ms
+2024-06-10 00:11:51.860 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.UpdateBook (OnlineLibrary.API)'
+2024-06-10 00:11:51.864 +03:30 [INF] HTTP PUT /api/Books/1 responded 204 in 368.6963 ms
+2024-06-10 00:11:51.874 +03:30 [INF] Request finished HTTP/1.1 PUT http://localhost/api/Books/1 - 204 null null 391.6791ms
+2024-06-10 00:12:00.094 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Books - null null
+2024-06-10 00:12:00.106 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-10 00:12:00.113 +03:30 [INF] Route matched with {action = "GetAllBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllBooks() on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-10 00:12:00.167 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-10 00:12:00.248 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[ISBN], [b].[IsAvailable], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+2024-06-10 00:12:00.258 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 83.2982ms.
+2024-06-10 00:12:00.266 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[OnlineLibrary.Domain.Entities.Book, OnlineLibrary.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[OnlineLibrary.Application.DTOs.BookDto, OnlineLibrary.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-10 00:12:00.272 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) in 147.1387ms
+2024-06-10 00:12:00.278 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-10 00:12:00.283 +03:30 [INF] HTTP GET /api/Books responded 200 in 176.5337 ms
+2024-06-10 00:12:00.289 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Books - 200 null application/json; charset=utf-8 195.2559ms
+2024-06-10 00:12:13.993 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Users/GetAllUsers - null null
+2024-06-10 00:12:14.008 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.UsersController.GetAllUsersAsync (OnlineLibrary.API)'
+2024-06-10 00:12:14.017 +03:30 [INF] Route matched with {action = "GetAllUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllUsersAsync() on controller OnlineLibrary.API.Controllers.UsersController (OnlineLibrary.API).
+2024-06-10 00:12:14.055 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.UsersController.GetAllUsersAsync (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-10 00:12:14.074 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+2024-06-10 00:12:14.096 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.UsersController.GetAllUsersAsync (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 30.8161ms.
+2024-06-10 00:12:14.103 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[OnlineLibrary.Domain.Entities.User, OnlineLibrary.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[OnlineLibrary.Application.DTOs.UserDto, OnlineLibrary.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-10 00:12:14.111 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.UsersController.GetAllUsersAsync (OnlineLibrary.API) in 84.518ms
+2024-06-10 00:12:14.116 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.UsersController.GetAllUsersAsync (OnlineLibrary.API)'
+2024-06-10 00:12:14.119 +03:30 [INF] HTTP GET /api/Users/GetAllUsers responded 200 in 111.3406 ms
+2024-06-10 00:12:14.126 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Users/GetAllUsers - 200 null application/json; charset=utf-8 132.2861ms
+2024-06-10 00:12:47.372 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Loans/CreateLoan - application/json 32
+2024-06-10 00:12:47.386 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.LoansController.BorrowBook (OnlineLibrary.API)'
+2024-06-10 00:12:47.397 +03:30 [INF] Route matched with {action = "BorrowBook", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] BorrowBook(OnlineLibrary.Application.DTOs.CreateLoanDto) on controller OnlineLibrary.API.Controllers.LoansController (OnlineLibrary.API).
+2024-06-10 00:12:47.457 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.LoansController.BorrowBook (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-10 00:12:57.499 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[Author], [b].[ISBN], [b].[IsAvailable], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2024-06-10 00:13:03.183 +03:30 [INF] Executed DbCommand (12ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__p_0
+2024-06-10 00:14:34.343 +03:30 [INF] Executed DbCommand (9ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime2), @p8='?' (DbType = DateTime2), @p9='?' (DbType = Int32), @p13='?' (DbType = Int32), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Books] SET [Author] = @p0, [ISBN] = @p1, [IsAvailable] = @p2, [PublishedDate] = @p3, [Title] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+INSERT INTO [Loans] ([BookId], [BorrowedDate], [ReturnedDate], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p6, @p7, @p8, @p9);
+UPDATE [Users] SET [Email] = @p10, [Password] = @p11, [Username] = @p12
+OUTPUT 1
+WHERE [Id] = @p13;
+2024-06-10 00:14:51.138 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.LoansController.BorrowBook (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 123675.8976ms.
+2024-06-10 00:14:51.177 +03:30 [INF] Executing OkObjectResult, writing value of type 'OnlineLibrary.Application.DTOs.LoanDto'.
+2024-06-10 00:14:51.191 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.LoansController.BorrowBook (OnlineLibrary.API) in 123785.869ms
+2024-06-10 00:14:51.198 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.LoansController.BorrowBook (OnlineLibrary.API)'
+2024-06-10 00:14:51.202 +03:30 [INF] HTTP POST /api/Loans/CreateLoan responded 200 in 123816.5044 ms
+2024-06-10 00:14:51.209 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Loans/CreateLoan - 200 null application/json; charset=utf-8 123837.0727ms
+2024-06-10 00:15:18.025 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Loans/gettallloans - null null
+2024-06-10 00:15:18.039 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.LoansController.GetAllLoans (OnlineLibrary.API)'
+2024-06-10 00:15:18.047 +03:30 [INF] Route matched with {action = "GetAllLoans", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllLoans() on controller OnlineLibrary.API.Controllers.LoansController (OnlineLibrary.API).
+2024-06-10 00:15:18.080 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.LoansController.GetAllLoans (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-10 00:15:19.995 +03:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[BookId], [l].[BorrowedDate], [l].[ReturnedDate], [l].[UserId]
+FROM [Loans] AS [l]
+2024-06-10 00:15:20.011 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.LoansController.GetAllLoans (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1925.487ms.
+2024-06-10 00:15:20.020 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[OnlineLibrary.Domain.Entities.Loan, OnlineLibrary.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[OnlineLibrary.Application.DTOs.LoanDto, OnlineLibrary.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-10 00:15:20.027 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.LoansController.GetAllLoans (OnlineLibrary.API) in 1973.0706ms
+2024-06-10 00:15:20.032 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.LoansController.GetAllLoans (OnlineLibrary.API)'
+2024-06-10 00:15:20.036 +03:30 [INF] HTTP GET /api/Loans/gettallloans responded 200 in 1996.2899 ms
+2024-06-10 00:15:20.043 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Loans/gettallloans - 200 null application/json; charset=utf-8 2017.9532ms
+2024-06-10 22:44:00.086 +03:30 [WRN] Overriding address(es) 'http://*:80'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-10 22:44:00.162 +03:30 [INF] Now listening on: http://[::]:80
+2024-06-10 22:44:00.167 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-10 22:44:00.170 +03:30 [INF] Hosting environment: Development
+2024-06-10 22:44:00.173 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-10 22:44:03.269 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/swagger - null null
+2024-06-10 22:44:24.635 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/swagger - 301 0 null 21376.0498ms
+2024-06-10 22:44:24.652 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/swagger/index.html - null null
+2024-06-10 22:44:24.892 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/swagger/index.html - 200 null text/html;charset=utf-8 240.0151ms
+2024-06-10 22:44:24.966 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/swagger/swagger-ui-standalone-preset.js - null null
+2024-06-10 22:44:24.966 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/swagger/swagger-ui.css - null null
+2024-06-10 22:44:24.967 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/swagger/swagger-ui-bundle.js - null null
+2024-06-10 22:44:25.098 +03:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-06-10 22:44:25.098 +03:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-06-10 22:44:25.130 +03:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-06-10 22:44:25.150 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 183.2557ms
+2024-06-10 22:44:25.159 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/swagger/swagger-ui.css - 200 143943 text/css 192.3302ms
+2024-06-10 22:44:25.179 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 212.1698ms
+2024-06-10 22:44:25.192 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/_vs/browserLink - null null
+2024-06-10 22:44:25.204 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-10 22:44:25.233 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript; charset=utf-8 29.6326ms
+2024-06-10 22:44:25.310 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/_vs/browserLink - 200 null text/javascript; charset=UTF-8 118.0282ms
+2024-06-10 22:44:25.483 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/swagger/v1/swagger.json - null null
+2024-06-10 22:44:25.644 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 161.1559ms

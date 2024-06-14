@@ -2,8 +2,8 @@
 using System.Threading.Tasks;
 using Ardalis.Result;
 using Microsoft.EntityFrameworkCore;
-using OnlineLibrary.Core.Entities;
-using OnlineLibrary.Core.Interfaces;
+using OnlineLibrary.Domain.Entities;
+using OnlineLibrary.Domain.Interfaces;
 using OnlineLibrary.Infrastructure.Data;
 using Serilog;
 

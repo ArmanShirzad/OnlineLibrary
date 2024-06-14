@@ -16,8 +16,8 @@ C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.Application\obj\Debug\ne
 C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Application\bin\Debug\net8.0\OnlineLibrary.Application.deps.json
 C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Application\bin\Debug\net8.0\OnlineLibrary.Application.dll
 C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Application\bin\Debug\net8.0\OnlineLibrary.Application.pdb
-C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Application\bin\Debug\net8.0\OnlineLibrary.Core.dll
-C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Application\bin\Debug\net8.0\OnlineLibrary.Core.pdb
+C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Application\bin\Debug\net8.0\OnlineLibrary.Domain.dll
+C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Application\bin\Debug\net8.0\OnlineLibrary.Domain.pdb
 C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Application\obj\Debug\net8.0\OnlineLibrary.Application.csproj.AssemblyReference.cache
 C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Application\obj\Debug\net8.0\OnlineLibrary.Application.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Application\obj\Debug\net8.0\OnlineLibrary.Application.AssemblyInfoInputs.cache

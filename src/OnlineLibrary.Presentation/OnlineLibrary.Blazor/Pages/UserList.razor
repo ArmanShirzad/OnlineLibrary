@@ -1,0 +1,27 @@
+﻿@page "/users"
+@inject OnlineLibrary.Blazor.Services.UserService UserService
+
+<h3>User List</h3>
+
+<ul>
+    @if (users == null)
+    {
+        <li>Loading...</li>
+    }
+    else
+    {
+        @foreach (var user in users)
+        {
+            <li>@user.Username - @user.Email</li>
+        }
+    }
+</ul>
+
+@code {
+    private IEnumerable<OnlineLibrary.Blazor.Models.UserDto> users;
+
+    protected override async Task OnInitializedAsync()
+    {
+        users = await UserService.GetAllUsersAsync();
+    }
+}

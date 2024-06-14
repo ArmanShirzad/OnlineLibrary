@@ -1,4 +1,4 @@
-﻿using OnlineLibrary.Application.Interfaces;
+﻿using OnlineLibrary.Domain.Interfaces;
 using OnlineLibrary.Application.Mappings;
 using OnlineLibrary.Application.Services;
 using OnlineLibrary.Application.Validators.Book;
@@ -29,7 +29,9 @@ namespace OnlineLibrary.Application
             services.AddSingleton(config);
             services.AddScoped<IMapper, Mapper>(); 
             services.AddValidatorsFromAssemblyContaining<CreateBookValidator>();
+            services.AddValidatorsFromAssemblyContaining<BookValidator>();
             services.AddValidatorsFromAssemblyContaining<UpdateUserValidator>();
+            services.AddValidatorsFromAssemblyContaining<CreateUserValidator>();
             services.AddValidatorsFromAssemblyContaining<DeleteLoanValidator>();
         }
 

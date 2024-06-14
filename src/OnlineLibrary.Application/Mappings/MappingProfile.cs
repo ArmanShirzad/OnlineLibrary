@@ -5,8 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Mapster;
 
-using OnlineLibrary.Application.DTOs;
-using OnlineLibrary.Core.Entities;
+using OnlineLibrary.Domain.DTOs;
+using OnlineLibrary.Domain.Entities;
 namespace OnlineLibrary.Application.Mappings
 {
     public class MappingProfile : IRegister
@@ -27,12 +27,22 @@ namespace OnlineLibrary.Application.Mappings
                         .Map(dest => dest.Username, src => src.Username)
                         .Map(dest => dest.Email, src => src.Email);
 
-            config.NewConfig<Loan, LoanDto>()
-                .Map(dest => dest.Id, src => src.Id)
-                .Map(dest => dest.BorrowedDate, src => src.BorrowedDate)
-                .Map(dest => dest.ReturnedDate, src => src.ReturnedDate)
+            TypeAdapterConfig<Loan, LoanDto>.NewConfig()
                 .Map(dest => dest.Book, src => src.Book)
-                .Map(dest => dest.User, src => src.User);
+                .Map(dest => dest.User, src => src.User)
+                .Map(dest => dest.BorrowedDate, src => src.BorrowedDate)
+                .Map(dest => dest.ReturnedDate, src => src.ReturnedDate);
+
+            config.NewConfig<Book, CreateBookDto>();
+                config.NewConfig<CreateBookDto, Book>();
+
+            TypeAdapterConfig<CreateLoanDto, Loan>.NewConfig()
+                .Map(dest => dest.BookId, src => src.BookId)
+                .Map(dest => dest.UserId, src => src.UserId);
+
+
+            config.NewConfig<User, CreateUserDto>();
+                config.NewConfig<CreateUserDto, User>();
 
         }
     }

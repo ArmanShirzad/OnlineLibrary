@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using OnlineLibrary.Application.DTOs;
+using OnlineLibrary.Domain.DTOs;
 using OnlineLibrary.Application.Services;
 using Ardalis.Result;
-using OnlineLibrary.Application.Interfaces;
+using OnlineLibrary.Domain.Interfaces;
 
 namespace OnlineLibrary.API.Controllers
 {
@@ -18,7 +18,7 @@ namespace OnlineLibrary.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddBook([FromBody] BookDto bookDto)
+        public async Task<IActionResult> AddBook([FromBody] CreateBookDto bookDto)
         {
             var result = await _bookService.AddBookAsync(bookDto);
             if (result.IsSuccess)

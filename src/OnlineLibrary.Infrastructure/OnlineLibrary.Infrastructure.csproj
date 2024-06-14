@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OnlineLibrary.Core\OnlineLibrary.Core.csproj" />
+    <ProjectReference Include="..\OnlineLibrary.Domain\OnlineLibrary.Domain.csproj" />
 	  <ProjectReference Include="..\OnlineLibrary.Application\OnlineLibrary.Application.csproj" />
   </ItemGroup>
 

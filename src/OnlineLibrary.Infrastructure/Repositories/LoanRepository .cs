@@ -6,8 +6,8 @@ using Ardalis.Result;
 
 using Microsoft.EntityFrameworkCore;
 
-using OnlineLibrary.Core.Entities;
-using OnlineLibrary.Core.Interfaces;
+using OnlineLibrary.Domain.Entities;
+using OnlineLibrary.Domain.Interfaces;
 using OnlineLibrary.Infrastructure.Data;
 
 namespace OnlineLibrary.Infrastructure.Repositories
@@ -38,7 +38,10 @@ namespace OnlineLibrary.Infrastructure.Repositories
 
         public async Task<IEnumerable<Loan>> ListAllAsync()
         {
-            return await _context.Loans.ToListAsync();
+            return await _context.Loans
+                    .Include(l => l.Book)
+                    .Include(l => l.User)
+                    .ToListAsync();
         }
 
         public void Update(Loan loan)

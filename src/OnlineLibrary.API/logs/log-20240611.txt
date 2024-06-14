@@ -1,0 +1,13 @@
+2024-06-11 19:58:09.504 +03:30 [WRN] Overriding address(es) 'http://*:80'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-11 19:58:09.578 +03:30 [INF] Now listening on: http://[::]:80
+2024-06-11 19:58:09.583 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-11 19:58:09.587 +03:30 [INF] Hosting environment: Development
+2024-06-11 19:58:09.589 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-11 19:58:11.369 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/swagger/index.html - null null
+2024-06-11 19:58:11.718 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/swagger/index.html - 200 null text/html;charset=utf-8 358.9017ms
+2024-06-11 19:58:11.798 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-11 19:58:11.800 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/_vs/browserLink - null null
+2024-06-11 19:58:11.814 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript; charset=utf-8 16.7499ms
+2024-06-11 19:58:11.866 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/_vs/browserLink - 200 null text/javascript; charset=UTF-8 65.8721ms
+2024-06-11 19:58:12.141 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost/swagger/v1/swagger.json - null null
+2024-06-11 19:58:12.334 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 193.2795ms

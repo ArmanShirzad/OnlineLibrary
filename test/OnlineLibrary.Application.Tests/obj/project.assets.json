@@ -3075,7 +3075,7 @@
           "Microsoft.Extensions.Caching.Abstractions": "8.0.0",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Newtonsoft.Json": "13.0.1",
-          "OnlineLibrary.Core": "1.0.0"
+          "OnlineLibrary.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/OnlineLibrary.Application.dll": {}
@@ -3084,20 +3084,20 @@
           "bin/placeholder/OnlineLibrary.Application.dll": {}
         }
       },
-      "OnlineLibrary.Core/1.0.0": {
+      "OnlineLibrary.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Ardalis.Result": "9.1.0"
         },
         "compile": {
-          "bin/placeholder/OnlineLibrary.Core.dll": {}
+          "bin/placeholder/OnlineLibrary.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/OnlineLibrary.Core.dll": {}
+          "bin/placeholder/OnlineLibrary.Domain.dll": {}
         }
       },
-      "OnlineLibrary.Core.Tests/1.0.0": {
+      "OnlineLibrary.Domain.Tests/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -3108,10 +3108,10 @@
           "xunit.runner.visualstudio": "2.5.3"
         },
         "compile": {
-          "bin/placeholder/OnlineLibrary.Core.Tests.dll": {}
+          "bin/placeholder/OnlineLibrary.Domain.Tests.dll": {}
         },
         "runtime": {
-          "bin/placeholder/OnlineLibrary.Core.Tests.dll": {}
+          "bin/placeholder/OnlineLibrary.Domain.Tests.dll": {}
         }
       },
       "OnlineLibrary.Infrastructure/1.0.0": {
@@ -3124,7 +3124,7 @@
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "OnlineLibrary.Application": "1.0.0",
-          "OnlineLibrary.Core": "1.0.0",
+          "OnlineLibrary.Domain": "1.0.0",
           "Serilog.AspNetCore": "8.0.1",
           "Serilog.Extensions.Hosting": "8.0.0",
           "Serilog.Settings.Configuration": "8.0.0",
@@ -3146,7 +3146,7 @@
           "Microsoft.EntityFrameworkCore": "8.0.6",
           "Microsoft.EntityFrameworkCore.InMemory": "8.0.6",
           "Microsoft.NET.Test.Sdk": "17.8.0",
-          "OnlineLibrary.Core": "1.0.0",
+          "OnlineLibrary.Domain": "1.0.0",
           "OnlineLibrary.Infrastructure": "1.0.0",
           "coverlet.collector": "6.0.0",
           "moq": "4.20.70",
@@ -9190,15 +9190,15 @@
       "path": "../../src/OnlineLibrary.Application/OnlineLibrary.Application.csproj",
       "msbuildProject": "../../src/OnlineLibrary.Application/OnlineLibrary.Application.csproj"
     },
-    "OnlineLibrary.Core/1.0.0": {
+    "OnlineLibrary.Domain/1.0.0": {
       "type": "project",
-      "path": "../../src/OnlineLibrary.Core/OnlineLibrary.Core.csproj",
-      "msbuildProject": "../../src/OnlineLibrary.Core/OnlineLibrary.Core.csproj"
+      "path": "../../src/OnlineLibrary.Domain/OnlineLibrary.Domain.csproj",
+      "msbuildProject": "../../src/OnlineLibrary.Domain/OnlineLibrary.Domain.csproj"
     },
-    "OnlineLibrary.Core.Tests/1.0.0": {
+    "OnlineLibrary.Domain.Tests/1.0.0": {
       "type": "project",
-      "path": "../OnlineLibrary.Core.Tests/OnlineLibrary.Core.Tests.csproj",
-      "msbuildProject": "../OnlineLibrary.Core.Tests/OnlineLibrary.Core.Tests.csproj"
+      "path": "../OnlineLibrary.Domain.Tests/OnlineLibrary.Domain.Tests.csproj",
+      "msbuildProject": "../OnlineLibrary.Domain.Tests/OnlineLibrary.Domain.Tests.csproj"
     },
     "OnlineLibrary.Infrastructure/1.0.0": {
       "type": "project",
@@ -9216,8 +9216,8 @@
       "Ardalis.Result >= 9.1.0",
       "Microsoft.NET.Test.Sdk >= 17.8.0",
       "OnlineLibrary.Application >= 1.0.0",
-      "OnlineLibrary.Core >= 1.0.0",
-      "OnlineLibrary.Core.Tests >= 1.0.0",
+      "OnlineLibrary.Domain >= 1.0.0",
+      "OnlineLibrary.Domain.Tests >= 1.0.0",
       "OnlineLibrary.Infrastructure >= 1.0.0",
       "OnlineLibrary.Infrastructure.Tests >= 1.0.0",
       "Serilog.AspNetCore >= 8.0.1",
@@ -9257,14 +9257,14 @@
             "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj": {
               "projectPath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj"
             },
-            "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Core\\OnlineLibrary.Core.csproj": {
-              "projectPath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Core\\OnlineLibrary.Core.csproj"
+            "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj": {
+              "projectPath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj"
             },
             "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Infrastructure\\OnlineLibrary.Infrastructure.csproj": {
               "projectPath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Infrastructure\\OnlineLibrary.Infrastructure.csproj"
             },
-            "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\test\\OnlineLibrary.Core.Tests\\OnlineLibrary.Core.Tests.csproj": {
-              "projectPath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\test\\OnlineLibrary.Core.Tests\\OnlineLibrary.Core.Tests.csproj"
+            "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\test\\OnlineLibrary.Domain.Tests\\OnlineLibrary.Domain.Tests.csproj": {
+              "projectPath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\test\\OnlineLibrary.Domain.Tests\\OnlineLibrary.Domain.Tests.csproj"
             },
             "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\test\\OnlineLibrary.Infrastructure.Tests\\OnlineLibrary.Infrastructure.Tests.csproj": {
               "projectPath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\test\\OnlineLibrary.Infrastructure.Tests\\OnlineLibrary.Infrastructure.Tests.csproj"

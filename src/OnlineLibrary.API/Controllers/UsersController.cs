@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Query;
-using OnlineLibrary.Application.DTOs;
+using OnlineLibrary.Domain.DTOs;
 using OnlineLibrary.Application.Services;
-using OnlineLibrary.Application.Interfaces;
+using OnlineLibrary.Domain.Interfaces;
 using Ardalis.Result;
 
 namespace OnlineLibrary.API.Controllers
@@ -20,7 +20,7 @@ namespace OnlineLibrary.API.Controllers
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> Register(UserDto userDto)
+        public async Task<IActionResult> Register(CreateUserDto userDto)
         {
             var result = await _userService.RegisterUserAsync(userDto);
             return HandleResult(result);
@@ -42,7 +42,7 @@ namespace OnlineLibrary.API.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(UserDto userDto)
+        public async Task<IActionResult> Update(UpdateUserDto userDto)
         {
             var result = await _userService.UpdateUserAsync(userDto);
             return HandleResult(result);
@@ -54,6 +54,11 @@ namespace OnlineLibrary.API.Controllers
             var result = await _userService.DeleteUserAsync(id);
             return HandleResult(result);
         }
-
+        [HttpGet("GetAllUsers")]
+        public async Task<IActionResult> GetAllUsersAsync()
+        {
+            var result = await _userService.GetAllUsersAsync();
+            return HandleResult(result);
+        }
     }
 }

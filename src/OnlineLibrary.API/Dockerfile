@@ -4,7 +4,7 @@ WORKDIR /src
 
 # Copy and restore project files
 COPY ["OnlineLibrary.API/OnlineLibrary.API.csproj", "OnlineLibrary.API/"]
-COPY ["OnlineLibrary.Core/OnlineLibrary.Core.csproj", "OnlineLibrary.Core/"]
+COPY ["OnlineLibrary.Domain/OnlineLibrary.Domain.csproj", "OnlineLibrary.Domain/"]
 COPY ["OnlineLibrary.Application/OnlineLibrary.Application.csproj", "OnlineLibrary.Application/"]
 COPY ["OnlineLibrary.Infrastructure/OnlineLibrary.Infrastructure.csproj", "OnlineLibrary.Infrastructure/"]
 RUN dotnet restore "OnlineLibrary.API/OnlineLibrary.API.csproj"

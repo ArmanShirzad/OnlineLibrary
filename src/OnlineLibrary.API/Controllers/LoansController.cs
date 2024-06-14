@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using OnlineLibrary.Application.DTOs;
+using OnlineLibrary.Domain.DTOs;
 using OnlineLibrary.Application.Services;
 using Ardalis.Result;
-using OnlineLibrary.Application.Interfaces;
+using OnlineLibrary.Domain.Interfaces;
 
 namespace OnlineLibrary.API.Controllers
 {
@@ -19,10 +19,10 @@ namespace OnlineLibrary.API.Controllers
         }
 
         [HttpPost("CreateLoan")]
-        public async Task<IActionResult> BorrowBook([FromBody] BorrowBookDto borrowBookDto)
+        public async Task<IActionResult> BorrowBook([FromBody] CreateLoanDto borrowBookDto)
         {
 
-            var result = await _loanService.BorrowBookAsync(borrowBookDto.BookId,borrowBookDto.UserId);
+            var result = await _loanService.BorrowBookAsync(borrowBookDto);
             return HandleResult(result);
         }
 
@@ -41,9 +41,9 @@ namespace OnlineLibrary.API.Controllers
         }
 
         [HttpPut("returnloan/{id}")]
-        public async Task<IActionResult> ReturnBook(int id)
+        public async Task<IActionResult> ReturnBook(int loanId)
         {
-            var result = await _loanService.ReturnBookAsync(id);
+            var result = await _loanService.ReturnBookAsync(loanId);
             return HandleResult(result);
         }
 

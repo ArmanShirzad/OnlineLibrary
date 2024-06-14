@@ -1,4 +1,4 @@
-﻿using OnlineLibrary.Core;
+﻿using OnlineLibrary.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 using Xunit;
 using Moq;
 using Ardalis.Result;
-using OnlineLibrary.Core.Entities;
+using OnlineLibrary.Domain.Entities;
 using OnlineLibrary.Application.Services;
-using OnlineLibrary.Core.Interfaces;
+using OnlineLibrary.Domain.Interfaces;
 
 namespace OnlineLibrary.Application.Tests.Services
 {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-using OnlineLibrary.Core.Entities;
+using OnlineLibrary.Domain.Entities;
 using Microsoft.EntityFrameworkCore.Migrations;
     
 using System;

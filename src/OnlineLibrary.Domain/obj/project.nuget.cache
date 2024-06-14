@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "oKa1OgB1mVIbDmEpSXQh/rceUzunbMGwSt/Jd9gjJBQYXh5GCe9zl6cHWkjcSsAr6AKiIaovFtsGGLJAfoWDKw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\a_shi\\.nuget\\packages\\ardalis.result\\9.1.0\\ardalis.result.9.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -78,7 +78,7 @@ VALUES (N'20240606153154_initial', N'8.0.6');
 SELECT [b].[Id], [b].[Author], [b].[ISBN], [b].[IsAvailable], [b].[PublishedDate], [b].[Title]
 FROM [Books] AS [b]
 2024-06-06 23:42:07.788 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2922.0686ms.
-2024-06-06 23:42:07.807 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[OnlineLibrary.Core.Entities.Book, OnlineLibrary.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[OnlineLibrary.Application.DTOs.BookDto, OnlineLibrary.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-06 23:42:07.807 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[OnlineLibrary.Domain.Entities.Book, OnlineLibrary.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[OnlineLibrary.Application.DTOs.BookDto, OnlineLibrary.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
 2024-06-06 23:42:07.827 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) in 3359.3151ms
 2024-06-06 23:42:07.834 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
 2024-06-06 23:42:07.841 +03:30 [INF] HTTP GET /api/Books responded 200 in 3427.1085 ms

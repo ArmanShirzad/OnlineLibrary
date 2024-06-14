@@ -25,7 +25,7 @@ namespace OnlineLibrary.Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("OnlineLibrary.Core.Entities.Book", b =>
+            modelBuilder.Entity("OnlineLibrary.Domain.Entities.Book", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -56,7 +56,7 @@ namespace OnlineLibrary.Infrastructure.Migrations
                     b.ToTable("Books");
                 });
 
-            modelBuilder.Entity("OnlineLibrary.Core.Entities.Loan", b =>
+            modelBuilder.Entity("OnlineLibrary.Domain.Entities.Loan", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -85,7 +85,7 @@ namespace OnlineLibrary.Infrastructure.Migrations
                     b.ToTable("Loans");
                 });
 
-            modelBuilder.Entity("OnlineLibrary.Core.Entities.User", b =>
+            modelBuilder.Entity("OnlineLibrary.Domain.Entities.User", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -110,15 +110,15 @@ namespace OnlineLibrary.Infrastructure.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("OnlineLibrary.Core.Entities.Loan", b =>
+            modelBuilder.Entity("OnlineLibrary.Domain.Entities.Loan", b =>
                 {
-                    b.HasOne("OnlineLibrary.Core.Entities.Book", "Book")
+                    b.HasOne("OnlineLibrary.Domain.Entities.Book", "Book")
                         .WithMany("Loans")
                         .HasForeignKey("BookId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("OnlineLibrary.Core.Entities.User", "User")
+                    b.HasOne("OnlineLibrary.Domain.Entities.User", "User")
                         .WithMany("Loans")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -129,12 +129,12 @@ namespace OnlineLibrary.Infrastructure.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("OnlineLibrary.Core.Entities.Book", b =>
+            modelBuilder.Entity("OnlineLibrary.Domain.Entities.Book", b =>
                 {
                     b.Navigation("Loans");
                 });
 
-            modelBuilder.Entity("OnlineLibrary.Core.Entities.User", b =>
+            modelBuilder.Entity("OnlineLibrary.Domain.Entities.User", b =>
                 {
                     b.Navigation("Loans");
                 });

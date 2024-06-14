@@ -1,0 +1,46 @@
+﻿@page "/books"
+@inject OnlineLibrary.Blazor.Services.BookService BookService
+@inject HttpClient Http
+
+<h3>Books</h3>
+@if (books == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <ul>
+        @foreach (var book in books)
+        {
+            <li>
+                <p>@book.Title by @book.Author</p>
+                <p>@(book.IsAvailable ? "Available" : "Not Available")</p>
+                <button @onclick="() => BorrowBook(book.Id ?? 0)" disabled="@(!book.IsAvailable)">Borrow</button>
+            </li>
+        }
+    </ul>
+}
+
+@code {
+    private List<OnlineLibrary.Blazor.Models.BookDto> books;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var bookList = await BookService.GetAllBooksAsync();
+        books = bookList.ToList(); // Convert IEnumerable to List
+    }
+
+    private async Task BorrowBook(int bookId)
+    {
+        var userId = 1; // Replace with actual user ID
+        var response = await Http.PostAsJsonAsync<object>($"api/Books/borrow?bookId={bookId}&userId={userId}", null);
+        if (response.IsSuccessStatusCode)
+        {
+            // handle success
+        }
+        else
+        {
+            // handle error
+        }
+    }
+}

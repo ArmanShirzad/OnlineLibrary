@@ -20,7 +20,7 @@
 
   </ItemGroup>
 	<ItemGroup>
-		<ProjectReference Include="..\..\src\OnlineLibrary.Core\OnlineLibrary.Core.csproj" />
+		<ProjectReference Include="..\..\src\OnlineLibrary.Domain\OnlineLibrary.Domain.csproj" />
 		<ProjectReference Include="..\..\src\OnlineLibrary.Infrastructure\OnlineLibrary.Infrastructure.csproj" />
 	</ItemGroup>
   <ItemGroup>

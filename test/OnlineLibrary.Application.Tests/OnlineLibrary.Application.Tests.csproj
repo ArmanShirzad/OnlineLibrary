@@ -22,9 +22,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\OnlineLibrary.Application\OnlineLibrary.Application.csproj" />
-    <ProjectReference Include="..\..\src\OnlineLibrary.Core\OnlineLibrary.Core.csproj" />
+    <ProjectReference Include="..\..\src\OnlineLibrary.Domain\OnlineLibrary.Domain.csproj" />
     <ProjectReference Include="..\..\src\OnlineLibrary.Infrastructure\OnlineLibrary.Infrastructure.csproj" />
-    <ProjectReference Include="..\OnlineLibrary.Core.Tests\OnlineLibrary.Core.Tests.csproj" />
+    <ProjectReference Include="..\OnlineLibrary.Domain.Tests\OnlineLibrary.Domain.Tests.csproj" />
     <ProjectReference Include="..\OnlineLibrary.Infrastructure.Tests\OnlineLibrary.Infrastructure.Tests.csproj" />
   </ItemGroup>
 

@@ -1,6 +1,6 @@
 ﻿//using Microsoft.EntityFrameworkCore;
 
-//using OnlineLibrary.Core.Entities;
+//using OnlineLibrary.Domain.Entities;
 //using OnlineLibrary.Infrastructure.Data;
 //using OnlineLibrary.Infrastructure.Repositories;
 //using OnlineLibrary.Infrastructure.Tests.Data;

@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
-using OnlineLibrary.Application.DTOs;
-using OnlineLibrary.Core.Entities;
+using OnlineLibrary.Domain.DTOs;
+using OnlineLibrary.Domain.Entities;
 
 using System;
 using System.Collections.Generic;

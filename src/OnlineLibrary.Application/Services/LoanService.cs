@@ -2,19 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
 using Ardalis.Result;
-
 using FluentValidation;
-
+using OnlineLibrary.Domain.Interfaces;
+using OnlineLibrary.Domain.DTOs;
 using Mapster;
 
 using MapsterMapper;
 
-using OnlineLibrary.Application.DTOs;
-using OnlineLibrary.Application.Interfaces;
-using OnlineLibrary.Core.Entities;
-using OnlineLibrary.Core.Interfaces;
+using OnlineLibrary.Domain.Interfaces;
+using OnlineLibrary.Domain.Entities;
 
 namespace OnlineLibrary.Application.Services
 {
@@ -31,27 +28,45 @@ namespace OnlineLibrary.Application.Services
             _validator = validator;
         }
 
-        public async Task<Result<LoanDto>> BorrowBookAsync(int bookId, int userId)
+        public async Task<Result<LoanDto>> BorrowBookAsync(CreateLoanDto createLoanDto)
         {
             // Check if the book is available
-            var book = await _unitOfWork.Books.GetByIdAsync(bookId);
-            if (book == null)
+            var  book = await _unitOfWork.Books.GetByIdAsync(createLoanDto.BookId);
+            if (book ==null)
             {
                 return Result<LoanDto>.Error("Book not found");
             }
 
+            
             if (!book.IsAvailable)
             {
                 return Result<LoanDto>.Error("Book is not available for borrowing");
             }
 
-            // Create a new loan
-            var loan = new Loan { BookId = bookId, UserId = userId, BorrowedDate = DateTime.Now };
+            // Check if the user exists
+            var user= await _unitOfWork.Users.GetByIdAsync(createLoanDto.UserId);
+            if (user == null)
+            {
+                return Result<LoanDto>.Error("User not found");
+            }
+
+
+            // Create a new loan entity from the DTO
+            var loan = new Loan
+            {
+                BookId = createLoanDto.BookId,
+                UserId = createLoanDto.UserId,
+                BorrowedDate = DateTime.Now,
+                Book = book,
+                User = user
+            };
             await _unitOfWork.Loans.AddAsync(loan);
 
             // Update the book availability
             book.IsAvailable = false;
+            user.Loans.Add(loan);
             _unitOfWork.Books.Update(book);
+            _unitOfWork.Users.Update(user);
 
             var completeResult = await _unitOfWork.CompleteAsync();
             return completeResult > 0 ? Result<LoanDto>.Success(_mapper.Map<LoanDto>(loan)) : Result<LoanDto>.Error("Failed to borrow book");

@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 using FluentValidation;
 
-using OnlineLibrary.Application.DTOs;
+using OnlineLibrary.Domain.DTOs;
 namespace OnlineLibrary.Application.Validators.User
 {
-    public class UpdateUserValidator : AbstractValidator<UserDto>
+    public class UpdateUserValidator : AbstractValidator<UpdateUserDto>
     {
         public UpdateUserValidator()
         {

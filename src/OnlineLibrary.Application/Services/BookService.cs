@@ -14,10 +14,10 @@ using Microsoft.Extensions.Caching.Distributed;
 
 using Newtonsoft.Json;
 
-using OnlineLibrary.Application.DTOs;
-using OnlineLibrary.Application.Interfaces;
-using OnlineLibrary.Core.Entities;
-using OnlineLibrary.Core.Interfaces;
+using OnlineLibrary.Domain.DTOs;
+using OnlineLibrary.Domain.Interfaces;
+using OnlineLibrary.Domain.Entities;
+using OnlineLibrary.Domain.Interfaces;
 
 namespace OnlineLibrary.Application.Services
 {
@@ -27,18 +27,20 @@ namespace OnlineLibrary.Application.Services
         private readonly IMapper _mapper;
         private readonly IDistributedCache _cache;
         private readonly IValidator<BookDto> _validator;
+        private readonly IValidator<CreateBookDto> _createValidator;
 
-        public BookService(IUnitOfWork unitOfWork, IMapper mapper, IDistributedCache cache, IValidator<BookDto> validator)
+        public BookService(IUnitOfWork unitOfWork, IMapper mapper, IDistributedCache cache, IValidator<BookDto> validator, IValidator<CreateBookDto> createvalidator)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
             _cache = cache;
             _validator = validator;
+            _createValidator = createvalidator;
         }
 
-        public async Task<Result<BookDto>> AddBookAsync(BookDto bookDto)
+        public async Task<Result<BookDto>> AddBookAsync(CreateBookDto bookDto)
         {
-            var validationResult = await _validator.ValidateAsync(bookDto);
+            var validationResult = await _createValidator.ValidateAsync(bookDto);
             if (!validationResult.IsValid)
             {
                 return Result.Error(string.Join(", ", validationResult.Errors.Select(e => e.ErrorMessage)));
@@ -56,17 +58,17 @@ namespace OnlineLibrary.Application.Services
             {
                 return Result<BookDto>.Success(_mapper.Map<BookDto>(book));
             }
-            return Result<BookDto>.Error("Failed to add book");
+            return Result<BookDto>.Error("Failed to add book"); 
         }
 
         public async Task<Result<BookDto>> GetBookByIdAsync(int id)
         {
-            var cacheKey = $"Book_{id}";
-            var cachedBook = await _cache.GetStringAsync(cacheKey);
-            if (!string.IsNullOrEmpty(cachedBook))
-            {
-                return Result<BookDto>.Success(JsonConvert.DeserializeObject<BookDto>(cachedBook));
-            }
+            //var cacheKey = $"Book_{id}";
+            //var cachedBook = await _cache.GetStringAsync(cacheKey);
+            //if (!string.IsNullOrEmpty(cachedBook))
+            //{
+            //    return Result<BookDto>.Success(JsonConvert.DeserializeObject<BookDto>(cachedBook));
+            //}
 
             var book = await _unitOfWork.Books.GetByIdAsync(id);
             if (book == null)
@@ -75,7 +77,7 @@ namespace OnlineLibrary.Application.Services
             }
 
             var bookDto = _mapper.Map<BookDto>(book);
-            await _cache.SetStringAsync(cacheKey, JsonConvert.SerializeObject(bookDto));
+            //await _cache.SetStringAsync(cacheKey, JsonConvert.SerializeObject(bookDto));
             return Result<BookDto>.Success(bookDto);
         }
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using OnlineLibrary.Core.Entities;
+using OnlineLibrary.Domain.Entities;
 using OnlineLibrary.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Xunit;

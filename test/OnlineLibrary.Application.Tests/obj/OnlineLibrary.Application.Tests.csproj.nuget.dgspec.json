@@ -28,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Core\\OnlineLibrary.Core.csproj": {
-                "projectPath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Core\\OnlineLibrary.Core.csproj"
+              "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj": {
+                "projectPath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj"
               }
             }
           }
@@ -94,14 +94,14 @@
         }
       }
     },
-    "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Core\\OnlineLibrary.Core.csproj": {
+    "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Core\\OnlineLibrary.Core.csproj",
-        "projectName": "OnlineLibrary.Core",
-        "projectPath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Core\\OnlineLibrary.Core.csproj",
+        "projectUniqueName": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj",
+        "projectName": "OnlineLibrary.Domain",
+        "projectPath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj",
         "packagesPath": "C:\\Users\\a_shi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Core\\obj\\",
+        "outputPath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\a_shi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -187,8 +187,8 @@
               "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj": {
                 "projectPath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj"
               },
-              "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Core\\OnlineLibrary.Core.csproj": {
-                "projectPath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Core\\OnlineLibrary.Core.csproj"
+              "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj": {
+                "projectPath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj"
               }
             }
           }
@@ -312,14 +312,14 @@
               "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj": {
                 "projectPath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj"
               },
-              "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Core\\OnlineLibrary.Core.csproj": {
-                "projectPath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Core\\OnlineLibrary.Core.csproj"
+              "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj": {
+                "projectPath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj"
               },
               "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Infrastructure\\OnlineLibrary.Infrastructure.csproj": {
                 "projectPath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Infrastructure\\OnlineLibrary.Infrastructure.csproj"
               },
-              "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\test\\OnlineLibrary.Core.Tests\\OnlineLibrary.Core.Tests.csproj": {
-                "projectPath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\test\\OnlineLibrary.Core.Tests\\OnlineLibrary.Core.Tests.csproj"
+              "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\test\\OnlineLibrary.Domain.Tests\\OnlineLibrary.Domain.Tests.csproj": {
+                "projectPath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\test\\OnlineLibrary.Domain.Tests\\OnlineLibrary.Domain.Tests.csproj"
               },
               "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\test\\OnlineLibrary.Infrastructure.Tests\\OnlineLibrary.Infrastructure.Tests.csproj": {
                 "projectPath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\test\\OnlineLibrary.Infrastructure.Tests\\OnlineLibrary.Infrastructure.Tests.csproj"
@@ -391,14 +391,14 @@
         }
       }
     },
-    "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\test\\OnlineLibrary.Core.Tests\\OnlineLibrary.Core.Tests.csproj": {
+    "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\test\\OnlineLibrary.Domain.Tests\\OnlineLibrary.Domain.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\test\\OnlineLibrary.Core.Tests\\OnlineLibrary.Core.Tests.csproj",
-        "projectName": "OnlineLibrary.Core.Tests",
-        "projectPath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\test\\OnlineLibrary.Core.Tests\\OnlineLibrary.Core.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\test\\OnlineLibrary.Domain.Tests\\OnlineLibrary.Domain.Tests.csproj",
+        "projectName": "OnlineLibrary.Domain.Tests",
+        "projectPath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\test\\OnlineLibrary.Domain.Tests\\OnlineLibrary.Domain.Tests.csproj",
         "packagesPath": "C:\\Users\\a_shi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\test\\OnlineLibrary.Core.Tests\\obj\\",
+        "outputPath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\test\\OnlineLibrary.Domain.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\a_shi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -497,8 +497,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Core\\OnlineLibrary.Core.csproj": {
-                "projectPath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Core\\OnlineLibrary.Core.csproj"
+              "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj": {
+                "projectPath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj"
               },
               "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Infrastructure\\OnlineLibrary.Infrastructure.csproj": {
                 "projectPath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Infrastructure\\OnlineLibrary.Infrastructure.csproj"

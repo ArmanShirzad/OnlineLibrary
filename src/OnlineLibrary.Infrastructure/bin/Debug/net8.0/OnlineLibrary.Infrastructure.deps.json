@@ -16,7 +16,7 @@
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "OnlineLibrary.Application": "1.0.0",
-          "OnlineLibrary.Core": "1.0.0",
+          "OnlineLibrary.Domain": "1.0.0",
           "Serilog.AspNetCore": "8.0.1",
           "Serilog.Extensions.Hosting": "8.0.0",
           "Serilog.Settings.Configuration": "8.0.0",
@@ -1128,18 +1128,18 @@
           "Microsoft.Extensions.Caching.Abstractions": "8.0.0",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Newtonsoft.Json": "13.0.1",
-          "OnlineLibrary.Core": "1.0.0"
+          "OnlineLibrary.Domain": "1.0.0"
         },
         "runtime": {
           "OnlineLibrary.Application.dll": {}
         }
       },
-      "OnlineLibrary.Core/1.0.0": {
+      "OnlineLibrary.Domain/1.0.0": {
         "dependencies": {
           "Ardalis.Result": "9.1.0"
         },
         "runtime": {
-          "OnlineLibrary.Core.dll": {}
+          "OnlineLibrary.Domain.dll": {}
         }
       }
     }
@@ -1848,7 +1848,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "OnlineLibrary.Core/1.0.0": {
+    "OnlineLibrary.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,0 +1,32 @@
+﻿@page "/login"
+@inject HttpClient Http
+@code {
+    private OnlineLibrary.Blazor.Models.UserLoginDto _user = new();
+    private async Task LoginUser()
+    {
+        var response = await Http.PostAsJsonAsync("api/Users/login", _user);
+        if (response.IsSuccessStatusCode)
+        {
+            // handle success, navigate to home page
+        }
+        else
+        {
+            // handle error
+        }
+    }
+}
+
+<h3>Login</h3>
+<EditForm Model="_user" OnValidSubmit="LoginUser">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <div>
+        <label>Username: </label>
+        <InputText @bind-Value="_user.Username" />
+    </div>
+    <div>
+        <label>Password: </label>
+        <InputText InputType="password" @bind-Value="_user.Password" />
+    </div>
+    <button type="submit">Login</button>
+</EditForm>

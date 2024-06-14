@@ -8,9 +8,13 @@ services:
       - "5000:80"
     depends_on:
       - db
+      - redis
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ConnectionStrings__DefaultConnection=Server=db;Database=master;User=sa;Password=YourStrong@Passw0rd;
+      - Redis__ConnectionString=redis:6379,password=yourpassword
+    networks:
+      - app-network
 
   db:
     image: mcr.microsoft.com/mssql/server
@@ -20,3 +24,20 @@ services:
       ACCEPT_EULA: "Y"
     ports:
       - "1433:1433"
+    networks:
+      - app-network
+
+  redis:
+    image: redis:latest
+    container_name: redis-stack-server
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./redis.conf:/usr/local/etc/redis/redis.conf
+    command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

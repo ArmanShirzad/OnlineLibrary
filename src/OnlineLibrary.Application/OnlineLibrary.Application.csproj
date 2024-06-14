@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\OnlineLibrary.Core\OnlineLibrary.Core.csproj" />
+    <ProjectReference Include="..\OnlineLibrary.Domain\OnlineLibrary.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>

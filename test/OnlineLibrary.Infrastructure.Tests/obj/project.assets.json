@@ -3075,7 +3075,7 @@
           "Microsoft.Extensions.Caching.Abstractions": "8.0.0",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Newtonsoft.Json": "13.0.1",
-          "OnlineLibrary.Core": "1.0.0"
+          "OnlineLibrary.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/OnlineLibrary.Application.dll": {}
@@ -3084,17 +3084,17 @@
           "bin/placeholder/OnlineLibrary.Application.dll": {}
         }
       },
-      "OnlineLibrary.Core/1.0.0": {
+      "OnlineLibrary.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Ardalis.Result": "9.1.0"
         },
         "compile": {
-          "bin/placeholder/OnlineLibrary.Core.dll": {}
+          "bin/placeholder/OnlineLibrary.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/OnlineLibrary.Core.dll": {}
+          "bin/placeholder/OnlineLibrary.Domain.dll": {}
         }
       },
       "OnlineLibrary.Infrastructure/1.0.0": {
@@ -3107,7 +3107,7 @@
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "OnlineLibrary.Application": "1.0.0",
-          "OnlineLibrary.Core": "1.0.0",
+          "OnlineLibrary.Domain": "1.0.0",
           "Serilog.AspNetCore": "8.0.1",
           "Serilog.Extensions.Hosting": "8.0.0",
           "Serilog.Settings.Configuration": "8.0.0",
@@ -9152,10 +9152,10 @@
       "path": "../../src/OnlineLibrary.Application/OnlineLibrary.Application.csproj",
       "msbuildProject": "../../src/OnlineLibrary.Application/OnlineLibrary.Application.csproj"
     },
-    "OnlineLibrary.Core/1.0.0": {
+    "OnlineLibrary.Domain/1.0.0": {
       "type": "project",
-      "path": "../../src/OnlineLibrary.Core/OnlineLibrary.Core.csproj",
-      "msbuildProject": "../../src/OnlineLibrary.Core/OnlineLibrary.Core.csproj"
+      "path": "../../src/OnlineLibrary.Domain/OnlineLibrary.Domain.csproj",
+      "msbuildProject": "../../src/OnlineLibrary.Domain/OnlineLibrary.Domain.csproj"
     },
     "OnlineLibrary.Infrastructure/1.0.0": {
       "type": "project",
@@ -9168,7 +9168,7 @@
       "Microsoft.EntityFrameworkCore >= 8.0.6",
       "Microsoft.EntityFrameworkCore.InMemory >= 8.0.6",
       "Microsoft.NET.Test.Sdk >= 17.8.0",
-      "OnlineLibrary.Core >= 1.0.0",
+      "OnlineLibrary.Domain >= 1.0.0",
       "OnlineLibrary.Infrastructure >= 1.0.0",
       "coverlet.collector >= 6.0.0",
       "moq >= 4.20.70",
@@ -9203,8 +9203,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Core\\OnlineLibrary.Core.csproj": {
-              "projectPath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Core\\OnlineLibrary.Core.csproj"
+            "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj": {
+              "projectPath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj"
             },
             "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Infrastructure\\OnlineLibrary.Infrastructure.csproj": {
               "projectPath": "C:\\Users\\a_shi\\source\\repos\\OnlineLibrary\\src\\OnlineLibrary.Infrastructure\\OnlineLibrary.Infrastructure.csproj"

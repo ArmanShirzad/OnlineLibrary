@@ -11,8 +11,8 @@
           "Ardalis.Result": "9.1.0",
           "Microsoft.NET.Test.Sdk": "17.8.0",
           "OnlineLibrary.Application": "1.0.0",
-          "OnlineLibrary.Core": "1.0.0",
-          "OnlineLibrary.Core.Tests": "1.0.0",
+          "OnlineLibrary.Domain": "1.0.0",
+          "OnlineLibrary.Domain.Tests": "1.0.0",
           "OnlineLibrary.Infrastructure": "1.0.0",
           "OnlineLibrary.Infrastructure.Tests": "1.0.0",
           "Serilog.AspNetCore": "8.0.1",
@@ -1769,21 +1769,21 @@
           "Microsoft.Extensions.Caching.Abstractions": "8.0.0",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Newtonsoft.Json": "13.0.1",
-          "OnlineLibrary.Core": "1.0.0"
+          "OnlineLibrary.Domain": "1.0.0"
         },
         "runtime": {
           "OnlineLibrary.Application.dll": {}
         }
       },
-      "OnlineLibrary.Core/1.0.0": {
+      "OnlineLibrary.Domain/1.0.0": {
         "dependencies": {
           "Ardalis.Result": "9.1.0"
         },
         "runtime": {
-          "OnlineLibrary.Core.dll": {}
+          "OnlineLibrary.Domain.dll": {}
         }
       },
-      "OnlineLibrary.Core.Tests/1.0.0": {
+      "OnlineLibrary.Domain.Tests/1.0.0": {
         "dependencies": {
           "Microsoft.NET.Test.Sdk": "17.8.0",
           "coverlet.collector": "6.0.0",
@@ -1792,7 +1792,7 @@
           "xunit.runner.visualstudio": "2.5.3"
         },
         "runtime": {
-          "OnlineLibrary.Core.Tests.dll": {}
+          "OnlineLibrary.Domain.Tests.dll": {}
         }
       },
       "OnlineLibrary.Infrastructure/1.0.0": {
@@ -1803,7 +1803,7 @@
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "OnlineLibrary.Application": "1.0.0",
-          "OnlineLibrary.Core": "1.0.0",
+          "OnlineLibrary.Domain": "1.0.0",
           "Serilog.AspNetCore": "8.0.1",
           "Serilog.Extensions.Hosting": "8.0.0",
           "Serilog.Settings.Configuration": "8.0.0",
@@ -1820,7 +1820,7 @@
           "Microsoft.EntityFrameworkCore": "8.0.6",
           "Microsoft.EntityFrameworkCore.InMemory": "8.0.6",
           "Microsoft.NET.Test.Sdk": "17.8.0",
-          "OnlineLibrary.Core": "1.0.0",
+          "OnlineLibrary.Domain": "1.0.0",
           "OnlineLibrary.Infrastructure": "1.0.0",
           "coverlet.collector": "6.0.0",
           "Moq": "4.20.70",
@@ -2999,12 +2999,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "OnlineLibrary.Core/1.0.0": {
+    "OnlineLibrary.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "OnlineLibrary.Core.Tests/1.0.0": {
+    "OnlineLibrary.Domain.Tests/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

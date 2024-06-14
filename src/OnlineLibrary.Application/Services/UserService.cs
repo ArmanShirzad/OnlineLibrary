@@ -5,12 +5,14 @@ using Ardalis.Result;
 
 using FluentValidation;
 
+using Mapster;
+
 using MapsterMapper;
 
-using OnlineLibrary.Application.DTOs;
-using OnlineLibrary.Application.Interfaces;
-using OnlineLibrary.Core.Entities;
-using OnlineLibrary.Core.Interfaces;
+using OnlineLibrary.Domain.DTOs;
+using OnlineLibrary.Domain.Interfaces;
+using OnlineLibrary.Domain.Entities;
+using OnlineLibrary.Domain.Interfaces;
 
 namespace OnlineLibrary.Application.Services
 {
@@ -18,18 +20,20 @@ namespace OnlineLibrary.Application.Services
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
-        private readonly IValidator<UserDto> _validator;
+        private readonly IValidator<UpdateUserDto> _updateValidator;
+        private readonly IValidator<CreateUserDto> _createValidator;
 
-        public UserService(IUnitOfWork unitOfWork, IMapper mapper, IValidator<UserDto> validator)
+        public UserService(IUnitOfWork unitOfWork, IMapper mapper, IValidator<UpdateUserDto> validator, IValidator<CreateUserDto> createValidator)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
-            _validator = validator;
+            _updateValidator = validator;
+            _createValidator = createValidator;
         }
 
-        public async Task<Result<UserDto>> RegisterUserAsync(UserDto userDto)
+        public async Task<Result<UserDto>> RegisterUserAsync(CreateUserDto userDto)
         {
-            var validationResult = await _validator.ValidateAsync(userDto);
+            var validationResult = await _createValidator.ValidateAsync(userDto);
             if (!validationResult.IsValid)
             {
                 return Result<UserDto>.Error(validationResult.Errors.Select(e => e.ErrorMessage).ToList().ToString());
@@ -73,9 +77,9 @@ namespace OnlineLibrary.Application.Services
             return Result<UserDto>.Success(userDto);
         }
 
-        public async Task<Result> UpdateUserAsync(UserDto userDto)
+        public async Task<Result> UpdateUserAsync(UpdateUserDto userDto)
         {
-            var validationResult = await _validator.ValidateAsync(userDto);
+            var validationResult = await _updateValidator.ValidateAsync(userDto);
             if (!validationResult.IsValid)
             {
                 return Result.Error(validationResult.Errors.Select(e => e.ErrorMessage).ToList().ToString());
@@ -99,6 +103,13 @@ namespace OnlineLibrary.Application.Services
             _unitOfWork.Users.Delete(user);
             var completeResult = await _unitOfWork.CompleteAsync();
             return completeResult > 0 ? Result.Success() : Result.Error("Failed to delete user");
+        }
+
+        public async Task<Result<IEnumerable<UserDto>>> GetAllUsersAsync()
+        {
+            var users = await _unitOfWork.Users.ListAllAsync();
+            var userDtos = users.Adapt<IEnumerable<UserDto>>();
+            return Result<IEnumerable<UserDto>>.Success(userDtos);
         }
     }
 }

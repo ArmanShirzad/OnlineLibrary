@@ -1,4 +1,4 @@
-﻿using OnlineLibrary.Core.Interfaces;
+﻿using OnlineLibrary.Domain.Interfaces;
 using OnlineLibrary.Infrastructure.Data;
 
 using System;

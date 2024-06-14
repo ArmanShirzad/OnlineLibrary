@@ -1,15 +1,15 @@
-﻿using OnlineLibrary.Application.DTOs;
+﻿using OnlineLibrary.Domain.DTOs;
 using FluentValidation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using OnlineLibrary.Core.Entities;
+using OnlineLibrary.Domain.Entities;
 
 namespace OnlineLibrary.Application.Validators.Book
 {
-    public class CreateBookValidator : AbstractValidator<BookDto>
+    public class CreateBookValidator : AbstractValidator<CreateBookDto>
     {
         public CreateBookValidator()
         {
