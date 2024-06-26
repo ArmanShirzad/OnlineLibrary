@@ -1,5 +1,5 @@
-C:\Users\a_shi\source\repos\OnlineLibrary\test\OnlineLibrary.Domain.Tests\bin\Debug\net8.0\testhost.exe
 C:\Users\a_shi\source\repos\OnlineLibrary\test\OnlineLibrary.Domain.Tests\bin\Debug\net8.0\testhost.dll
+C:\Users\a_shi\source\repos\OnlineLibrary\test\OnlineLibrary.Domain.Tests\bin\Debug\net8.0\testhost.exe
 C:\Users\a_shi\source\repos\OnlineLibrary\test\OnlineLibrary.Domain.Tests\bin\Debug\net8.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 C:\Users\a_shi\source\repos\OnlineLibrary\test\OnlineLibrary.Domain.Tests\bin\Debug\net8.0\xunit.runner.reporters.netcoreapp10.dll
 C:\Users\a_shi\source\repos\OnlineLibrary\test\OnlineLibrary.Domain.Tests\bin\Debug\net8.0\xunit.runner.utility.netcoreapp10.dll

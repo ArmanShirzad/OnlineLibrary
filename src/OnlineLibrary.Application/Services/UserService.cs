@@ -1,18 +1,18 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
-
 using Ardalis.Result;
-
 using FluentValidation;
-
 using Mapster;
-
 using MapsterMapper;
-
 using OnlineLibrary.Domain.DTOs;
 using OnlineLibrary.Domain.Interfaces;
 using OnlineLibrary.Domain.Entities;
 using OnlineLibrary.Domain.Interfaces;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Http.Authentication;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authentication;
 
 namespace OnlineLibrary.Application.Services
 {
@@ -22,13 +22,15 @@ namespace OnlineLibrary.Application.Services
         private readonly IMapper _mapper;
         private readonly IValidator<UpdateUserDto> _updateValidator;
         private readonly IValidator<CreateUserDto> _createValidator;
+        private readonly IHttpContextAccessor _httpContext;
 
-        public UserService(IUnitOfWork unitOfWork, IMapper mapper, IValidator<UpdateUserDto> validator, IValidator<CreateUserDto> createValidator)
+        public UserService(IUnitOfWork unitOfWork, IMapper mapper, IValidator<UpdateUserDto> validator, IValidator<CreateUserDto> createValidator, IHttpContextAccessor httpContext)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
             _updateValidator = validator;
             _createValidator = createValidator;
+            _httpContext = httpContext;
         }
 
         public async Task<Result<UserDto>> RegisterUserAsync(CreateUserDto userDto)
@@ -52,14 +54,24 @@ namespace OnlineLibrary.Application.Services
             return Result<UserDto>.Success(registeredUserDto);
         }
 
-        public async Task<Result<UserDto>> AuthenticateUserAsync(string username, string password)
+        public async Task<Result<UserDto>> AuthenticateUserAsync(UserLoginDto userLoginDto)
         {
             var users = await _unitOfWork.Users.ListAllAsync();
-            var user = users.FirstOrDefault(u => u.Username == username && u.Password == password);
+            var user = users.FirstOrDefault(u => u.Username == userLoginDto.Username && u.Password == userLoginDto.Password);
             if (user == null)
             {
                 return Result<UserDto>.Error("Invalid credentials");
             }
+            var claims = new List<Claim>
+    {
+        new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+        new Claim(ClaimTypes.Name, user.Username),
+        // Add other claims as needed
+    };
+
+            var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+            var authProperties = new Microsoft.AspNetCore.Authentication.AuthenticationProperties();
+            await _httpContext.HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity), authProperties);
 
             var userDto = _mapper.Map<UserDto>(user);
             return Result<UserDto>.Success(userDto);

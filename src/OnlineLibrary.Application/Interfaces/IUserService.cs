@@ -14,7 +14,7 @@ namespace OnlineLibrary.Domain.Interfaces
     public interface IUserService
     {
         Task<Result<UserDto>> RegisterUserAsync(CreateUserDto user);
-        Task<Result<UserDto>> AuthenticateUserAsync(string username, string password);
+        Task<Result<UserDto>> AuthenticateUserAsync(UserLoginDto userDto);
         Task<Result<UserDto>> GetUserByIdAsync(int id);
         Task<Result> UpdateUserAsync(UpdateUserDto user);
         Task<Result> DeleteUserAsync(int id);

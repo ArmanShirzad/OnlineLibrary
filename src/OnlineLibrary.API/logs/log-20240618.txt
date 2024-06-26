@@ -1,0 +1,301 @@
+2024-06-18 01:30:04.678 +03:30 [INF] User profile is available. Using 'C:\Users\a_shi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-18 01:30:06.662 +03:30 [WRN] Overriding address(es) 'http://*:5168'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-18 01:30:06.712 +03:30 [INF] Now listening on: http://[::]:5168
+2024-06-18 01:30:06.716 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-18 01:30:06.718 +03:30 [INF] Hosting environment: Development
+2024-06-18 01:30:06.722 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-18 01:30:09.723 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/index.html - null null
+2024-06-18 01:30:10.870 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/index.html - 200 null text/html;charset=utf-8 1157.831ms
+2024-06-18 01:30:11.607 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-18 01:30:11.614 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/_vs/browserLink - null null
+2024-06-18 01:30:11.660 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript; charset=utf-8 54.9712ms
+2024-06-18 01:30:12.550 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/_vs/browserLink - 200 null text/javascript; charset=UTF-8 935.8904ms
+2024-06-18 01:30:12.621 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - null null
+2024-06-18 01:30:12.783 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 162.2462ms
+2024-06-18 01:32:06.431 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/Users/GetAllUsers - null null
+2024-06-18 01:32:06.476 +03:30 [WRN] Failed to determine the https port for redirect.
+2024-06-18 01:32:06.490 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.UsersController.GetAllUsersAsync (OnlineLibrary.API)'
+2024-06-18 01:32:06.529 +03:30 [INF] Route matched with {action = "GetAllUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllUsersAsync() on controller OnlineLibrary.API.Controllers.UsersController (OnlineLibrary.API).
+2024-06-18 01:32:06.980 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.UsersController.GetAllUsersAsync (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-18 01:32:08.620 +03:30 [INF] Executed DbCommand (70ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+2024-06-18 01:32:08.788 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.UsersController.GetAllUsersAsync (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1790.5674ms.
+2024-06-18 01:32:08.804 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[OnlineLibrary.Domain.Entities.User, OnlineLibrary.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[OnlineLibrary.Domain.DTOs.UserDto, OnlineLibrary.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-18 01:32:08.822 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.UsersController.GetAllUsersAsync (OnlineLibrary.API) in 2276.1392ms
+2024-06-18 01:32:08.830 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.UsersController.GetAllUsersAsync (OnlineLibrary.API)'
+2024-06-18 01:32:08.839 +03:30 [INF] HTTP GET /api/Users/GetAllUsers responded 200 in 2365.3648 ms
+2024-06-18 01:32:08.860 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/api/Users/GetAllUsers - 200 null application/json; charset=utf-8 2428.7854ms
+2024-06-18 01:33:08.786 +03:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5168/api/Users/register - null null
+2024-06-18 01:33:08.801 +03:30 [INF] CORS policy execution successful.
+2024-06-18 01:33:08.811 +03:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5168/api/Users/register - 204 null null 24.9212ms
+2024-06-18 01:33:08.844 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost:5168/api/Users/register - application/json; charset=utf-8 63
+2024-06-18 01:33:08.857 +03:30 [INF] CORS policy execution successful.
+2024-06-18 01:33:08.862 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.UsersController.Register (OnlineLibrary.API)'
+2024-06-18 01:33:08.880 +03:30 [INF] Route matched with {action = "Register", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(OnlineLibrary.Domain.DTOs.CreateUserDto) on controller OnlineLibrary.API.Controllers.UsersController (OnlineLibrary.API).
+2024-06-18 01:33:08.954 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.UsersController.Register (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-18 01:33:09.285 +03:30 [INF] Executed DbCommand (54ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [Password], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2024-06-18 01:33:09.328 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.UsersController.Register (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 367.1517ms.
+2024-06-18 01:33:09.337 +03:30 [INF] Executing OkObjectResult, writing value of type 'OnlineLibrary.Domain.DTOs.UserDto'.
+2024-06-18 01:33:09.346 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.UsersController.Register (OnlineLibrary.API) in 455.645ms
+2024-06-18 01:33:09.351 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.UsersController.Register (OnlineLibrary.API)'
+2024-06-18 01:33:09.356 +03:30 [INF] HTTP POST /api/Users/register responded 200 in 494.2771 ms
+2024-06-18 01:33:09.365 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost:5168/api/Users/register - 200 null application/json; charset=utf-8 521.9057ms
+2024-06-18 01:33:16.094 +03:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - null null
+2024-06-18 01:33:16.105 +03:30 [INF] CORS policy execution successful.
+2024-06-18 01:33:16.112 +03:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - 204 null null 18.4935ms
+2024-06-18 01:33:16.126 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost:5168/api/Users/login - application/json; charset=utf-8 39
+2024-06-18 01:33:16.136 +03:30 [INF] CORS policy execution successful.
+2024-06-18 01:33:16.141 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-18 01:33:16.151 +03:30 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OnlineLibrary.Domain.DTOs.UserLoginDto) on controller OnlineLibrary.API.Controllers.UsersController (OnlineLibrary.API).
+2024-06-18 01:33:16.202 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-18 01:33:16.293 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+2024-06-18 01:33:16.307 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 100.081ms.
+2024-06-18 01:33:16.318 +03:30 [INF] Executing OkObjectResult, writing value of type 'OnlineLibrary.Domain.DTOs.UserDto'.
+2024-06-18 01:33:16.325 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) in 163.9498ms
+2024-06-18 01:33:16.332 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-18 01:33:16.340 +03:30 [INF] HTTP POST /api/Users/login responded 200 in 199.1607 ms
+2024-06-18 01:33:16.349 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost:5168/api/Users/login - 200 null application/json; charset=utf-8 222.5388ms
+2024-06-18 01:33:25.728 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/users/userinfo - null null
+2024-06-18 01:33:25.741 +03:30 [INF] CORS policy execution successful.
+2024-06-18 01:33:25.745 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.UsersController.GetUserInfo (OnlineLibrary.API)'
+2024-06-18 01:33:25.756 +03:30 [INF] Route matched with {action = "GetUserInfo", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserInfo() on controller OnlineLibrary.API.Controllers.UsersController (OnlineLibrary.API).
+2024-06-18 01:33:25.804 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.UsersController.GetUserInfo (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-18 01:33:43.338 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.UsersController.GetUserInfo (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.UnauthorizedObjectResult in 17526.4105ms.
+2024-06-18 01:33:43.348 +03:30 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2024-06-18 01:33:43.402 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.UsersController.GetUserInfo (OnlineLibrary.API) in 17635.6681ms
+2024-06-18 01:33:43.422 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.UsersController.GetUserInfo (OnlineLibrary.API)'
+2024-06-18 01:33:43.438 +03:30 [INF] HTTP GET /api/users/userinfo responded 401 in 17693.6458 ms
+2024-06-18 01:33:43.633 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/api/users/userinfo - 401 null text/plain; charset=utf-8 17905.2161ms
+2024-06-18 01:34:00.487 +03:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5168/api/Users/register - null null
+2024-06-18 01:34:00.501 +03:30 [INF] CORS policy execution successful.
+2024-06-18 01:34:00.509 +03:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5168/api/Users/register - 204 null null 22.4945ms
+2024-06-18 01:34:00.523 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost:5168/api/Users/register - application/json; charset=utf-8 55
+2024-06-18 01:34:00.534 +03:30 [INF] CORS policy execution successful.
+2024-06-18 01:34:00.540 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.UsersController.Register (OnlineLibrary.API)'
+2024-06-18 01:34:00.545 +03:30 [INF] Route matched with {action = "Register", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(OnlineLibrary.Domain.DTOs.CreateUserDto) on controller OnlineLibrary.API.Controllers.UsersController (OnlineLibrary.API).
+2024-06-18 01:34:00.600 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.UsersController.Register (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-18 01:34:00.618 +03:30 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [Password], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2024-06-18 01:34:00.635 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.UsersController.Register (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 28.4909ms.
+2024-06-18 01:34:00.645 +03:30 [INF] Executing OkObjectResult, writing value of type 'OnlineLibrary.Domain.DTOs.UserDto'.
+2024-06-18 01:34:00.653 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.UsersController.Register (OnlineLibrary.API) in 95.7963ms
+2024-06-18 01:34:00.660 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.UsersController.Register (OnlineLibrary.API)'
+2024-06-18 01:34:00.667 +03:30 [INF] HTTP POST /api/Users/register responded 200 in 126.4227 ms
+2024-06-18 01:34:00.675 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost:5168/api/Users/register - 200 null application/json; charset=utf-8 152.4057ms
+2024-06-18 01:34:22.976 +03:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - null null
+2024-06-18 01:34:22.987 +03:30 [INF] CORS policy execution successful.
+2024-06-18 01:34:22.990 +03:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - 204 null null 14.0696ms
+2024-06-18 01:34:23.002 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost:5168/api/Users/login - application/json; charset=utf-8 38
+2024-06-18 01:34:23.009 +03:30 [INF] CORS policy execution successful.
+2024-06-18 01:34:23.014 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-18 01:34:23.017 +03:30 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OnlineLibrary.Domain.DTOs.UserLoginDto) on controller OnlineLibrary.API.Controllers.UsersController (OnlineLibrary.API).
+2024-06-18 01:34:23.061 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-18 01:34:23.071 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+2024-06-18 01:37:01.055 +03:30 [INF] User profile is available. Using 'C:\Users\a_shi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-18 01:37:01.478 +03:30 [WRN] Overriding address(es) 'http://*:5168'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-18 01:37:01.524 +03:30 [INF] Now listening on: http://[::]:5168
+2024-06-18 01:37:01.527 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-18 01:37:01.530 +03:30 [INF] Hosting environment: Development
+2024-06-18 01:37:01.534 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-18 01:37:04.498 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/index.html - null null
+2024-06-18 01:37:05.013 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/index.html - 200 null text/html;charset=utf-8 522.4553ms
+2024-06-18 01:37:05.099 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-18 01:37:05.100 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/_vs/browserLink - null null
+2024-06-18 01:37:05.133 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript; charset=utf-8 34.4776ms
+2024-06-18 01:37:05.213 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/_vs/browserLink - 200 null text/javascript; charset=UTF-8 112.3613ms
+2024-06-18 01:37:05.305 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - null null
+2024-06-18 01:37:05.480 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 175.351ms
+2024-06-18 01:37:21.000 +03:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - null null
+2024-06-18 01:37:21.022 +03:30 [INF] CORS policy execution successful.
+2024-06-18 01:37:21.029 +03:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - 204 null null 28.6395ms
+2024-06-18 01:37:21.044 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost:5168/api/Users/login - application/json; charset=utf-8 38
+2024-06-18 01:37:21.057 +03:30 [INF] CORS policy execution successful.
+2024-06-18 01:37:21.063 +03:30 [WRN] Failed to determine the https port for redirect.
+2024-06-18 01:37:21.075 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-18 01:37:21.116 +03:30 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OnlineLibrary.Domain.DTOs.UserLoginDto) on controller OnlineLibrary.API.Controllers.UsersController (OnlineLibrary.API).
+2024-06-18 01:37:21.599 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-18 01:37:23.453 +03:30 [INF] Executed DbCommand (92ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+2024-06-18 01:38:23.266 +03:30 [INF] User profile is available. Using 'C:\Users\a_shi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-18 01:38:23.826 +03:30 [WRN] Overriding address(es) 'http://*:5168'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-18 01:38:23.874 +03:30 [INF] Now listening on: http://[::]:5168
+2024-06-18 01:38:23.898 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-18 01:38:23.905 +03:30 [INF] Hosting environment: Development
+2024-06-18 01:38:23.909 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-18 01:38:26.394 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/index.html - null null
+2024-06-18 01:38:27.022 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/index.html - 200 null text/html;charset=utf-8 640.8546ms
+2024-06-18 01:38:27.132 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-18 01:38:27.141 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/_vs/browserLink - null null
+2024-06-18 01:38:27.164 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript; charset=utf-8 31.9137ms
+2024-06-18 01:38:27.216 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/_vs/browserLink - 200 null text/javascript; charset=UTF-8 75.637ms
+2024-06-18 01:38:27.359 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - null null
+2024-06-18 01:38:27.584 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 224.5514ms
+2024-06-18 01:39:39.707 +03:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - null null
+2024-06-18 01:39:39.742 +03:30 [INF] CORS policy execution successful.
+2024-06-18 01:39:39.751 +03:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - 204 null null 44.0591ms
+2024-06-18 01:39:39.767 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost:5168/api/Users/login - application/json; charset=utf-8 38
+2024-06-18 01:39:39.779 +03:30 [INF] CORS policy execution successful.
+2024-06-18 01:39:39.786 +03:30 [WRN] Failed to determine the https port for redirect.
+2024-06-18 01:39:39.796 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-18 01:39:39.847 +03:30 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OnlineLibrary.Domain.DTOs.UserLoginDto) on controller OnlineLibrary.API.Controllers.UsersController (OnlineLibrary.API).
+2024-06-18 01:39:40.337 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-18 01:39:42.036 +03:30 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+2024-06-18 01:39:43.221 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) in 3355.3919ms
+2024-06-18 01:39:43.521 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-18 01:39:43.741 +03:30 [ERR] HTTP POST /api/Users/login responded 500 in 3954.6688 ms
+System.InvalidOperationException: No sign-in authentication handlers are registered. Did you forget to call AddAuthentication().AddCookie("Cookies",...)?
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.SignInAsync(HttpContext context, String scheme, ClaimsPrincipal principal, AuthenticationProperties properties)
+   at OnlineLibrary.Application.Services.UserService.AuthenticateUserAsync(UserLoginDto userLoginDto) in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Application\Services\UserService.cs:line 79
+   at OnlineLibrary.API.Controllers.UsersController.Login(UserLoginDto user) in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\Controllers\UsersController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-06-18 01:39:44.563 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No sign-in authentication handlers are registered. Did you forget to call AddAuthentication().AddCookie("Cookies",...)?
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.SignInAsync(HttpContext context, String scheme, ClaimsPrincipal principal, AuthenticationProperties properties)
+   at OnlineLibrary.Application.Services.UserService.AuthenticateUserAsync(UserLoginDto userLoginDto) in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Application\Services\UserService.cs:line 79
+   at OnlineLibrary.API.Controllers.UsersController.Login(UserLoginDto user) in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\Controllers\UsersController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-18 01:39:44.646 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost:5168/api/Users/login - 500 null text/plain; charset=utf-8 4879.462ms
+2024-06-18 01:40:04.029 +03:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - null null
+2024-06-18 01:40:04.045 +03:30 [INF] CORS policy execution successful.
+2024-06-18 01:40:04.055 +03:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - 204 null null 25.3529ms
+2024-06-18 01:40:04.069 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost:5168/api/Users/login - application/json; charset=utf-8 38
+2024-06-18 01:40:04.076 +03:30 [INF] CORS policy execution successful.
+2024-06-18 01:40:04.081 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-18 01:40:04.086 +03:30 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OnlineLibrary.Domain.DTOs.UserLoginDto) on controller OnlineLibrary.API.Controllers.UsersController (OnlineLibrary.API).
+2024-06-18 01:40:04.142 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-18 01:40:04.201 +03:30 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+2024-06-18 01:40:28.878 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) in 24780.4874ms
+2024-06-18 01:40:29.130 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-18 01:40:29.321 +03:30 [ERR] HTTP POST /api/Users/login responded 500 in 25240.1263 ms
+System.InvalidOperationException: No sign-in authentication handlers are registered. Did you forget to call AddAuthentication().AddCookie("Cookies",...)?
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.SignInAsync(HttpContext context, String scheme, ClaimsPrincipal principal, AuthenticationProperties properties)
+   at OnlineLibrary.Application.Services.UserService.AuthenticateUserAsync(UserLoginDto userLoginDto) in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Application\Services\UserService.cs:line 79
+   at OnlineLibrary.API.Controllers.UsersController.Login(UserLoginDto user) in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\Controllers\UsersController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-06-18 01:40:30.006 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No sign-in authentication handlers are registered. Did you forget to call AddAuthentication().AddCookie("Cookies",...)?
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.SignInAsync(HttpContext context, String scheme, ClaimsPrincipal principal, AuthenticationProperties properties)
+   at OnlineLibrary.Application.Services.UserService.AuthenticateUserAsync(UserLoginDto userLoginDto) in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Application\Services\UserService.cs:line 79
+   at OnlineLibrary.API.Controllers.UsersController.Login(UserLoginDto user) in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\Controllers\UsersController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-18 01:40:30.089 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost:5168/api/Users/login - 500 null text/plain; charset=utf-8 26021.0127ms
+2024-06-18 01:40:45.107 +03:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - null null
+2024-06-18 01:40:45.118 +03:30 [INF] CORS policy execution successful.
+2024-06-18 01:40:45.123 +03:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - 204 null null 16.2547ms
+2024-06-18 01:40:45.134 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost:5168/api/Users/login - application/json; charset=utf-8 38
+2024-06-18 01:40:45.146 +03:30 [INF] CORS policy execution successful.
+2024-06-18 01:40:45.150 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-18 01:40:45.155 +03:30 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OnlineLibrary.Domain.DTOs.UserLoginDto) on controller OnlineLibrary.API.Controllers.UsersController (OnlineLibrary.API).
+2024-06-18 01:40:45.200 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-18 01:40:45.330 +03:30 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+2024-06-18 01:43:45.052 +03:30 [INF] User profile is available. Using 'C:\Users\a_shi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-18 01:43:45.702 +03:30 [WRN] Overriding address(es) 'http://*:5168'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-18 01:43:45.793 +03:30 [INF] Now listening on: http://[::]:5168
+2024-06-18 01:43:45.962 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-18 01:43:45.966 +03:30 [INF] Hosting environment: Development
+2024-06-18 01:43:46.035 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-18 01:43:48.055 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/index.html - null null
+2024-06-18 01:43:48.571 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/index.html - 200 null text/html;charset=utf-8 524.0081ms
+2024-06-18 01:43:48.589 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-18 01:43:48.608 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript; charset=utf-8 19.6647ms
+2024-06-18 01:43:50.367 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/_vs/browserLink - null null
+2024-06-18 01:43:50.408 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/_vs/browserLink - 200 null text/javascript; charset=UTF-8 41.4332ms
+2024-06-18 01:43:50.502 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - null null
+2024-06-18 01:43:50.649 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 147.9455ms
+2024-06-18 01:44:02.025 +03:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - null null
+2024-06-18 01:44:02.052 +03:30 [INF] CORS policy execution successful.
+2024-06-18 01:44:02.061 +03:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - 204 null null 36.8024ms
+2024-06-18 01:44:02.075 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost:5168/api/Users/login - application/json; charset=utf-8 38
+2024-06-18 01:44:02.091 +03:30 [INF] CORS policy execution successful.
+2024-06-18 01:44:02.101 +03:30 [WRN] Failed to determine the https port for redirect.
+2024-06-18 01:44:02.112 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-18 01:44:02.145 +03:30 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OnlineLibrary.Domain.DTOs.UserLoginDto) on controller OnlineLibrary.API.Controllers.UsersController (OnlineLibrary.API).
+2024-06-18 01:44:02.502 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-18 01:44:04.144 +03:30 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+2024-06-18 01:44:07.505 +03:30 [INF] AuthenticationScheme: Cookies signed in.
+2024-06-18 01:44:58.190 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 55673.6284ms.
+2024-06-18 01:44:58.207 +03:30 [INF] Executing OkObjectResult, writing value of type 'OnlineLibrary.Domain.DTOs.UserDto'.
+2024-06-18 01:44:58.224 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) in 56066.1845ms
+2024-06-18 01:44:58.236 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-18 01:44:58.243 +03:30 [INF] HTTP POST /api/Users/login responded 200 in 56140.5366 ms
+2024-06-18 01:44:58.261 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost:5168/api/Users/login - 200 null application/json; charset=utf-8 56185.8327ms
+2024-06-18 01:45:03.529 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/users/userinfo - null null
+2024-06-18 01:45:03.544 +03:30 [INF] CORS policy execution successful.
+2024-06-18 01:45:03.550 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.UsersController.GetUserInfo (OnlineLibrary.API)'
+2024-06-18 01:45:03.562 +03:30 [INF] Route matched with {action = "GetUserInfo", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserInfo() on controller OnlineLibrary.API.Controllers.UsersController (OnlineLibrary.API).
+2024-06-18 01:45:03.605 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.UsersController.GetUserInfo (OnlineLibrary.API) - Validation state: "Valid"

@@ -18,6 +18,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Serilog;
 using Serilog.Events;
+using OnlineLibrary.Application.Interfaces;
+using OnlineLibrary.Infrastructure.Services;
+using Microsoft.AspNetCore.Components.Authorization;
 
 namespace OnlineLibrary.Infrastructure
 {
@@ -31,7 +34,8 @@ namespace OnlineLibrary.Infrastructure
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IBookRepository, BookRepository>();
             services.AddScoped<ILoanRepository, LoanRepository>();
-
+            services.AddScoped<ICurrentUserService, CurrentUserService>();
+            //services.AddScoped<AuthenticationStateProvider, CustomAuthenticationStateProvider>();
             services.AddSingleton(Log.Logger);
 
             //redis

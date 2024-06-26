@@ -59,6 +59,14 @@
               "target": "Package",
               "version": "[5.3.0, )"
             },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.Authentication": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.3, )"
@@ -74,6 +82,10 @@
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[7.6.2, )"
             },
             "Serilog.AspNetCore": {
               "target": "Package",
@@ -163,6 +175,10 @@
             "Mapster": {
               "target": "Package",
               "version": "[7.4.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.Cookies": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.Extensions.Caching.Abstractions": {
               "target": "Package",
@@ -311,6 +327,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.6, )"

@@ -1,10 +1,17 @@
 ﻿@page "/login"
 @inject HttpClient Http
+
 @code {
     private OnlineLibrary.Blazor.Models.UserLoginDto _user = new();
+
     private async Task LoginUser()
     {
-        var response = await Http.PostAsJsonAsync("api/Users/login", _user);
+        var loginData = new
+        {
+            Username = _user.Username,
+            Password = _user.Password
+        };
+        var response = await Http.PostAsJsonAsync("api/Users/login", loginData);
         if (response.IsSuccessStatusCode)
         {
             // handle success, navigate to home page

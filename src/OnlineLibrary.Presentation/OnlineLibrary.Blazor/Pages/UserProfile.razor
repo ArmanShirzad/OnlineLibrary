@@ -1,15 +1,36 @@
 ﻿@page "/profile"
 @inject HttpClient Http
+@inject Microsoft.AspNetCore.Components.Authorization.AuthenticationStateProvider AuthStateProvider
 
 @code {
     private Blazor.Models.UserDto user;
-    private List<OnlineLibrary.Blazor.Models.BookDto> borrowedBooks;
+    private List<OnlineLibrary.Blazor.Models.BookDto> borrowedBooks = new List<OnlineLibrary.Blazor.Models.BookDto>();
+    private System.Security.Claims.ClaimsPrincipal field;
 
-    protected override async Task OnInitializedAsync()
+    protected async override Task OnInitializedAsync()
     {
-        var userId = 1; // Replace with actual user ID
-        user = await Http.GetFromJsonAsync<OnlineLibrary.Blazor.Models.UserDto>($"api/Users/{userId}");
-        borrowedBooks = await Http.GetFromJsonAsync<List<OnlineLibrary.Blazor.Models.BookDto>>($"api/Users/{userId}/borrowedBooks");
+        var authState = await AuthStateProvider.GetAuthenticationStateAsync();
+        var claimsIdentity = authState.User.Identity as System.Security.Claims.ClaimsIdentity;
+        field = authState.User;
+
+        if (claimsIdentity != null && claimsIdentity.IsAuthenticated)
+        {
+            var userIdClaim = claimsIdentity.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier);
+            var userEmailClaim = claimsIdentity.FindFirst(System.Security.Claims.ClaimTypes.Email);
+
+            if (userIdClaim != null && userEmailClaim != null)
+            {
+                var userDto = new Blazor.Models.UserDto
+                {
+                    Id = int.Parse(userIdClaim.Value),
+                    Username = claimsIdentity.Name,
+                    Email = userEmailClaim.Value
+                };
+                
+                user = userDto;
+                borrowedBooks = await Http.GetFromJsonAsync<List<OnlineLibrary.Blazor.Models.BookDto>>($"api/loans/alluserloans/{user.Id}");
+            }
+        }
     }
 }
 
@@ -20,14 +41,28 @@
 }
 else
 {
-    <p>Username: @user.Username</p>
-    <p>Email: @user.Email</p>
+    if (field.Identity.IsAuthenticated)
+    {
+        <p>Hello, @user.Username</p>
+        <p>Email: @user.Email</p>
 
-    <h4>Borrowed Books</h4>
-    <ul>
-        @foreach (var book in borrowedBooks)
-        {
-            <li>@book.Title by @book.Author</li>
-        }
-    </ul>
+        <h4>Borrowed Books</h4>
+        <ul>
+            @if (borrowedBooks != null)
+            {
+                foreach (var book in borrowedBooks)
+                {
+                    <li>@book.Title by @book.Author</li>
+                }
+            }
+            else
+            {
+                <li>No books found.</li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p>You are not authenticated.</p>
+    }
 }

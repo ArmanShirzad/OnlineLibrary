@@ -1,0 +1,1245 @@
+2024-06-17 00:16:07.951 +03:30 [WRN] Overriding address(es) 'http://*:5168'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-17 00:16:08.034 +03:30 [INF] Now listening on: http://[::]:5168
+2024-06-17 00:16:08.040 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-17 00:16:08.043 +03:30 [INF] Hosting environment: Development
+2024-06-17 00:16:08.046 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-17 00:16:09.993 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/index.html - null null
+2024-06-17 00:16:11.834 +03:30 [WRN] Unable to contact VS to retrieve Browser Link script tag.
+2024-06-17 00:16:11.993 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/index.html - 200 null text/html;charset=utf-8 2011.0326ms
+2024-06-17 00:16:12.079 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-17 00:16:12.094 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 14.6405ms
+2024-06-17 00:16:12.224 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - null null
+2024-06-17 00:16:12.360 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 136.9247ms
+2024-06-17 00:16:39.023 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/books - null null
+2024-06-17 00:16:39.040 +03:30 [INF] CORS policy execution successful.
+2024-06-17 00:16:39.047 +03:30 [WRN] Failed to determine the https port for redirect.
+2024-06-17 00:16:39.060 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-17 00:16:39.096 +03:30 [INF] Route matched with {action = "GetAllBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllBooks() on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-17 00:16:39.524 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-17 00:16:41.320 +03:30 [INF] Executed DbCommand (42ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[ISBN], [b].[IsAvailable], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+2024-06-17 00:16:41.516 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1980.6396ms.
+2024-06-17 00:16:41.538 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[OnlineLibrary.Domain.Entities.Book, OnlineLibrary.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[OnlineLibrary.Domain.DTOs.BookDto, OnlineLibrary.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-17 00:16:41.564 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) in 2455.5897ms
+2024-06-17 00:16:41.571 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-17 00:16:41.578 +03:30 [INF] HTTP GET /api/books responded 200 in 2530.3014 ms
+2024-06-17 00:16:41.594 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/api/books - 200 null application/json; charset=utf-8 2570.5295ms
+2024-06-17 00:16:56.773 +03:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5168/api/Users/register - null null
+2024-06-17 00:16:56.786 +03:30 [INF] CORS policy execution successful.
+2024-06-17 00:16:56.791 +03:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5168/api/Users/register - 204 null null 17.8479ms
+2024-06-17 00:16:56.802 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost:5168/api/Users/register - application/json; charset=utf-8 55
+2024-06-17 00:16:56.811 +03:30 [INF] CORS policy execution successful.
+2024-06-17 00:16:56.813 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.UsersController.Register (OnlineLibrary.API)'
+2024-06-17 00:16:56.824 +03:30 [INF] Route matched with {action = "Register", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(OnlineLibrary.Domain.DTOs.CreateUserDto) on controller OnlineLibrary.API.Controllers.UsersController (OnlineLibrary.API).
+2024-06-17 00:16:56.903 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.UsersController.Register (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-17 00:16:57.139 +03:30 [INF] Executed DbCommand (53ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [Password], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2024-06-17 00:16:57.175 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.UsersController.Register (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 265.2349ms.
+2024-06-17 00:16:57.184 +03:30 [INF] Executing OkObjectResult, writing value of type 'OnlineLibrary.Domain.DTOs.UserDto'.
+2024-06-17 00:16:57.190 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.UsersController.Register (OnlineLibrary.API) in 356.3163ms
+2024-06-17 00:16:57.196 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.UsersController.Register (OnlineLibrary.API)'
+2024-06-17 00:16:57.199 +03:30 [INF] HTTP POST /api/Users/register responded 200 in 385.9340 ms
+2024-06-17 00:16:57.204 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost:5168/api/Users/register - 200 null application/json; charset=utf-8 401.4618ms
+2024-06-17 00:17:01.188 +03:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - null null
+2024-06-17 00:17:01.206 +03:30 [INF] CORS policy execution successful.
+2024-06-17 00:17:01.211 +03:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - 204 null null 22.4597ms
+2024-06-17 00:17:01.219 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost:5168/api/Users/login - application/json; charset=utf-8 37
+2024-06-17 00:17:01.225 +03:30 [INF] CORS policy execution successful.
+2024-06-17 00:17:01.229 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-17 00:17:01.235 +03:30 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OnlineLibrary.Domain.DTOs.UserLoginDto) on controller OnlineLibrary.API.Controllers.UsersController (OnlineLibrary.API).
+2024-06-17 00:17:01.273 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-17 00:17:03.444 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+2024-06-17 00:17:05.007 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3728.081ms.
+2024-06-17 00:17:05.018 +03:30 [INF] Executing OkObjectResult, writing value of type 'OnlineLibrary.Domain.DTOs.UserDto'.
+2024-06-17 00:17:05.024 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) in 3780.6943ms
+2024-06-17 00:17:05.031 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-17 00:17:05.036 +03:30 [INF] HTTP POST /api/Users/login responded 200 in 3807.6742 ms
+2024-06-17 00:17:05.044 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost:5168/api/Users/login - 200 null application/json; charset=utf-8 3825.5452ms
+2024-06-17 00:21:06.528 +03:30 [WRN] Overriding address(es) 'http://*:5168'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-17 00:21:06.590 +03:30 [INF] Now listening on: http://[::]:5168
+2024-06-17 00:21:06.598 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-17 00:21:06.600 +03:30 [INF] Hosting environment: Development
+2024-06-17 00:21:06.602 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-17 00:21:08.238 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/index.html - null null
+2024-06-17 00:21:09.777 +03:30 [WRN] Unable to contact VS to retrieve Browser Link script tag.
+2024-06-17 00:21:09.927 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/index.html - 200 null text/html;charset=utf-8 1691.6614ms
+2024-06-17 00:21:10.017 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-17 00:21:10.033 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 13.1285ms
+2024-06-17 00:21:10.168 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - null null
+2024-06-17 00:21:10.380 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 212.7449ms
+2024-06-17 00:21:26.468 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/Users/ - null null
+2024-06-17 00:21:27.903 +03:30 [WRN] Unable to contact VS to retrieve Browser Link script tag.
+2024-06-17 00:21:27.915 +03:30 [WRN] Failed to determine the https port for redirect.
+2024-06-17 00:21:27.928 +03:30 [INF] HTTP GET /api/Users/ responded 404 in 11.5474 ms
+2024-06-17 00:21:27.938 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/api/Users/ - 404 0 null 1469.8653ms
+2024-06-17 00:21:27.960 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5168/api/Users/, Response status code: 404
+2024-06-17 00:26:00.934 +03:30 [WRN] Overriding address(es) 'http://*:5168'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-17 00:26:01.032 +03:30 [INF] Now listening on: http://[::]:5168
+2024-06-17 00:26:01.037 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-17 00:26:01.040 +03:30 [INF] Hosting environment: Development
+2024-06-17 00:26:01.044 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-17 00:26:03.433 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/index.html - null null
+2024-06-17 00:26:05.159 +03:30 [WRN] Unable to contact VS to retrieve Browser Link script tag.
+2024-06-17 00:26:05.290 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/index.html - 200 null text/html;charset=utf-8 1868.1647ms
+2024-06-17 00:26:05.377 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-17 00:26:05.396 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 18.8312ms
+2024-06-17 00:26:05.503 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - null null
+2024-06-17 00:26:05.628 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 125.6843ms
+2024-06-17 00:28:41.979 +03:30 [WRN] Overriding address(es) 'http://*:5168'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-17 00:28:42.093 +03:30 [INF] Now listening on: http://[::]:5168
+2024-06-17 00:28:42.100 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-17 00:28:42.104 +03:30 [INF] Hosting environment: Development
+2024-06-17 00:28:42.107 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-17 00:28:44.523 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/index.html - null null
+2024-06-17 00:28:46.295 +03:30 [WRN] Unable to contact VS to retrieve Browser Link script tag.
+2024-06-17 00:28:46.425 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/index.html - 200 null text/html;charset=utf-8 1909.7378ms
+2024-06-17 00:28:46.510 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-17 00:28:46.527 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 17.8673ms
+2024-06-17 00:28:46.638 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - null null
+2024-06-17 00:28:46.759 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 120.4639ms
+2024-06-17 00:35:55.765 +03:30 [WRN] Overriding address(es) 'http://*:5168'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-17 00:35:55.849 +03:30 [INF] Now listening on: http://[::]:5168
+2024-06-17 00:35:55.859 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-17 00:35:55.863 +03:30 [INF] Hosting environment: Development
+2024-06-17 00:35:55.866 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-17 00:35:58.122 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/index.html - null null
+2024-06-17 00:36:00.118 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/books - null null
+2024-06-17 00:36:00.156 +03:30 [WRN] Unable to contact VS to retrieve Browser Link script tag.
+2024-06-17 00:36:00.206 +03:30 [INF] CORS policy execution successful.
+2024-06-17 00:36:00.215 +03:30 [WRN] Failed to determine the https port for redirect.
+2024-06-17 00:36:00.221 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-17 00:36:00.247 +03:30 [INF] Route matched with {action = "GetAllBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllBooks() on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-17 00:36:00.308 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/index.html - 200 null text/html;charset=utf-8 2193.7776ms
+2024-06-17 00:36:00.409 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-17 00:36:00.437 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 27.355ms
+2024-06-17 00:36:00.558 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - null null
+2024-06-17 00:36:00.838 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 280.0662ms
+2024-06-17 00:36:01.097 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-17 00:36:04.010 +03:30 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[ISBN], [b].[IsAvailable], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+2024-06-17 00:36:04.195 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3088.0887ms.
+2024-06-17 00:36:04.214 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[OnlineLibrary.Domain.Entities.Book, OnlineLibrary.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[OnlineLibrary.Domain.DTOs.BookDto, OnlineLibrary.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-17 00:36:04.244 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) in 3983.8998ms
+2024-06-17 00:36:04.254 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-17 00:36:04.261 +03:30 [INF] HTTP GET /api/books responded 200 in 4045.9622 ms
+2024-06-17 00:36:04.281 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/api/books - 200 null application/json; charset=utf-8 4162.7789ms
+2024-06-17 00:36:23.379 +03:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5168/api/Users/register - null null
+2024-06-17 00:36:23.393 +03:30 [INF] CORS policy execution successful.
+2024-06-17 00:36:23.398 +03:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5168/api/Users/register - 204 null null 18.6184ms
+2024-06-17 00:36:23.410 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost:5168/api/Users/register - application/json; charset=utf-8 59
+2024-06-17 00:36:23.417 +03:30 [INF] CORS policy execution successful.
+2024-06-17 00:36:23.423 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.UsersController.Register (OnlineLibrary.API)'
+2024-06-17 00:36:23.436 +03:30 [INF] Route matched with {action = "Register", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(OnlineLibrary.Domain.DTOs.CreateUserDto) on controller OnlineLibrary.API.Controllers.UsersController (OnlineLibrary.API).
+2024-06-17 00:36:23.507 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.UsersController.Register (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-17 00:36:23.791 +03:30 [INF] Executed DbCommand (94ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [Password], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2024-06-17 00:36:23.832 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.UsersController.Register (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 318.0261ms.
+2024-06-17 00:36:23.839 +03:30 [INF] Executing OkObjectResult, writing value of type 'OnlineLibrary.Domain.DTOs.UserDto'.
+2024-06-17 00:36:23.847 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.UsersController.Register (OnlineLibrary.API) in 400.9267ms
+2024-06-17 00:36:23.851 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.UsersController.Register (OnlineLibrary.API)'
+2024-06-17 00:36:23.854 +03:30 [INF] HTTP POST /api/Users/register responded 200 in 430.8983 ms
+2024-06-17 00:36:23.860 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost:5168/api/Users/register - 200 null application/json; charset=utf-8 450.3164ms
+2024-06-17 00:36:30.825 +03:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - null null
+2024-06-17 00:36:30.836 +03:30 [INF] CORS policy execution successful.
+2024-06-17 00:36:30.839 +03:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - 204 null null 13.7739ms
+2024-06-17 00:36:30.854 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost:5168/api/Users/login - application/json; charset=utf-8 38
+2024-06-17 00:36:30.864 +03:30 [INF] CORS policy execution successful.
+2024-06-17 00:36:30.866 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-17 00:36:30.877 +03:30 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OnlineLibrary.Domain.DTOs.UserLoginDto) on controller OnlineLibrary.API.Controllers.UsersController (OnlineLibrary.API).
+2024-06-17 00:36:30.915 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-17 00:36:33.133 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+2024-06-17 00:36:33.144 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2223.4299ms.
+2024-06-17 00:36:33.152 +03:30 [INF] Executing OkObjectResult, writing value of type 'OnlineLibrary.Domain.DTOs.UserDto'.
+2024-06-17 00:36:33.157 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) in 2272.4678ms
+2024-06-17 00:36:33.162 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-17 00:36:33.165 +03:30 [INF] HTTP POST /api/Users/login responded 200 in 2299.2102 ms
+2024-06-17 00:36:33.172 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost:5168/api/Users/login - 200 null application/json; charset=utf-8 2317.9457ms
+2024-06-17 00:38:01.276 +03:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - null null
+2024-06-17 00:38:01.285 +03:30 [INF] CORS policy execution successful.
+2024-06-17 00:38:01.289 +03:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - 204 null null 12.439ms
+2024-06-17 00:38:01.298 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost:5168/api/Users/login - application/json; charset=utf-8 38
+2024-06-17 00:38:01.307 +03:30 [INF] CORS policy execution successful.
+2024-06-17 00:38:01.311 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-17 00:38:01.314 +03:30 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OnlineLibrary.Domain.DTOs.UserLoginDto) on controller OnlineLibrary.API.Controllers.UsersController (OnlineLibrary.API).
+2024-06-17 00:38:01.357 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-17 00:38:03.460 +03:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+2024-06-17 00:38:03.470 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2109.4142ms.
+2024-06-17 00:38:03.476 +03:30 [INF] Executing OkObjectResult, writing value of type 'OnlineLibrary.Domain.DTOs.UserDto'.
+2024-06-17 00:38:03.482 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) in 2159.8105ms
+2024-06-17 00:38:03.487 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-17 00:38:03.491 +03:30 [INF] HTTP POST /api/Users/login responded 200 in 2179.9791 ms
+2024-06-17 00:38:03.498 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost:5168/api/Users/login - 200 null application/json; charset=utf-8 2200.3643ms
+2024-06-17 00:51:18.702 +03:30 [WRN] Overriding address(es) 'http://*:5168'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-17 00:51:18.766 +03:30 [INF] Now listening on: http://[::]:5168
+2024-06-17 00:51:18.771 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-17 00:51:18.773 +03:30 [INF] Hosting environment: Development
+2024-06-17 00:51:18.776 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-17 00:51:21.049 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/index.html - null null
+2024-06-17 00:51:23.264 +03:30 [WRN] Unable to contact VS to retrieve Browser Link script tag.
+2024-06-17 00:51:23.484 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/index.html - 200 null text/html;charset=utf-8 2443.6718ms
+2024-06-17 00:51:23.594 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-17 00:51:23.610 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 15.8879ms
+2024-06-17 00:51:23.733 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - null null
+2024-06-17 00:51:23.897 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 164.0335ms
+2024-06-17 00:51:42.082 +03:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - null null
+2024-06-17 00:51:42.101 +03:30 [INF] CORS policy execution successful.
+2024-06-17 00:51:42.108 +03:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - 204 null null 26.1926ms
+2024-06-17 00:51:42.120 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost:5168/api/Users/login - application/json; charset=utf-8 38
+2024-06-17 00:51:42.128 +03:30 [INF] CORS policy execution successful.
+2024-06-17 00:51:42.132 +03:30 [WRN] Failed to determine the https port for redirect.
+2024-06-17 00:51:42.142 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-17 00:51:42.175 +03:30 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OnlineLibrary.Domain.DTOs.UserLoginDto) on controller OnlineLibrary.API.Controllers.UsersController (OnlineLibrary.API).
+2024-06-17 00:51:42.521 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-17 00:51:48.020 +03:30 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+2024-06-17 00:51:48.176 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5646.5717ms.
+2024-06-17 00:51:48.193 +03:30 [INF] Executing OkObjectResult, writing value of type 'OnlineLibrary.Domain.DTOs.UserDto'.
+2024-06-17 00:51:48.207 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) in 6018.4285ms
+2024-06-17 00:51:48.215 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-17 00:51:48.223 +03:30 [INF] HTTP POST /api/Users/login responded 200 in 6089.5226 ms
+2024-06-17 00:51:48.248 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost:5168/api/Users/login - 200 null application/json; charset=utf-8 6127.796ms
+2024-06-17 01:11:47.362 +03:30 [WRN] Overriding address(es) 'http://*:5168'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-17 01:11:47.437 +03:30 [INF] Now listening on: http://[::]:5168
+2024-06-17 01:11:47.442 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-17 01:11:47.445 +03:30 [INF] Hosting environment: Development
+2024-06-17 01:11:47.447 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-17 01:11:48.990 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/index.html - null null
+2024-06-17 01:11:50.225 +03:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - null null
+2024-06-17 01:11:50.272 +03:30 [INF] CORS policy execution successful.
+2024-06-17 01:11:50.295 +03:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - 204 null null 69.3929ms
+2024-06-17 01:11:50.312 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost:5168/api/Users/login - application/json; charset=utf-8 38
+2024-06-17 01:11:50.321 +03:30 [INF] CORS policy execution successful.
+2024-06-17 01:11:50.328 +03:30 [WRN] Failed to determine the https port for redirect.
+2024-06-17 01:11:50.337 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-17 01:11:50.366 +03:30 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OnlineLibrary.Domain.DTOs.UserLoginDto) on controller OnlineLibrary.API.Controllers.UsersController (OnlineLibrary.API).
+2024-06-17 01:11:50.914 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-17 01:11:54.770 +03:30 [INF] Executed DbCommand (40ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+2024-06-17 01:11:55.396 +03:30 [WRN] Unable to contact VS to retrieve Browser Link script tag.
+2024-06-17 01:11:55.498 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/index.html - 200 null text/html;charset=utf-8 6522.6024ms
+2024-06-17 01:11:55.564 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4634.8959ms.
+2024-06-17 01:11:55.578 +03:30 [INF] Executing OkObjectResult, writing value of type 'OnlineLibrary.Domain.DTOs.UserDto'.
+2024-06-17 01:11:55.599 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-17 01:11:55.600 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) in 5218.1029ms
+2024-06-17 01:11:55.622 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 27.1402ms
+2024-06-17 01:11:55.622 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-17 01:11:55.648 +03:30 [INF] HTTP POST /api/Users/login responded 200 in 5319.2240 ms
+2024-06-17 01:11:55.665 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost:5168/api/Users/login - 200 null application/json; charset=utf-8 5353.7042ms
+2024-06-17 01:11:55.728 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - null null
+2024-06-17 01:11:55.828 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 99.6797ms
+2024-06-17 01:12:25.839 +03:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - null null
+2024-06-17 01:12:25.849 +03:30 [INF] CORS policy execution successful.
+2024-06-17 01:12:25.857 +03:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - 204 null null 18.0669ms
+2024-06-17 01:12:25.865 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost:5168/api/Users/login - application/json; charset=utf-8 38
+2024-06-17 01:12:25.873 +03:30 [INF] CORS policy execution successful.
+2024-06-17 01:12:25.875 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-17 01:12:25.879 +03:30 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OnlineLibrary.Domain.DTOs.UserLoginDto) on controller OnlineLibrary.API.Controllers.UsersController (OnlineLibrary.API).
+2024-06-17 01:12:26.049 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-17 01:12:31.369 +03:30 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+2024-06-17 01:12:31.377 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5321.3304ms.
+2024-06-17 01:12:31.383 +03:30 [INF] Executing OkObjectResult, writing value of type 'OnlineLibrary.Domain.DTOs.UserDto'.
+2024-06-17 01:12:31.389 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) in 5452.4536ms
+2024-06-17 01:12:31.394 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-17 01:12:31.399 +03:30 [INF] HTTP POST /api/Users/login responded 200 in 5523.8298 ms
+2024-06-17 01:12:31.407 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost:5168/api/Users/login - 200 null application/json; charset=utf-8 5541.5342ms
+2024-06-17 18:25:25.335 +03:30 [WRN] Overriding address(es) 'http://*:5168'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-17 18:25:25.425 +03:30 [INF] Now listening on: http://[::]:5168
+2024-06-17 18:25:25.429 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-17 18:25:25.432 +03:30 [INF] Hosting environment: Development
+2024-06-17 18:25:25.435 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-17 18:25:29.485 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/index.html - null null
+2024-06-17 18:25:35.902 +03:30 [WRN] Unable to contact VS to retrieve Browser Link script tag.
+2024-06-17 18:25:36.038 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/index.html - 200 null text/html;charset=utf-8 6565.7314ms
+2024-06-17 18:25:36.146 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-17 18:25:36.162 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 16.1387ms
+2024-06-17 18:25:36.306 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - null null
+2024-06-17 18:25:36.470 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 163.9378ms
+2024-06-17 18:28:38.658 +03:30 [WRN] Overriding address(es) 'http://*:5168'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-17 18:28:38.837 +03:30 [INF] Now listening on: http://[::]:5168
+2024-06-17 18:28:38.872 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-17 18:28:38.876 +03:30 [INF] Hosting environment: Development
+2024-06-17 18:28:38.883 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-17 18:28:40.915 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/index.html - null null
+2024-06-17 18:28:42.976 +03:30 [WRN] Unable to contact VS to retrieve Browser Link script tag.
+2024-06-17 18:28:43.234 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/index.html - 200 null text/html;charset=utf-8 2329.5ms
+2024-06-17 18:28:43.256 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-17 18:28:43.271 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 15.0306ms
+2024-06-17 18:28:43.524 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - null null
+2024-06-17 18:28:43.674 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 150.3309ms
+2024-06-17 18:56:59.646 +03:30 [WRN] Overriding address(es) 'http://*:5168'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-17 18:56:59.819 +03:30 [INF] Now listening on: http://[::]:5168
+2024-06-17 18:56:59.827 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-17 18:56:59.829 +03:30 [INF] Hosting environment: Development
+2024-06-17 18:56:59.833 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-17 18:57:02.116 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/index.html - null null
+2024-06-17 18:57:03.954 +03:30 [WRN] Unable to contact VS to retrieve Browser Link script tag.
+2024-06-17 18:57:04.082 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/index.html - 200 null text/html;charset=utf-8 1978.2051ms
+2024-06-17 18:57:04.102 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-17 18:57:04.117 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 14.4201ms
+2024-06-17 18:57:04.383 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - null null
+2024-06-17 18:57:04.637 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 253.8618ms
+2024-06-17 18:57:06.313 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/books - null null
+2024-06-17 18:57:06.330 +03:30 [INF] CORS policy execution successful.
+2024-06-17 18:57:06.340 +03:30 [WRN] Failed to determine the https port for redirect.
+2024-06-17 18:57:06.356 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-17 18:57:06.393 +03:30 [INF] Route matched with {action = "GetAllBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllBooks() on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-17 18:57:06.779 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-17 18:57:16.047 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/loans/alluserloans/{user.id} - null null
+2024-06-17 18:57:16.057 +03:30 [INF] CORS policy execution successful.
+2024-06-17 18:57:16.060 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.LoansController.GetLoansByUserId (OnlineLibrary.API)'
+2024-06-17 18:57:16.074 +03:30 [INF] Route matched with {action = "GetLoansByUserId", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLoansByUserId(Int32) on controller OnlineLibrary.API.Controllers.LoansController (OnlineLibrary.API).
+2024-06-17 18:57:16.267 +03:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-06-17 18:57:16.298 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.LoansController.GetLoansByUserId (OnlineLibrary.API) in 207.6686ms
+2024-06-17 18:57:16.307 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.LoansController.GetLoansByUserId (OnlineLibrary.API)'
+2024-06-17 18:57:16.311 +03:30 [INF] HTTP GET /api/loans/alluserloans/{user.id} responded 400 in 249.5999 ms
+2024-06-17 18:57:16.319 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/api/loans/alluserloans/{user.id} - 400 null application/problem+json; charset=utf-8 272.5489ms
+2024-06-17 18:57:33.250 +03:30 [ERR] An error occurred using the connection to database 'OnlineLibrary' on server '.'.
+2024-06-17 18:57:33.553 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'OnlineLibrary.Infrastructure.Data.LibraryDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+2024-06-17 18:57:34.690 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) in 28290.0768ms
+2024-06-17 18:57:34.916 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-17 18:57:35.106 +03:30 [ERR] HTTP GET /api/books responded 500 in 28768.2098 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineLibrary.Infrastructure.Repositories.BookRepository.ListAllAsync() in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Infrastructure\Repositories\BookRepository .cs:line 50
+   at OnlineLibrary.Application.Services.BookService.ListAllBooksAsync() in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Application\Services\BookService.cs:line 116
+   at OnlineLibrary.API.Controllers.BooksController.GetAllBooks() in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\Controllers\BooksController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+2024-06-17 18:57:35.799 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineLibrary.Infrastructure.Repositories.BookRepository.ListAllAsync() in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Infrastructure\Repositories\BookRepository .cs:line 50
+   at OnlineLibrary.Application.Services.BookService.ListAllBooksAsync() in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Application\Services\BookService.cs:line 116
+   at OnlineLibrary.API.Controllers.BooksController.GetAllBooks() in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\Controllers\BooksController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+2024-06-17 18:57:35.903 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/books - null null
+2024-06-17 18:57:35.908 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/api/books - 500 null text/plain; charset=utf-8 29594.8154ms
+2024-06-17 18:57:35.919 +03:30 [INF] CORS policy execution successful.
+2024-06-17 18:57:35.927 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-17 18:57:35.930 +03:30 [INF] Route matched with {action = "GetAllBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllBooks() on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-17 18:57:35.970 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-17 18:57:36.228 +03:30 [ERR] An error occurred using the connection to database 'OnlineLibrary' on server '.'.
+2024-06-17 18:57:36.612 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'OnlineLibrary.Infrastructure.Data.LibraryDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+2024-06-17 18:57:37.363 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) in 1427.675ms
+2024-06-17 18:57:37.464 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-17 18:57:37.533 +03:30 [ERR] HTTP GET /api/books responded 500 in 1606.3140 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineLibrary.Infrastructure.Repositories.BookRepository.ListAllAsync() in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Infrastructure\Repositories\BookRepository .cs:line 50
+   at OnlineLibrary.Application.Services.BookService.ListAllBooksAsync() in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Application\Services\BookService.cs:line 116
+   at OnlineLibrary.API.Controllers.BooksController.GetAllBooks() in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\Controllers\BooksController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+2024-06-17 18:57:37.780 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineLibrary.Infrastructure.Repositories.BookRepository.ListAllAsync() in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Infrastructure\Repositories\BookRepository .cs:line 50
+   at OnlineLibrary.Application.Services.BookService.ListAllBooksAsync() in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Application\Services\BookService.cs:line 116
+   at OnlineLibrary.API.Controllers.BooksController.GetAllBooks() in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\Controllers\BooksController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+2024-06-17 18:57:37.856 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/api/books - 500 null text/plain; charset=utf-8 1953.5512ms
+2024-06-17 19:01:21.461 +03:30 [WRN] Overriding address(es) 'http://*:5168'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-17 19:01:21.539 +03:30 [INF] Now listening on: http://[::]:5168
+2024-06-17 19:01:21.547 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-17 19:01:21.549 +03:30 [INF] Hosting environment: Development
+2024-06-17 19:01:21.553 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-17 19:01:23.440 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/index.html - null null
+2024-06-17 19:01:26.180 +03:30 [WRN] Unable to contact VS to retrieve Browser Link script tag.
+2024-06-17 19:01:26.341 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/index.html - 200 null text/html;charset=utf-8 2911.4528ms
+2024-06-17 19:01:26.429 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-17 19:01:26.465 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 36.5603ms
+2024-06-17 19:01:26.604 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - null null
+2024-06-17 19:01:26.734 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 129.5785ms
+2024-06-17 19:01:46.330 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost:5168/api/Books - application/json 135
+2024-06-17 19:01:46.349 +03:30 [INF] CORS policy execution failed.
+2024-06-17 19:01:46.355 +03:30 [INF] Request origin http://localhost:5168 does not have permission to access the resource.
+2024-06-17 19:01:46.361 +03:30 [WRN] Failed to determine the https port for redirect.
+2024-06-17 19:01:46.371 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API)'
+2024-06-17 19:01:46.405 +03:30 [INF] Route matched with {action = "AddBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddBook(OnlineLibrary.Domain.DTOs.CreateBookDto) on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-17 19:01:47.250 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-17 19:02:03.607 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/Books - null null
+2024-06-17 19:02:03.620 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-17 19:02:03.627 +03:30 [INF] Route matched with {action = "GetAllBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllBooks() on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-17 19:02:03.673 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-17 19:02:24.421 +03:30 [ERR] An error occurred using the connection to database 'OnlineLibrary' on server '.'.
+2024-06-17 19:02:24.421 +03:30 [ERR] An error occurred using the connection to database 'OnlineLibrary' on server '.'.
+2024-06-17 19:02:25.164 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'OnlineLibrary.Infrastructure.Data.LibraryDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+2024-06-17 19:02:25.164 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'OnlineLibrary.Infrastructure.Data.LibraryDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+2024-06-17 19:02:26.898 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API) in 40171.8869ms
+2024-06-17 19:02:27.860 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) in 24167.3557ms
+2024-06-17 19:02:28.003 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.AddBook (OnlineLibrary.API)'
+2024-06-17 19:02:28.243 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-17 19:02:28.444 +03:30 [ERR] HTTP POST /api/Books responded 500 in 42081.1976 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at OnlineLibrary.Infrastructure.Repositories.BookRepository.GetBookByISBNAsync(String isbn) in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Infrastructure\Repositories\BookRepository .cs:line 40
+   at OnlineLibrary.Application.Services.BookService.AddBookAsync(CreateBookDto bookDto) in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Application\Services\BookService.cs:line 48
+   at OnlineLibrary.API.Controllers.BooksController.AddBook(CreateBookDto bookDto) in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\Controllers\BooksController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+2024-06-17 19:02:28.642 +03:30 [ERR] HTTP GET /api/Books responded 500 in 25021.3669 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineLibrary.Infrastructure.Repositories.BookRepository.ListAllAsync() in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Infrastructure\Repositories\BookRepository .cs:line 50
+   at OnlineLibrary.Application.Services.BookService.ListAllBooksAsync() in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Application\Services\BookService.cs:line 116
+   at OnlineLibrary.API.Controllers.BooksController.GetAllBooks() in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\Controllers\BooksController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+2024-06-17 19:02:29.699 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at OnlineLibrary.Infrastructure.Repositories.BookRepository.GetBookByISBNAsync(String isbn) in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Infrastructure\Repositories\BookRepository .cs:line 40
+   at OnlineLibrary.Application.Services.BookService.AddBookAsync(CreateBookDto bookDto) in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Application\Services\BookService.cs:line 48
+   at OnlineLibrary.API.Controllers.BooksController.AddBook(CreateBookDto bookDto) in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\Controllers\BooksController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+2024-06-17 19:02:30.542 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineLibrary.Infrastructure.Repositories.BookRepository.ListAllAsync() in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Infrastructure\Repositories\BookRepository .cs:line 50
+   at OnlineLibrary.Application.Services.BookService.ListAllBooksAsync() in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.Application\Services\BookService.cs:line 116
+   at OnlineLibrary.API.Controllers.BooksController.GetAllBooks() in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\Controllers\BooksController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+2024-06-17 19:02:30.707 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost:5168/api/Books - 500 null text/plain; charset=utf-8 44377.0905ms
+2024-06-17 19:02:30.735 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/api/Books - 500 null text/plain; charset=utf-8 27127.9171ms
+2024-06-17 19:17:28.032 +03:30 [WRN] Overriding address(es) 'http://*:5168'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-17 19:17:28.161 +03:30 [INF] Now listening on: http://[::]:5168
+2024-06-17 19:17:28.166 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-17 19:17:28.169 +03:30 [INF] Hosting environment: Development
+2024-06-17 19:17:28.174 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-17 19:17:30.188 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/index.html - null null
+2024-06-17 19:17:34.095 +03:30 [WRN] Unable to contact VS to retrieve Browser Link script tag.
+2024-06-17 19:17:34.222 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/index.html - 200 null text/html;charset=utf-8 4044.0773ms
+2024-06-17 19:17:34.242 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-17 19:17:34.258 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 16.0536ms
+2024-06-17 19:17:34.440 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - null null
+2024-06-17 19:17:34.567 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 126.3035ms
+2024-06-17 19:17:57.471 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/Books - null null
+2024-06-17 19:17:57.494 +03:30 [WRN] Failed to determine the https port for redirect.
+2024-06-17 19:17:57.501 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-17 19:17:57.531 +03:30 [INF] Route matched with {action = "GetAllBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllBooks() on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-17 19:17:57.886 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-17 19:17:59.432 +03:30 [INF] Executed DbCommand (67ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[ISBN], [b].[IsAvailable], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+2024-06-17 19:17:59.629 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1717.8186ms.
+2024-06-17 19:17:59.647 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[OnlineLibrary.Domain.Entities.Book, OnlineLibrary.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[OnlineLibrary.Domain.DTOs.BookDto, OnlineLibrary.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-17 19:17:59.670 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) in 2121.5505ms
+2024-06-17 19:17:59.680 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-17 19:17:59.685 +03:30 [INF] HTTP GET /api/Books responded 200 in 2191.0804 ms
+2024-06-17 19:17:59.700 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/api/Books - 200 null application/json; charset=utf-8 2228.4004ms
+2024-06-17 19:18:03.711 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/Books - null null
+2024-06-17 19:18:03.724 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-17 19:18:03.731 +03:30 [INF] Route matched with {action = "GetAllBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllBooks() on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-17 19:18:03.790 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-17 19:18:03.834 +03:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[ISBN], [b].[IsAvailable], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+2024-06-17 19:18:03.844 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 48.966ms.
+2024-06-17 19:18:03.851 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[OnlineLibrary.Domain.Entities.Book, OnlineLibrary.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[OnlineLibrary.Domain.DTOs.BookDto, OnlineLibrary.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-17 19:18:03.856 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) in 108.7572ms
+2024-06-17 19:18:03.864 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-17 19:18:03.867 +03:30 [INF] HTTP GET /api/Books responded 200 in 143.7395 ms
+2024-06-17 19:18:03.873 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/api/Books - 200 null application/json; charset=utf-8 161.865ms
+2024-06-17 19:18:11.781 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/books - null null
+2024-06-17 19:18:11.793 +03:30 [INF] CORS policy execution successful.
+2024-06-17 19:18:11.796 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-17 19:18:11.800 +03:30 [INF] Route matched with {action = "GetAllBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllBooks() on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-17 19:18:11.847 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-17 19:18:11.927 +03:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[ISBN], [b].[IsAvailable], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+2024-06-17 19:18:11.938 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 83.2855ms.
+2024-06-17 19:18:11.943 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[OnlineLibrary.Domain.Entities.Book, OnlineLibrary.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[OnlineLibrary.Domain.DTOs.BookDto, OnlineLibrary.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-17 19:18:11.953 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) in 144.1282ms
+2024-06-17 19:18:11.962 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-17 19:18:11.967 +03:30 [INF] HTTP GET /api/books responded 200 in 170.8884 ms
+2024-06-17 19:18:11.974 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/api/books - 200 null application/json; charset=utf-8 192.8163ms
+2024-06-17 19:18:15.012 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/loans/alluserloans/{user.id} - null null
+2024-06-17 19:18:15.023 +03:30 [INF] CORS policy execution successful.
+2024-06-17 19:18:15.025 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.LoansController.GetLoansByUserId (OnlineLibrary.API)'
+2024-06-17 19:18:15.040 +03:30 [INF] Route matched with {action = "GetLoansByUserId", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLoansByUserId(Int32) on controller OnlineLibrary.API.Controllers.LoansController (OnlineLibrary.API).
+2024-06-17 19:18:15.224 +03:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-06-17 19:18:15.246 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.LoansController.GetLoansByUserId (OnlineLibrary.API) in 193.1424ms
+2024-06-17 19:18:15.252 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.LoansController.GetLoansByUserId (OnlineLibrary.API)'
+2024-06-17 19:18:15.256 +03:30 [INF] HTTP GET /api/loans/alluserloans/{user.id} responded 400 in 231.0289 ms
+2024-06-17 19:18:15.265 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/api/loans/alluserloans/{user.id} - 400 null application/problem+json; charset=utf-8 254.2743ms
+2024-06-17 19:18:34.426 +03:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5168/api/Users/register - null null
+2024-06-17 19:18:34.439 +03:30 [INF] CORS policy execution successful.
+2024-06-17 19:18:34.442 +03:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5168/api/Users/register - 204 null null 16.1176ms
+2024-06-17 19:18:34.452 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost:5168/api/Users/register - application/json; charset=utf-8 60
+2024-06-17 19:18:34.459 +03:30 [INF] CORS policy execution successful.
+2024-06-17 19:18:34.461 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.UsersController.Register (OnlineLibrary.API)'
+2024-06-17 19:18:34.469 +03:30 [INF] Route matched with {action = "Register", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(OnlineLibrary.Domain.DTOs.CreateUserDto) on controller OnlineLibrary.API.Controllers.UsersController (OnlineLibrary.API).
+2024-06-17 19:18:34.525 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.UsersController.Register (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-17 19:18:34.775 +03:30 [INF] Executed DbCommand (54ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [Password], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2024-06-17 19:18:34.816 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.UsersController.Register (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 283.1741ms.
+2024-06-17 19:18:34.822 +03:30 [INF] Executing OkObjectResult, writing value of type 'OnlineLibrary.Domain.DTOs.UserDto'.
+2024-06-17 19:18:34.829 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.UsersController.Register (OnlineLibrary.API) in 345.9096ms
+2024-06-17 19:18:34.835 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.UsersController.Register (OnlineLibrary.API)'
+2024-06-17 19:18:34.838 +03:30 [INF] HTTP POST /api/Users/register responded 200 in 376.5180 ms
+2024-06-17 19:18:34.845 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost:5168/api/Users/register - 200 null application/json; charset=utf-8 393.622ms
+2024-06-17 19:18:38.021 +03:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - null null
+2024-06-17 19:18:38.032 +03:30 [INF] CORS policy execution successful.
+2024-06-17 19:18:38.035 +03:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - 204 null null 14.2508ms
+2024-06-17 19:18:38.045 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost:5168/api/Users/login - application/json; charset=utf-8 38
+2024-06-17 19:18:38.057 +03:30 [INF] CORS policy execution successful.
+2024-06-17 19:18:38.060 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-17 19:18:38.066 +03:30 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OnlineLibrary.Domain.DTOs.UserLoginDto) on controller OnlineLibrary.API.Controllers.UsersController (OnlineLibrary.API).
+2024-06-17 19:18:38.107 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-17 19:18:40.220 +03:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+2024-06-17 19:18:40.230 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2115.7681ms.
+2024-06-17 19:18:40.238 +03:30 [INF] Executing OkObjectResult, writing value of type 'OnlineLibrary.Domain.DTOs.UserDto'.
+2024-06-17 19:18:40.242 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) in 2161.9323ms
+2024-06-17 19:18:40.248 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-17 19:18:40.252 +03:30 [INF] HTTP POST /api/Users/login responded 200 in 2192.4857 ms
+2024-06-17 19:18:40.262 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost:5168/api/Users/login - 200 null application/json; charset=utf-8 2217.0703ms
+2024-06-17 19:18:42.794 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/loans/alluserloans/{user.id} - null null
+2024-06-17 19:18:42.807 +03:30 [INF] CORS policy execution successful.
+2024-06-17 19:18:42.822 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.LoansController.GetLoansByUserId (OnlineLibrary.API)'
+2024-06-17 19:18:42.828 +03:30 [INF] Route matched with {action = "GetLoansByUserId", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLoansByUserId(Int32) on controller OnlineLibrary.API.Controllers.LoansController (OnlineLibrary.API).
+2024-06-17 19:18:42.949 +03:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-06-17 19:18:42.957 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.LoansController.GetLoansByUserId (OnlineLibrary.API) in 121.2762ms
+2024-06-17 19:18:42.969 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.LoansController.GetLoansByUserId (OnlineLibrary.API)'
+2024-06-17 19:18:42.986 +03:30 [INF] HTTP GET /api/loans/alluserloans/{user.id} responded 400 in 164.2536 ms
+2024-06-17 19:18:42.995 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/api/loans/alluserloans/{user.id} - 400 null application/problem+json; charset=utf-8 201.3512ms
+2024-06-17 19:19:20.372 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/loans/alluserloans/{user.id} - null null
+2024-06-17 19:19:20.388 +03:30 [INF] CORS policy execution successful.
+2024-06-17 19:19:20.398 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.LoansController.GetLoansByUserId (OnlineLibrary.API)'
+2024-06-17 19:19:20.409 +03:30 [INF] Route matched with {action = "GetLoansByUserId", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLoansByUserId(Int32) on controller OnlineLibrary.API.Controllers.LoansController (OnlineLibrary.API).
+2024-06-17 19:19:20.554 +03:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-06-17 19:19:20.563 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.LoansController.GetLoansByUserId (OnlineLibrary.API) in 139.0531ms
+2024-06-17 19:19:20.568 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.LoansController.GetLoansByUserId (OnlineLibrary.API)'
+2024-06-17 19:19:20.573 +03:30 [INF] HTTP GET /api/loans/alluserloans/{user.id} responded 400 in 174.1601 ms
+2024-06-17 19:19:20.603 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/api/loans/alluserloans/{user.id} - 400 null application/problem+json; charset=utf-8 230.3159ms
+2024-06-17 19:26:14.970 +03:30 [WRN] Overriding address(es) 'http://*:5168'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-17 19:26:15.101 +03:30 [INF] Now listening on: http://[::]:5168
+2024-06-17 19:26:15.107 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-17 19:26:15.110 +03:30 [INF] Hosting environment: Development
+2024-06-17 19:26:15.115 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-17 19:26:17.341 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/index.html - null null
+2024-06-17 19:26:19.502 +03:30 [WRN] Unable to contact VS to retrieve Browser Link script tag.
+2024-06-17 19:26:19.638 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/index.html - 200 null text/html;charset=utf-8 2306.4312ms
+2024-06-17 19:26:19.784 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-17 19:26:19.806 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 23.1359ms
+2024-06-17 19:26:19.947 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - null null
+2024-06-17 19:26:20.145 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 198.2316ms
+2024-06-17 19:26:27.287 +03:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - null null
+2024-06-17 19:26:27.304 +03:30 [INF] CORS policy execution successful.
+2024-06-17 19:26:27.314 +03:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - 204 null null 26.7894ms
+2024-06-17 19:26:27.325 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost:5168/api/Users/login - application/json; charset=utf-8 38
+2024-06-17 19:26:27.336 +03:30 [INF] CORS policy execution successful.
+2024-06-17 19:26:27.342 +03:30 [WRN] Failed to determine the https port for redirect.
+2024-06-17 19:26:27.351 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-17 19:26:27.388 +03:30 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OnlineLibrary.Domain.DTOs.UserLoginDto) on controller OnlineLibrary.API.Controllers.UsersController (OnlineLibrary.API).
+2024-06-17 19:26:27.767 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-17 19:26:41.874 +03:30 [INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+2024-06-17 19:27:10.152 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 42373.3079ms.
+2024-06-17 19:27:10.169 +03:30 [INF] Executing OkObjectResult, writing value of type 'OnlineLibrary.Domain.DTOs.UserDto'.
+2024-06-17 19:27:10.184 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) in 42782.4947ms
+2024-06-17 19:27:10.189 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-17 19:27:10.197 +03:30 [INF] HTTP POST /api/Users/login responded 200 in 42854.4248 ms
+2024-06-17 19:27:10.213 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost:5168/api/Users/login - 200 null application/json; charset=utf-8 42887.3095ms
+2024-06-17 19:27:14.516 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/loans/alluserloans/1 - null null
+2024-06-17 19:27:14.532 +03:30 [INF] CORS policy execution successful.
+2024-06-17 19:27:14.535 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.LoansController.GetLoansByUserId (OnlineLibrary.API)'
+2024-06-17 19:27:14.550 +03:30 [INF] Route matched with {action = "GetLoansByUserId", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLoansByUserId(Int32) on controller OnlineLibrary.API.Controllers.LoansController (OnlineLibrary.API).
+2024-06-17 19:27:14.602 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.LoansController.GetLoansByUserId (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-17 19:29:18.628 +03:30 [INF] Executed DbCommand (48ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[BookId], [l].[BorrowedDate], [l].[ReturnedDate], [l].[UserId]
+FROM [Loans] AS [l]
+WHERE [l].[UserId] = @__userId_0
+2024-06-17 19:29:18.668 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.LoansController.GetLoansByUserId (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 124056.7556ms.
+2024-06-17 19:29:18.676 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[OnlineLibrary.Domain.Entities.Loan, OnlineLibrary.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[OnlineLibrary.Domain.DTOs.LoanDto, OnlineLibrary.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-17 19:29:19.154 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.LoansController.GetLoansByUserId (OnlineLibrary.API) in 124589.9467ms
+2024-06-17 19:29:19.160 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.LoansController.GetLoansByUserId (OnlineLibrary.API)'
+2024-06-17 19:29:19.162 +03:30 [INF] HTTP GET /api/loans/alluserloans/1 responded 200 in 124627.4859 ms
+2024-06-17 19:29:19.167 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/api/loans/alluserloans/1 - 499 null application/json; charset=utf-8 124651.4899ms
+2024-06-17 19:37:57.452 +03:30 [WRN] Overriding address(es) 'http://*:5168'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-17 19:37:57.821 +03:30 [INF] Now listening on: http://[::]:5168
+2024-06-17 19:37:57.829 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-17 19:37:57.834 +03:30 [INF] Hosting environment: Development
+2024-06-17 19:37:57.846 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-17 19:38:00.461 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/index.html - null null
+2024-06-17 19:38:02.308 +03:30 [WRN] Unable to contact VS to retrieve Browser Link script tag.
+2024-06-17 19:38:02.444 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/index.html - 200 null text/html;charset=utf-8 1992.3604ms
+2024-06-17 19:38:02.529 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-17 19:38:02.553 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 23.7977ms
+2024-06-17 19:38:02.654 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - null null
+2024-06-17 19:38:02.784 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 129.2907ms
+2024-06-17 19:38:14.287 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/Books - null null
+2024-06-17 19:38:14.306 +03:30 [WRN] Failed to determine the https port for redirect.
+2024-06-17 19:38:14.314 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-17 19:38:14.341 +03:30 [INF] Route matched with {action = "GetAllBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllBooks() on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-17 19:38:14.680 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-17 19:38:16.092 +03:30 [INF] Executed DbCommand (42ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[ISBN], [b].[IsAvailable], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+2024-06-17 19:38:16.260 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1568.9809ms.
+2024-06-17 19:38:16.280 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[OnlineLibrary.Domain.Entities.Book, OnlineLibrary.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[OnlineLibrary.Domain.DTOs.BookDto, OnlineLibrary.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-17 19:38:16.307 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) in 1945.2551ms
+2024-06-17 19:38:16.315 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-17 19:38:16.321 +03:30 [INF] HTTP GET /api/Books responded 200 in 2014.9497 ms
+2024-06-17 19:38:16.340 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/api/Books - 200 null application/json; charset=utf-8 2053.2145ms
+2024-06-17 19:38:18.961 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/Users/GetAllUsers - null null
+2024-06-17 19:38:18.983 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.UsersController.GetAllUsersAsync (OnlineLibrary.API)'
+2024-06-17 19:38:18.990 +03:30 [INF] Route matched with {action = "GetAllUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllUsersAsync() on controller OnlineLibrary.API.Controllers.UsersController (OnlineLibrary.API).
+2024-06-17 19:38:19.039 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.UsersController.GetAllUsersAsync (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-17 19:38:19.092 +03:30 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+2024-06-17 19:38:19.121 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.UsersController.GetAllUsersAsync (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 73.8929ms.
+2024-06-17 19:38:19.131 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[OnlineLibrary.Domain.Entities.User, OnlineLibrary.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[OnlineLibrary.Domain.DTOs.UserDto, OnlineLibrary.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-17 19:38:19.138 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.UsersController.GetAllUsersAsync (OnlineLibrary.API) in 139.8606ms
+2024-06-17 19:38:19.146 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.UsersController.GetAllUsersAsync (OnlineLibrary.API)'
+2024-06-17 19:38:19.150 +03:30 [INF] HTTP GET /api/Users/GetAllUsers responded 200 in 167.5606 ms
+2024-06-17 19:38:19.157 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/api/Users/GetAllUsers - 200 null application/json; charset=utf-8 196.3939ms
+2024-06-17 21:54:03.653 +03:30 [WRN] Overriding address(es) 'http://*:5168'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-17 21:54:03.730 +03:30 [INF] Now listening on: http://[::]:5168
+2024-06-17 21:54:03.734 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-17 21:54:03.737 +03:30 [INF] Hosting environment: Development
+2024-06-17 21:54:03.742 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-17 21:54:06.609 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/index.html - null null
+2024-06-17 21:54:10.056 +03:30 [WRN] Unable to contact VS to retrieve Browser Link script tag.
+2024-06-17 21:54:10.233 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/index.html - 200 null text/html;charset=utf-8 3634.8948ms
+2024-06-17 21:54:10.326 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-17 21:54:10.340 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 14.0182ms
+2024-06-17 21:54:10.450 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - null null
+2024-06-17 21:54:10.594 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 144.3024ms
+2024-06-17 21:54:54.783 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/books - null null
+2024-06-17 21:54:54.803 +03:30 [INF] CORS policy execution successful.
+2024-06-17 21:54:54.812 +03:30 [WRN] Failed to determine the https port for redirect.
+2024-06-17 21:54:54.827 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-17 21:54:54.864 +03:30 [INF] Route matched with {action = "GetAllBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllBooks() on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-17 21:54:55.215 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-17 21:54:56.799 +03:30 [INF] Executed DbCommand (42ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[ISBN], [b].[IsAvailable], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+2024-06-17 21:54:56.978 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1748.7784ms.
+2024-06-17 21:54:57.005 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[OnlineLibrary.Domain.Entities.Book, OnlineLibrary.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[OnlineLibrary.Domain.DTOs.BookDto, OnlineLibrary.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-17 21:54:57.034 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) in 2153.6285ms
+2024-06-17 21:54:57.041 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-17 21:54:57.047 +03:30 [INF] HTTP GET /api/books responded 200 in 2234.4401 ms
+2024-06-17 21:54:57.062 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/api/books - 200 null application/json; charset=utf-8 2279.8813ms
+2024-06-17 21:55:01.595 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/userinfo - null null
+2024-06-17 21:55:01.608 +03:30 [INF] CORS policy execution successful.
+2024-06-17 21:55:01.617 +03:30 [INF] HTTP GET /api/userinfo responded 404 in 0.3962 ms
+2024-06-17 21:55:01.625 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/api/userinfo - 404 0 null 30.3814ms
+2024-06-17 21:55:01.636 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5168/api/userinfo, Response status code: 404
+2024-06-17 21:55:19.488 +03:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - null null
+2024-06-17 21:55:19.501 +03:30 [INF] CORS policy execution successful.
+2024-06-17 21:55:19.507 +03:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - 204 null null 18.9257ms
+2024-06-17 21:55:19.542 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost:5168/api/Users/login - application/json; charset=utf-8 38
+2024-06-17 21:55:19.553 +03:30 [INF] CORS policy execution successful.
+2024-06-17 21:55:19.559 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-17 21:55:19.575 +03:30 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OnlineLibrary.Domain.DTOs.UserLoginDto) on controller OnlineLibrary.API.Controllers.UsersController (OnlineLibrary.API).
+2024-06-17 21:55:19.663 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-17 21:55:19.712 +03:30 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+2024-06-17 21:55:19.736 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 67.3993ms.
+2024-06-17 21:55:19.745 +03:30 [INF] Executing OkObjectResult, writing value of type 'OnlineLibrary.Domain.DTOs.UserDto'.
+2024-06-17 21:55:19.752 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) in 167.1502ms
+2024-06-17 21:55:19.758 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-17 21:55:19.761 +03:30 [INF] HTTP POST /api/Users/login responded 200 in 202.5030 ms
+2024-06-17 21:55:19.767 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost:5168/api/Users/login - 200 null application/json; charset=utf-8 224.8232ms
+2024-06-17 21:56:04.567 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/userinfo - null null
+2024-06-17 21:56:04.595 +03:30 [INF] CORS policy execution successful.
+2024-06-17 21:56:04.599 +03:30 [INF] HTTP GET /api/userinfo responded 404 in 0.0395 ms
+2024-06-17 21:56:04.604 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/api/userinfo - 404 0 null 36.9506ms
+2024-06-17 21:56:04.615 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5168/api/userinfo, Response status code: 404
+2024-06-17 21:56:29.247 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/userinfo - null null
+2024-06-17 21:56:29.279 +03:30 [INF] CORS policy execution successful.
+2024-06-17 21:56:29.282 +03:30 [INF] HTTP GET /api/userinfo responded 404 in 0.0364 ms
+2024-06-17 21:56:29.288 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/api/userinfo - 404 0 null 40.8727ms
+2024-06-17 21:56:29.300 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5168/api/userinfo, Response status code: 404
+2024-06-17 21:57:07.653 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/userinfo - null null
+2024-06-17 21:57:07.662 +03:30 [INF] CORS policy execution successful.
+2024-06-17 21:57:07.665 +03:30 [INF] HTTP GET /api/userinfo responded 404 in 0.0579 ms
+2024-06-17 21:57:07.671 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/api/userinfo - 404 0 null 17.95ms
+2024-06-17 21:57:07.681 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5168/api/userinfo, Response status code: 404
+2024-06-17 23:33:50.595 +03:30 [WRN] Overriding address(es) 'http://*:5168'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-17 23:33:50.687 +03:30 [INF] Now listening on: http://[::]:5168
+2024-06-17 23:33:50.692 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-17 23:33:50.696 +03:30 [INF] Hosting environment: Development
+2024-06-17 23:33:50.699 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-17 23:33:54.109 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/index.html - null null
+2024-06-17 23:34:18.756 +03:30 [WRN] Unable to contact VS to retrieve Browser Link script tag.
+2024-06-17 23:34:18.899 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/index.html - 200 null text/html;charset=utf-8 24798.9632ms
+2024-06-17 23:34:18.919 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-17 23:34:18.935 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 15.8555ms
+2024-06-17 23:34:19.121 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - null null
+2024-06-17 23:34:19.236 +03:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - null null
+2024-06-17 23:34:19.253 +03:30 [INF] CORS policy execution successful.
+2024-06-17 23:34:19.258 +03:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - 204 null null 21.9914ms
+2024-06-17 23:34:19.288 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost:5168/api/Users/login - application/json; charset=utf-8 38
+2024-06-17 23:34:19.297 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 176.5584ms
+2024-06-17 23:34:19.300 +03:30 [INF] CORS policy execution successful.
+2024-06-17 23:34:19.321 +03:30 [WRN] Failed to determine the https port for redirect.
+2024-06-17 23:34:19.333 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-17 23:34:19.379 +03:30 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OnlineLibrary.Domain.DTOs.UserLoginDto) on controller OnlineLibrary.API.Controllers.UsersController (OnlineLibrary.API).
+2024-06-17 23:34:19.745 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-17 23:34:21.153 +03:30 [INF] Executed DbCommand (49ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+2024-06-17 23:34:21.313 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1557.5497ms.
+2024-06-17 23:34:21.329 +03:30 [INF] Executing OkObjectResult, writing value of type 'OnlineLibrary.Domain.DTOs.UserDto'.
+2024-06-17 23:34:21.344 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) in 1949.7128ms
+2024-06-17 23:34:21.353 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-17 23:34:21.361 +03:30 [INF] HTTP POST /api/Users/login responded 200 in 2038.5462 ms
+2024-06-17 23:34:21.375 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost:5168/api/Users/login - 200 null application/json; charset=utf-8 2087.366ms
+2024-06-17 23:34:36.855 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/users/userinfo - null null
+2024-06-17 23:34:36.873 +03:30 [INF] CORS policy execution successful.
+2024-06-17 23:34:36.878 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.UsersController.GetUserInfo (OnlineLibrary.API)'
+2024-06-17 23:34:36.889 +03:30 [INF] Route matched with {action = "GetUserInfo", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserInfo() on controller OnlineLibrary.API.Controllers.UsersController (OnlineLibrary.API).
+2024-06-17 23:34:36.932 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.UsersController.GetUserInfo (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-17 23:35:09.279 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.UsersController.GetUserInfo (OnlineLibrary.API) in 32381.8339ms
+2024-06-17 23:35:10.937 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.UsersController.GetUserInfo (OnlineLibrary.API)'
+2024-06-17 23:35:21.619 +03:30 [ERR] HTTP GET /api/users/userinfo responded 500 in 44740.5677 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at OnlineLibrary.API.Controllers.UsersController.GetUserInfo() in C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\Controllers\UsersController.cs:line 69
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-06-17 23:35:45.980 +03:30 [WRN] Overriding address(es) 'http://*:5168'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-17 23:35:46.044 +03:30 [INF] Now listening on: http://[::]:5168
+2024-06-17 23:35:46.048 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-17 23:35:46.050 +03:30 [INF] Hosting environment: Development
+2024-06-17 23:35:46.054 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-17 23:35:48.921 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/index.html - null null
+2024-06-17 23:36:12.312 +03:30 [WRN] Unable to contact VS to retrieve Browser Link script tag.
+2024-06-17 23:36:12.435 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/index.html - 200 null text/html;charset=utf-8 23521.7014ms
+2024-06-17 23:36:12.526 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-17 23:36:12.563 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 37.5924ms
+2024-06-17 23:36:12.676 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - null null
+2024-06-17 23:36:12.799 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 122.6996ms
+2024-06-17 23:37:00.936 +03:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - null null
+2024-06-17 23:37:00.955 +03:30 [INF] CORS policy execution successful.
+2024-06-17 23:37:00.963 +03:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - 204 null null 26.4889ms
+2024-06-17 23:37:00.994 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost:5168/api/Users/login - application/json; charset=utf-8 38
+2024-06-17 23:37:01.006 +03:30 [INF] CORS policy execution successful.
+2024-06-17 23:37:01.016 +03:30 [WRN] Failed to determine the https port for redirect.
+2024-06-17 23:37:01.030 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-17 23:37:01.064 +03:30 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OnlineLibrary.Domain.DTOs.UserLoginDto) on controller OnlineLibrary.API.Controllers.UsersController (OnlineLibrary.API).
+2024-06-17 23:37:01.470 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-17 23:37:03.116 +03:30 [INF] Executed DbCommand (69ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+2024-06-17 23:37:03.289 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1807.7362ms.
+2024-06-17 23:37:03.309 +03:30 [INF] Executing OkObjectResult, writing value of type 'OnlineLibrary.Domain.DTOs.UserDto'.
+2024-06-17 23:37:03.331 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) in 2247.1129ms
+2024-06-17 23:37:03.339 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-17 23:37:03.347 +03:30 [INF] HTTP POST /api/Users/login responded 200 in 2329.2146 ms
+2024-06-17 23:37:03.365 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost:5168/api/Users/login - 200 null application/json; charset=utf-8 2371.9349ms
+2024-06-17 23:37:06.636 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/users/userinfo - null null
+2024-06-17 23:37:06.664 +03:30 [INF] CORS policy execution successful.
+2024-06-17 23:37:06.668 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.UsersController.GetUserInfo (OnlineLibrary.API)'
+2024-06-17 23:37:06.675 +03:30 [INF] Route matched with {action = "GetUserInfo", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserInfo() on controller OnlineLibrary.API.Controllers.UsersController (OnlineLibrary.API).
+2024-06-17 23:37:06.717 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.UsersController.GetUserInfo (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-17 23:37:38.695 +03:30 [WRN] Overriding address(es) 'http://*:5168'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-17 23:37:38.808 +03:30 [INF] Now listening on: http://[::]:5168
+2024-06-17 23:37:38.812 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-17 23:37:38.815 +03:30 [INF] Hosting environment: Development
+2024-06-17 23:37:38.819 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-17 23:37:41.115 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/index.html - null null
+2024-06-17 23:38:22.446 +03:30 [WRN] Unable to contact VS to retrieve Browser Link script tag.
+2024-06-17 23:38:22.591 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/index.html - 200 null text/html;charset=utf-8 41485.9311ms
+2024-06-17 23:38:22.598 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-17 23:38:22.629 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 31.193ms
+2024-06-17 23:38:22.872 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - null null
+2024-06-17 23:38:23.030 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 158.3074ms
+2024-06-17 23:38:25.115 +03:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - null null
+2024-06-17 23:38:25.132 +03:30 [INF] CORS policy execution successful.
+2024-06-17 23:38:25.140 +03:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5168/api/Users/login - 204 null null 25.0676ms
+2024-06-17 23:38:25.158 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost:5168/api/Users/login - application/json; charset=utf-8 38
+2024-06-17 23:38:25.170 +03:30 [INF] CORS policy execution successful.
+2024-06-17 23:38:25.176 +03:30 [WRN] Failed to determine the https port for redirect.
+2024-06-17 23:38:25.184 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-17 23:38:25.218 +03:30 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OnlineLibrary.Domain.DTOs.UserLoginDto) on controller OnlineLibrary.API.Controllers.UsersController (OnlineLibrary.API).
+2024-06-17 23:38:25.591 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-17 23:38:27.170 +03:30 [INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+2024-06-17 23:38:27.416 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1807.9104ms.
+2024-06-17 23:38:27.434 +03:30 [INF] Executing OkObjectResult, writing value of type 'OnlineLibrary.Domain.DTOs.UserDto'.
+2024-06-17 23:38:27.450 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API) in 2217.0807ms
+2024-06-17 23:38:27.456 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.UsersController.Login (OnlineLibrary.API)'
+2024-06-17 23:38:27.467 +03:30 [INF] HTTP POST /api/Users/login responded 200 in 2289.9330 ms
+2024-06-17 23:38:27.484 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost:5168/api/Users/login - 200 null application/json; charset=utf-8 2325.9374ms
+2024-06-17 23:38:29.421 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/users/userinfo - null null
+2024-06-17 23:38:29.433 +03:30 [INF] CORS policy execution successful.
+2024-06-17 23:38:29.441 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.UsersController.GetUserInfo (OnlineLibrary.API)'
+2024-06-17 23:38:29.456 +03:30 [INF] Route matched with {action = "GetUserInfo", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserInfo() on controller OnlineLibrary.API.Controllers.UsersController (OnlineLibrary.API).
+2024-06-17 23:38:29.506 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.UsersController.GetUserInfo (OnlineLibrary.API) - Validation state: "Valid"

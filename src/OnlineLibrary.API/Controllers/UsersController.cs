@@ -5,6 +5,8 @@ using OnlineLibrary.Domain.DTOs;
 using OnlineLibrary.Application.Services;
 using OnlineLibrary.Domain.Interfaces;
 using Ardalis.Result;
+using OnlineLibrary.Application.Interfaces;
+using OnlineLibrary.Application.DTOs;
 
 namespace OnlineLibrary.API.Controllers
 {
@@ -13,10 +15,12 @@ namespace OnlineLibrary.API.Controllers
     public class UsersController : BaseController
     {
         private readonly IUserService _userService;
+        private readonly ICurrentUserService _currentUserService;
 
-        public UsersController(IUserService userService)
+        public UsersController(IUserService userService, ICurrentUserService currentUserService)
         {
             _userService = userService;
+            _currentUserService = currentUserService;
         }
 
         [HttpPost("register")]
@@ -28,9 +32,9 @@ namespace OnlineLibrary.API.Controllers
         }
 
         [HttpPost("login")]
-        public async Task<IActionResult> Login(string username, string password)
+        public async Task<IActionResult> Login(UserLoginDto user)
         {
-            var result = await _userService.AuthenticateUserAsync(username,password);
+            var result = await _userService.AuthenticateUserAsync(user);
             return HandleResult(result);
         }
         
@@ -59,6 +63,35 @@ namespace OnlineLibrary.API.Controllers
         {
             var result = await _userService.GetAllUsersAsync();
             return HandleResult(result);
+        }
+        [HttpGet("userinfo")]
+        public async Task<IActionResult> GetUserInfo()
+        {
+            if (!await _currentUserService.IsUserAuthenticatedAsync())
+            {
+                return Unauthorized("User is not authenticated.");
+            }
+
+            var userId = await _currentUserService.GetUserIdAsync();
+            if (userId == null)
+            {
+                return NotFound("User ID not found.");
+            }
+
+            var user = await _currentUserService.GetUserByIdAsync(int.Parse(userId));
+            if (user == null)
+            {
+                return NotFound("User not found.");
+            }
+
+            var userInfo = new UserInfo
+            {
+                 Id = user.Id,
+                Username = user.Username,
+                isAuthenticated= true
+            };
+
+            return Ok(userInfo);
         }
     }
 }

@@ -1,11 +1,31 @@
 {
   "Version": 1,
-  "Hash": "VcmQBpYBE1lvX6znAyw9cNEWA3M/WcpbX+rkqNE+DIg=",
+  "Hash": "QrUFV5+i7fg18rrZBNiji2yFKLjsR5Li0kMQK05hq30=",
   "Source": "OnlineLibrary.API",
   "BasePath": "_content/OnlineLibrary.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\a_shi\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\8.0.6\\staticwebassets\\AuthenticationService.js",
+      "SourceId": "Microsoft.AspNetCore.Components.WebAssembly.Authentication",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\a_shi\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\8.0.6\\staticwebassets\\",
+      "BasePath": "_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication",
+      "RelativePath": "AuthenticationService.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\a_shi\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\8.0.6\\staticwebassets\\AuthenticationService.js"
+    }
+  ]
 }

@@ -1,18 +1,25 @@
 ﻿@page "/registeruser"
 @inject HttpClient Http
+@inject NavigationManager Navigation
 @code {
     private OnlineLibrary.Blazor.Models.UserRegistrationDto _user = new();
+    private string errorMessage = string.Empty;
+
     private async Task RegisterUser()
     {
         var response = await Http.PostAsJsonAsync("api/Users/register", _user);
         if (response.IsSuccessStatusCode)
         {
-            // handle success, navigate to login page or home page
+            await RedirecttoLogin();
         }
         else
         {
-            // handle error
+            errorMessage = "an error occured";
         }
+    }
+    private async Task RedirecttoLogin()
+    {
+        Navigation.NavigateTo("/login");
     }
 }
 
@@ -34,3 +41,10 @@
     </div>
     <button type="submit">Register</button>
 </EditForm>
+
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="error-message">
+        @errorMessage
+    </div>
+}

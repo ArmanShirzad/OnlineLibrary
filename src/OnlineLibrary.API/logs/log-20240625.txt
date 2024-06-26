@@ -1,0 +1,42 @@
+2024-06-25 23:44:23.428 +03:30 [INF] User profile is available. Using 'C:\Users\a_shi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-25 23:44:23.827 +03:30 [WRN] Overriding address(es) 'http://*:5168'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-25 23:44:23.886 +03:30 [INF] Now listening on: http://[::]:5168
+2024-06-25 23:44:23.907 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-25 23:44:23.937 +03:30 [INF] Hosting environment: Development
+2024-06-25 23:44:23.950 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-25 23:51:05.378 +03:30 [INF] User profile is available. Using 'C:\Users\a_shi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-25 23:51:05.637 +03:30 [WRN] Overriding address(es) 'http://*:5168'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-06-25 23:51:05.659 +03:30 [INF] Now listening on: http://[::]:5168
+2024-06-25 23:51:05.664 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-25 23:51:05.666 +03:30 [INF] Hosting environment: Development
+2024-06-25 23:51:05.670 +03:30 [INF] Content root path: C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API
+2024-06-25 23:51:07.367 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger - null null
+2024-06-25 23:51:45.732 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/books - null null
+2024-06-25 23:51:45.976 +03:30 [INF] CORS policy execution successful.
+2024-06-25 23:51:45.983 +03:30 [WRN] Failed to determine the https port for redirect.
+2024-06-25 23:51:45.993 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-25 23:51:46.029 +03:30 [INF] Route matched with {action = "GetAllBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllBooks() on controller OnlineLibrary.API.Controllers.BooksController (OnlineLibrary.API).
+2024-06-25 23:51:46.486 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-25 23:51:51.619 +03:30 [WRN] Unable to contact VS to retrieve Browser Link script tag.
+2024-06-25 23:51:51.683 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/swagger - 301 0 null 44328.4711ms
+2024-06-25 23:51:51.925 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/swagger/index.html - null null
+2024-06-25 23:51:52.623 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5168/api/users/userinfo - null null
+2024-06-25 23:51:52.672 +03:30 [INF] CORS policy execution successful.
+2024-06-25 23:51:52.676 +03:30 [INF] Executing endpoint 'OnlineLibrary.API.Controllers.UsersController.GetUserInfo (OnlineLibrary.API)'
+2024-06-25 23:51:52.697 +03:30 [INF] Route matched with {action = "GetUserInfo", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserInfo() on controller OnlineLibrary.API.Controllers.UsersController (OnlineLibrary.API).
+2024-06-25 23:51:52.779 +03:30 [INF] Executing action method OnlineLibrary.API.Controllers.UsersController.GetUserInfo (OnlineLibrary.API) - Validation state: "Valid"
+2024-06-25 23:52:07.764 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.UsersController.GetUserInfo (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.UnauthorizedObjectResult in 13553.0035ms.
+2024-06-25 23:52:08.877 +03:30 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2024-06-25 23:52:08.905 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.UsersController.GetUserInfo (OnlineLibrary.API) in 16180.4913ms
+2024-06-25 23:52:08.910 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.UsersController.GetUserInfo (OnlineLibrary.API)'
+2024-06-25 23:52:08.926 +03:30 [INF] HTTP GET /api/users/userinfo responded 401 in 16247.9269 ms
+2024-06-25 23:52:08.936 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/api/users/userinfo - 401 null text/plain; charset=utf-8 16312.6705ms
+2024-06-25 23:52:09.187 +03:30 [INF] Executed DbCommand (257ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[ISBN], [b].[IsAvailable], [b].[PublishedDate], [b].[Title]
+FROM [Books] AS [b]
+2024-06-25 23:52:09.503 +03:30 [INF] Executed action method OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 23002.8615ms.
+2024-06-25 23:52:09.519 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[OnlineLibrary.Domain.Entities.Book, OnlineLibrary.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[OnlineLibrary.Domain.DTOs.BookDto, OnlineLibrary.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-25 23:52:09.575 +03:30 [INF] Executed action OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API) in 23538.6554ms
+2024-06-25 23:52:09.581 +03:30 [INF] Executed endpoint 'OnlineLibrary.API.Controllers.BooksController.GetAllBooks (OnlineLibrary.API)'
+2024-06-25 23:52:09.588 +03:30 [INF] HTTP GET /api/books responded 200 in 23606.3558 ms
+2024-06-25 23:52:09.603 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5168/api/books - 200 null application/json; charset=utf-8 23871.0062ms

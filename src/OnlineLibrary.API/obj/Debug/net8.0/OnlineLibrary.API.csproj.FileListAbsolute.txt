@@ -39,6 +39,7 @@ C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.API\obj\Debug\net8.0\Onl
 C:\Users\a_shi\source\repos\OnlineLibrary\OnlineLibrary.API\obj\Debug\net8.0\ref\OnlineLibrary.API.dll
 C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0\appsettings.json
+C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0\OnlineLibrary.API.staticwebassets.runtime.json
 C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0\OnlineLibrary.API.exe
 C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0\OnlineLibrary.API.deps.json
 C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0\OnlineLibrary.API.runtimeconfig.json
@@ -52,6 +53,14 @@ C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0
 C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0\Humanizer.dll
 C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0\Mapster.dll
 C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0\Mapster.Core.dll
+C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0\System.Web.Cors.dll
+C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Authorization.dll
+C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0\Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll
+C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
 C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
@@ -77,6 +86,7 @@ C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0
 C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0\Microsoft.JSInterop.dll
 C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0\Microsoft.OpenApi.dll
 C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
@@ -202,4 +212,9 @@ C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\obj\Debug\net8.0
 C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\obj\Debug\net8.0\OnlineLibrary.API.pdb
 C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\obj\Debug\net8.0\OnlineLibrary.API.genruntimeconfig.cache
 C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\obj\Debug\net8.0\ref\OnlineLibrary.API.dll
-C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0\System.Web.Cors.dll
+C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\a_shi\source\repos\OnlineLibrary\src\OnlineLibrary.API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
